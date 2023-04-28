@@ -1,0 +1,201 @@
+
+.nav-container{
+    background-color: white;
+    
+
+}
+
+.navigation{
+    
+    height: 4.875rem;
+    padding: 20px 40px;
+    /* background-color: lightgray; */
+    align-items: center;
+}
+.navigation .headerlogo{
+    grid-column: span 3;
+    color: #00544f;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+
+}
+
+.navigation .nav-sec{
+    grid-column: 4 / span 9;
+    justify-self: end;
+}
+
+.navigation nav a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #00544f;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#s-up-button{
+    border: #00544f solid 1px;
+    border-radius: 50px;
+    padding: 11px 17px;
+    background-color: #00544f;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.mob-nav-sec{
+    display: none;
+}
+
+@media (max-width:800px){
+    .navigation{
+      margin: auto;
+    }
+    .nav-sec{
+        display: none;
+        
+    }
+    .mob-nav-sec{
+        display: grid;
+        grid-column: 12;
+    }
+    .menu-items{
+        display: none;
+    }
+
+    .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        grid-column: 1;
+        grid-row: 1;
+        /* position: absolute; */
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #00544f;
+      }  
+    .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .checkbox {
+        /* position: absolute; */
+        /* grid-column: 12; */
+        grid-column: 1;
+        grid-row: 1;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .mob-nav-sec input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .mob-nav-sec input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .mob-nav-sec input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      .mob-nav-sec input[type="checkbox"]:checked ~ .hamburger-lines .line {
+        background: #ffffff;
+      }
+
+      .mob-nav-sec input[type="checkbox"]:checked ~ .menu-items {
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        /*  */
+        grid-template-columns: repeat(12,1fr);
+        /*  */
+        align-items: center;
+        justify-content: start;
+        font-size: 2rem;
+        gap: 1.5rem;
+        background-color: #00544f;
+        transition: 1s;
+        /* transform: translateY(100vh); */
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+      .menu-items #menu-item{
+        color: #ffffff;
+        grid-column: 1;
+        /* padding: 0 20px; */
+        align-self:flex-start;
+        /* font-family: 'Comfortaa', cursive; */
+
+      }
+      .menu-items .mob-headerlogo{
+        font-family: 'Comfortaa', cursive;
+        font-size: 30px;
+        padding: 0;
+        align-self: flex-start;
+        margin: 0 2rem;
+        align-self:flex-start;
+      }
+
+}
+
+/* ------------4 column grid for phone */
+@media (max-width:464px){
+  .grid-system{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      margin:auto;
+      width: 100%;
+  }
+  .navigation .headerlogo{
+    grid-column: span 3;
+    justify-self: start;
+    font-size: 35px;
+
+}
+  .mob-nav-sec{
+    grid-column: 4;
+    justify-self: end;
+}
+.mob-nav-sec input[type="checkbox"]:checked ~ .menu-items {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      margin:auto;
+      width: 100%;
+}
+
+.menu-items #menu-item{
+  color: #ffffff;
+  padding: 0;
+  align-self:flex-start;
+  /* font-family: 'Comfortaa', cursive; */
+  grid-column: 1;
+}
+  
+}
+

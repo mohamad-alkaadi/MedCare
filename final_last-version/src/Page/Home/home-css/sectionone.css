@@ -1,0 +1,157 @@
+.section-one{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+
+}
+
+.section-one img{
+    grid-column: span 6;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    pointer-events: none;
+
+}
+.section-one-para{
+    grid-column: 7 / span 6;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    width: 100%;
+    
+    
+}
+.one-headline{
+    font-size: 5.5rem;
+    color: #00544f;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.one-subheadline{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #00544f;
+}
+
+.one-button{
+    border: #00544f solid 1px;
+    border-radius: 50px;
+    padding: 11px 17px;
+    background-color: #00544f;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+
+@media (max-width:1300px){
+    .one-headline{
+        font-size: 5rem;
+        
+    }
+}
+
+@media (max-width:1100px){
+    .one-headline{
+        font-size: 4rem;
+        
+    }
+    .one-subheadline{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:1100px){
+    .one-headline{
+        font-size: 4rem;
+        
+    }
+    .one-subheadline{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:970px){
+    .one-headline{
+        font-size: 3rem;
+        
+    }
+    .one-subheadline{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:830px){
+    .one-headline{
+        font-size: 2.5rem;        
+    }
+    .one-subheadline{
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ------------change apperance -----------*/
+
+@media (max-width:800px){
+    .section-one{
+        max-width: 1500px;
+        margin:60px auto;
+        padding: 20px;
+    }
+    .section-one img{
+        grid-column: span 12 ;
+        grid-row: 2;
+        width: 100%;    
+    }
+    .section-one-para{
+        grid-column: span 12;   
+    }
+    .one-headline{
+        font-size: 4.7rem;
+        color: #00544f;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .one-subheadline{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        color: #00544f;
+    }
+    
+    
+    
+}
+/* ------------4 column grid for phone */
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+
+
+      .section-one img{
+        grid-column: span 4 ;  
+    }
+
+    .section-one-para{
+        grid-column: span 4;  
+         
+    }
+    .one-headline{
+        font-size: 15vw;
+    }
+    
+    .one-subheadline{
+        font-size: 5vw;
+    }
+    
+    
+}
+

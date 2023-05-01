@@ -5,13 +5,15 @@ const img = ()=>{
   return <img src={secThee} draggable="false" />;
 }
 
-const secTwo = (value) => {
+const secTwo = (value,active) => {
+  if(active){
   switch (value) {
     case value = 0:
       return <img src={secThee} draggable="false" />
       break;
     case value = 1:
-      return(<div className='hidden-content-two'>
+      return(<div className='hidden-content-one hidden-content'>
+              
               <p className='hidden-title'>Monitor patients continuously and remotely</p>
               <p className='hidden-para'>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
                  This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
@@ -19,28 +21,31 @@ const secTwo = (value) => {
              </div>)
       break;
     case value = 2:
-      return(<div className='hidden-content-three'>
-              <p>2One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
+      return(<div className='hidden-content-two hidden-content'>
+              <button className='back-button'>{`<`}</button>
+              <p className='hidden-title'>Easy booking of same or next day appointments</p>
+             <p className='hidden-para'> 
+             We offer a service to book medical appointments for the elderly. You can find and book a nearby doctor for same or next day visits using our online platform, phone line, or app. We have a network of trusted GPs, specialists, and urgent care providers. Our service is fast, easy, and respectful of the elderly’s choice. They can make their own appointments using our simple interface and get reminders and confirmations via smartwatch. Our service helps you and your elderly loved ones get the care you need.
               </p>
+              
              </div>)
       break;
     case value = 3:
-      return(<div className='hidden-content-four'>
+      return(<div className='hidden-content-three hidden-content'>
               <p>3One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
                  This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
               </p>
              </div>)
       break;
     case value = 4:
-      return(<div className='hidden-content-five'>
+      return(<div className='hidden-content-four hidden-content'>
               <p>4One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
                  This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
               </p>
              </div>)
       break;
     case value = 5:
-      return(<div className='hidden-content-six'>
+      return(<div className='hidden-content-five hidden-content'>
               
               <p>5One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
                  This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
@@ -48,53 +53,58 @@ const secTwo = (value) => {
              </div>)
       break;
     case value = 6:
-      return(<div className='hidden-content-one'>
+      return(<div className='hidden-content-six hidden-content'>
               <p>6One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
                  This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
               </p>
              </div>)
       break;
     default:
+      return <img src={secThee} draggable="false" />
       break;
   }
+  }else{
+    return <img src={secThee} draggable="false" />
+  }
 }
+  
 
 
 
-const hellobe = (buttonValue) =>{
-  console.log(buttonValue);
+const hellobe = (buttonValue,buttonActive) =>{
+  console.log(buttonValue,buttonActive);
 }
 
 const SectionThree = () => {
-  const [hello,setHello] =useState({value:0});
+  const [hello,setHello] =useState({value:0,active:false});
 
   const buttonOne = () =>{
-    setHello({...hello,value:1});
-    return hello.value;
+    setHello({...hello,value:1,active:!hello.active});
+    return hello.value,hello.active;
   }
   const buttonTwo = () =>{
-    setHello({...hello,value:2});
-    return hello.value;
+    setHello({...hello,value:2,active:!hello.active});
+    return hello.value,hello.active;
   }
   
   const buttonThree = () =>{
-    setHello({...hello,value:3});
-    return hello.value;
+    setHello({...hello,value:3,active:!hello.active});
+    return hello.value,hello.active;
   }
   
   const buttonFour = () =>{
-    setHello({...hello,value:4});
-    return hello.value;
+    setHello({...hello,value:4,active:!hello.active});
+    return hello.value,hello.active;
   }
   
   const buttonFive = () =>{
-    setHello({...hello,value:5});
-    return hello.value;
+    setHello({...hello,value:5,active:!hello.active});
+    return hello.value,hello.active;
   }
   
   const buttonSix = () =>{
-    setHello({...hello,value:6});
-    return hello.value;
+    setHello({...hello,value:6,active:!hello.active});
+    return hello.value,hello.active;
   }
 
 
@@ -176,36 +186,8 @@ const SectionThree = () => {
           </div>
           {/* {img()} */}
           {/* <img src={secThee} draggable="false" /> */}
-          {hellobe(hello.value)}
-          {secTwo(hello.value)}
-          {/* <div className='hidden-content'>
-            
-            <div className='hidden-content-two'>
-              <p>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-              </p>
-            </div>
-            <div className='hidden-content-three'>
-              <p>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-              </p>
-            </div>
-            <div className='hidden-content-four'>
-              <p>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-              </p>
-            </div>
-            <div className='hidden-content-five'>
-              <p>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-              </p>
-            </div>
-            <div className='hidden-content-six'>
-              <p>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                 This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-              </p>
-            </div>
-          </div> */}
+          {hellobe(hello.value,hello.active)}
+          {secTwo(hello.value,hello.active)}
         </div>
         
     </div>

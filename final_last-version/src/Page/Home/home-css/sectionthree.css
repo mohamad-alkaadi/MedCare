@@ -4,7 +4,7 @@
     padding: 20px;
     color: #00544f;
 }
-.sub-benefits button, input[type="submit"], input[type="reset"] {
+.sub-benefits button, input[type="submit"], input[type="reset"],.back-button {
 	background: none;
 	color: inherit;
 	border: none;
@@ -159,7 +159,7 @@
     pointer-events: none;
 } */
 
-  .hidden-content-two{
+  .hidden-content-two,.hidden-content{
     grid-column: 7/span 6;
     display: grid;
     justify-content: center;
@@ -172,7 +172,7 @@
     
   }
   .hidden-title{
-    font-size: 1.5rem;
+    font-size: 2.6rem;
     padding-bottom: 2rem;
   }
   .hidden-para{

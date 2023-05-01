@@ -76,6 +76,13 @@
     transition-delay: 1s;
     
 }
+/* .sub-ben-text:focus{
+    color: #fff;
+    background-color: #00544f;
+    text-align: center;
+    padding: .5rem;
+    transition-delay: 1s;
+} */
 
 .sub-ben-text span{
     position: absolute;
@@ -265,7 +272,7 @@
     .sub-ben-text{
         text-align: center;
     }
-
+   
 }
 
 @media (max-width:464px){

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './home-css/sectionthree.css'
 import secThee from './Home-assets/sec3.jpg'
+
+
 const img = ()=>{
   return <img src={secThee} draggable="false" />;
 }
@@ -21,8 +23,8 @@ const secTwo = (value,active) => {
              </div>)
       break;
     case value = 2:
-      return(<div className='hidden-content-two hidden-content'>
-              <button className='back-button'>{`<`}</button>
+      return(
+              <div className='hidden-content-two hidden-content'>
               <p className='hidden-title'>Easy booking of same or next day appointments</p>
              <p className='hidden-para'> 
              We offer a service to book medical appointments for the elderly. You can find and book a nearby doctor for same or next day visits using our online platform, phone line, or app. We have a network of trusted GPs, specialists, and urgent care providers. Our service is fast, easy, and respectful of the elderly’s choice. They can make their own appointments using our simple interface and get reminders and confirmations via smartwatch. Our service helps you and your elderly loved ones get the care you need.
@@ -84,6 +86,7 @@ const SectionThree = () => {
   }
   const buttonTwo = () =>{
     setHello({...hello,value:2,active:!hello.active});
+
     return hello.value,hello.active;
   }
   
@@ -129,7 +132,6 @@ const SectionThree = () => {
                 </div>
 
                 <div className='sub-ben text-two'>
-                  
                   <button onClick={buttonTwo} className='sub-ben-text'>
                   <span></span>
                   <span></span>

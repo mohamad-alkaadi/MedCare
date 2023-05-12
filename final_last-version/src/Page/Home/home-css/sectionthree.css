@@ -16,6 +16,7 @@
     text-align: start;
 }
 
+
 .benefits-text{
     grid-column: 1 /span 6;
     /* display: grid; */
@@ -170,20 +171,32 @@
     grid-column: 7/span 6;
     display: grid;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     background-color: #00544f;
     text-align: start;
     color: #fff;
     height: 100%;
     padding: 1rem;
-    
+    grid-template-rows: 1% auto;
   }
-  .hidden-title{
+  .back-button{
+    font-size: 1.8rem;
+    width: fit-content;
+    align-self: flex-start;
+  }
+
+    .hidden-title{
     font-size: 2.6rem;
     padding-bottom: 2rem;
+    align-self: center;
   }
   .hidden-para{
     font-size: 1.1rem;
+    align-self: center;
+  }
+  .hidden-para{
+    align-self: center;
+    /* background-color: red; */
   }
 /* ---------------------------------end of pc specific-----------------------------------*/
 }

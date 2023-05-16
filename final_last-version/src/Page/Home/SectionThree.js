@@ -85,9 +85,7 @@ const SectionThree = () => {
                   <button onClick={backClick} className='back-button'><MdClose/></button>
                   <div className='hidden-para'>
                    <p className='hidden-title'>Peace of mind for family members</p>
-                     <p p className='hidden-para'>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                         This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-                    </p>
+                     <p p className='hidden-para'>Our company offers a service that helps elderly people stay healthy and independent at home. With our service, they get a wearable device that measures their vital signs and sends the data to a cloud platform. This allows their family members or health care professionals to access the data and monitor their health status. The device also detects any abnormalities and alerts the nearest hospital in case of an emergency. Our service connects the elderly to their loved ones and health care team, while enabling them to live comfortably at home. It also lowers the risk of complications and hospitalizations. </p>
                 </div>
                </div>)
         break;
@@ -104,10 +102,12 @@ const SectionThree = () => {
         break;
       case 5:
         return(<div className='hidden-content-five hidden-content'>
-                
-                <p>5One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                   This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-                </p>
+               <button onClick={backClick} className='back-button'><MdClose/></button>
+                  <div className='hidden-para'>
+                   <p className='hidden-title'>Personalized and flexible services</p>
+                     <p p className='hidden-para'>
+                     Our company offers personalized and flexible services for elderly care, based on monitoring their vital signs and connecting them to the nearest hospital that is contracted with us. We have three plans to suit different needs and budgets: basic, standard and premium. The basic plan has a low monthly subscription fee, but a higher cost when you need help. The standard plan has a moderate monthly fee and a moderate cost when you need help. The premium plan has a high monthly fee, but a low or no cost when you need help. You can choose the plan that best fits your situation and preferences. </p>
+                </div>
                </div>)
         break;
       case 6:

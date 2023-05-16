@@ -112,9 +112,12 @@ const SectionThree = () => {
         break;
       case 6:
         return(<div className='hidden-content-six hidden-content'>
-                <p>6One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
-                   This way, patients can enjoy their daily activities while being under medical supervision, and doctors can intervene promptly if any abnormality is detected.
-                </p>
+                <button onClick={backClick} className='back-button'><MdClose/></button>
+                  <div className='hidden-para'>
+                   <p className='hidden-title'>Provide remote care and guidance to patients</p>
+                     <p p className='hidden-para'>
+                     Our company provides remote care and guidance to patients who need frequent monitoring of their vital signs. We use a device that connects patients with a team of health professionals who can offer advice and support. We also link patients with the nearest hospital that is contracted with us, in case of emergencies. Our service is convenient, safe and reliable for patients who want to stay at home and avoid unnecessary hospital visits. </p>
+                </div>
                </div>)
         break;
       default:

@@ -19,42 +19,42 @@ function useWindowSize(){
 
 
 
-const hellobe = (buttonValue,buttonActive) =>{
-  console.log(buttonValue,buttonActive);
+const hellobe = (buttonValue,sm,bb) =>{
+  console.log(buttonValue,sm,bb);
 }
 
 const SectionThree = () => {
-  const [hello,setHello] =useState({value:0,forSmallScreen:false});//for small screen for activating button and closing it
+  const [hello,setHello] =useState({value:0,one:false,two:false,three:false,four:false,five:false,six:false});//for small screen for activating button and closing it
 
   const width = useWindowSize();
 
   const buttonOne = () =>{
-    setHello({...hello,value:1});
+    setHello({...hello,value:1,one:!hello.one,two:false,three:false,four:false,five:false,six:false});
     return hello.value;
   }
   const buttonTwo = () =>{
-    setHello({...hello,value:2});
+    setHello({...hello,value:2,one:false,two:!hello.two,three:false,four:false,five:false,six:false});
 
     return hello.value;
   }
   
   const buttonThree = () =>{
-    setHello({...hello,value:3});
+    setHello({...hello,value:3,one:false,two:false,three:!hello.three,four:false,five:false,six:false});
     return hello.value;
   }
   
   const buttonFour = () =>{
-    setHello({...hello,value:4});
+    setHello({...hello,value:4,one:false,two:false,three:false,four:!hello.four,five:false,six:false});
     return hello.value;
   }
   
   const buttonFive = () =>{
-    setHello({...hello,value:5});
+    setHello({...hello,value:5,one:false,two:false,three:false,four:false,five:!hello.five,six:false});
     return hello.value;
   }
   
   const buttonSix = () =>{
-    setHello({...hello,value:6});
+    setHello({...hello,value:6,one:false,two:false,three:false,four:false,five:false,six:!hello.six});
     return hello.value;
   }
   const backClick = () =>{
@@ -68,8 +68,8 @@ const SectionThree = () => {
         return <img src={secThee} draggable="false" />
         break;
       case 1:
-        return(<div className='hidden-content-one hidden-content small-screen-content'>
-                <button onClick={backClick} className='back-button'><MdClose/></button>
+        return(<div className='hidden-content-one hidden-content'>
+         {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                 <div className='hidden-para'>
                   <p className='hidden-title'>Monitor patients continuously and remotely</p>
                   <p className='hidden-text'>One of the challenges in healthcare is to monitor patients continuously and remotely without compromising their comfort and mobility. A possible solution is to use a watch that can measure vital signs such as heart rate, blood pressure, oxygen saturation, and temperature, and transmit the data to a cloud-based platform where doctors can access it anytime and anywhere. 
@@ -81,7 +81,7 @@ const SectionThree = () => {
       case 2:
         return(
                 <div className='hidden-content-two hidden-content small-screen-content'>
-                  <button onClick={backClick} className='back-button'><MdClose/></button>
+                  {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                   <div className='hidden-para'>
 
                     <p className='hidden-title'>Easy booking of same or next day appointments</p>
@@ -93,7 +93,7 @@ const SectionThree = () => {
         break;
       case 3:
         return(<div className='hidden-content-three hidden-content small-screen-content'>
-                  <button onClick={backClick} className='back-button'><MdClose/></button>
+                  {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                   <div className='hidden-para'>
                    <p className='hidden-title'>Peace of mind for family members</p>
                      <p p className='hidden-text'>Our company offers a service that helps elderly people stay healthy and independent at home. With our service, they get a wearable device that measures their vital signs and sends the data to a cloud platform. This allows their family members or health care professionals to access the data and monitor their health status. The device also detects any abnormalities and alerts the nearest hospital in case of an emergency. Our service connects the elderly to their loved ones and health care team, while enabling them to live comfortably at home. It also lowers the risk of complications and hospitalizations. </p>
@@ -102,7 +102,7 @@ const SectionThree = () => {
         break;
       case 4:
         return(<div className='hidden-content-four hidden-content small-screen-content'>
-                <button onClick={backClick} className='back-button'><MdClose/></button>
+                  {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                   <div className='hidden-para'>
                    <p className='hidden-title'>Easier access to patient data remotely</p>
                      <p p className='hidden-text'>
@@ -113,7 +113,7 @@ const SectionThree = () => {
         break;
       case 5:
         return(<div className='hidden-content-five hidden-content small-screen-content'>
-               <button onClick={backClick} className='back-button'><MdClose/></button>
+                  {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                   <div className='hidden-para'>
                    <p className='hidden-title'>Personalized and flexible services</p>
                      <p p className='hidden-text'>
@@ -123,7 +123,7 @@ const SectionThree = () => {
         break;
       case 6:
         return(<div className='hidden-content-six hidden-content small-screen-content'>
-                <button onClick={backClick} className='back-button'><MdClose/></button>
+                  {width>464 ? <button onClick={backClick} className='back-button'><MdClose/></button>:null}
                   <div className='hidden-para'>
                    <p className='hidden-title'>Provide remote care and guidance to patients</p>
                      <p p className='hidden-text'>
@@ -159,10 +159,15 @@ const SectionThree = () => {
                     Monitor patients continuously and remotely
                   </button>
                 </div>
-                {hello.forSmallScreen ? <div className='small-screen-text'>
-                  {secTwo}
-                </div> : null}
+                {width<464?<div>{hello.one ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
 
+                {/* {hello.one ? <div>
+                {secTwo(hello.value)}
+                </div> : null} */}
+                  
+                   
                 <div className='sub-ben text-two'>
                   <button onClick={buttonTwo} className='sub-ben-text'>
                   <span></span>
@@ -172,7 +177,9 @@ const SectionThree = () => {
                   Easy booking of same or next day appointments
                   </button>
                 </div>
-
+                {width<464?<div>{hello.two ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
                 <div className='sub-ben text-three'>
                   
                   <button onClick={buttonThree} className='sub-ben-text'>
@@ -183,6 +190,10 @@ const SectionThree = () => {
                   Peace of mind for family members
                   </button>
                 </div>
+                {width<464?<div>{hello.three ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
+
                 <div className='sub-ben text-four'>
                  
                   <button onClick={buttonFour} className='sub-ben-text'>
@@ -193,6 +204,10 @@ const SectionThree = () => {
                   Easier access to patient data remotely
                   </button>
                 </div>
+                {width<464?<div>{hello.four ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
+
 
                 <div className='sub-ben text-five'>
                   <button onClick={buttonFive} className='sub-ben-text'>
@@ -203,7 +218,9 @@ const SectionThree = () => {
                   Personalized and flexible services
                   </button>
                 </div>
-                
+                {width<464?<div>{hello.five ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
                 <div className='sub-ben text-six'>
                   
               
@@ -216,10 +233,13 @@ const SectionThree = () => {
                   </button>
                   
                 </div>
+                {width<464?<div>{hello.six ? <div>
+                {secTwo(hello.value)}
+                </div> : null} </div>:null}
             </div>
           </div>
           
-          {hellobe(hello.value)}
+          {hellobe(hello.value,hello.one,hello.two)}
           {width>464?secTwo(hello.value):null}
         </div>
         

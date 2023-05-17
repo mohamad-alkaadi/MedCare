@@ -359,4 +359,15 @@
     .small-screen-content{
         display: grid;
     }
+    .hidden-content{
+        display: grid;
+        grid-template-columns: span 4;
+
+        justify-content: center;
+        background-color: #00544f;
+        text-align: start;
+        color: #fff;
+        height: 100%;
+        padding: 1rem;
+    }
 }

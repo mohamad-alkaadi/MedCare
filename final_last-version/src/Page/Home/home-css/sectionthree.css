@@ -59,7 +59,8 @@
 .hidden-content{
     display: none;
 }
-@media (min-width:900px){ 
+
+@media (min-width:901px){ 
 /* --------------button effect------------------just for desktop and tablet----------------------------------- */
 .sub-ben-text{
     position: relative;
@@ -198,6 +199,9 @@
     align-self: center;
     /* background-color: red; */
   }
+  .small-screen-text{
+    display: no;
+  }
 /* ---------------------------------end of pc specific-----------------------------------*/
 }
 
@@ -313,4 +317,46 @@
     }
   }
 
+/* mobile specific hidden items   */
+@media(min-width:465px ){
+    .hidden-content-two,.hidden-content{
+    grid-column: span 12;
+    display: grid;
+    justify-content: center;
+    /* align-content: center; */
+    background-color: #00544f;
+    text-align: start;
+    color: #fff;
+    height: 500px;
+    padding: 1rem;
+    grid-template-rows: 1% auto;
+  }
+  .back-button{
+    font-size: 1.8rem;
+    width: fit-content;
+    align-self: flex-start;
+  }
 
+    .hidden-title{
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+    align-self: center;
+  }
+  .hidden-para{
+    font-size: 1.1rem;
+    align-self: center;
+  }
+  .hidden-para{
+    align-self: center;
+    /* background-color: red; */
+  }
+}
+
+@media(max-width:464px){
+    .small-screen-text{
+        display: block;
+      }
+    .small-screen-content{
+        display: grid;
+    }
+}

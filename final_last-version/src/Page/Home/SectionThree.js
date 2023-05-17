@@ -238,7 +238,7 @@ const SectionThree = () => {
                 </div> : null} </div>:null}
             </div>
           </div>
-          
+          {}
           {hellobe(hello.value,hello.one,hello.two)}
           {width>464?secTwo(hello.value):null}
         </div>

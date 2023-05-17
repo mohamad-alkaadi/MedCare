@@ -270,9 +270,7 @@
     }
     .benefits-text{
         grid-column: 1 /span 12;
-        /* display: grid; */
         padding-top: 1rem;
-        /* align-self: center; */
     
     }
     .section-three img{
@@ -318,7 +316,7 @@
   }
 
 /* mobile specific hidden items   */
-@media(min-width:465px ){
+@media(min-width:465px ) and (max-width:900px){
     .hidden-content-two,.hidden-content{
     grid-column: span 12;
     display: grid;
@@ -370,4 +368,16 @@
         height: 100%;
         padding: 1rem;
     }
+    .hidden-title{
+        font-size: 2.1rem;
+        padding-bottom: 2rem;
+        align-self: center;
+      }
+      .hidden-para{
+        font-size: 1.1rem;
+        align-self: center;
+      }
+      .hidden-para{
+        align-self: center;
+      }
 }

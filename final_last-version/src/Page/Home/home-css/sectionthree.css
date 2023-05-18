@@ -321,7 +321,6 @@
     grid-column: span 12;
     display: grid;
     justify-content: center;
-    /* align-content: center; */
     background-color: #00544f;
     text-align: start;
     color: #fff;

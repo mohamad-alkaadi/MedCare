@@ -4,43 +4,44 @@ const SectionSix = () => {
   return (
     <div className='section-six-container'>
         <div className='section-six grid-system'>
-            <div className='sec-six-header'>Subscription plans</div>
-            <div className='toggle-time'>
-                <label>Annually</label>
-                <div className='toggle-btn'>
-                    <input type='checkbox' className='checkbox'/>
-                    <label for="checkbox" className='sub'>
-                        <div className='circle'></div>
-                    </label>
-                </div>
-
+        <div className='six-header'>Subscription plans</div>
+            <div className='six-toggle-time'>
+                    <label className='toggle-time'>Annually</label>
+                    <div className='six-toggle-btn'>
+                        <input type='checkbox' id='six-checkbox' className='six-checkbox'/>
+                        <label for="six-checkbox" className='six-sub'>
+                            <div className='six-circle'></div>
+                        </label> 
+                    </div>
+                    <label className='toggle-time'>Monthly</label>   
             </div>
 
-            <div className='cards'>
-                <div className='card-one'>
-                    <div className='header'>Basic</div>
-                    <div className='price'>$100</div>
-                    <div className='benefits'>
+            <div className='six-cards'>
+                <div className='six-card six-card-one'>
+                    <div className='six-card-content six-card-header'>Basic</div>
+                    <div className='six-card-content six-card-price'>$100</div>
+                    <div className='six-card-content six-card-benefits'>
                         pay less every month, but more when you need help
                     </div>
+                    <button className='sec-six-btn'>Learn More</button>
                 </div>
 
-                <div className='card-two'>
-                    <div className='header'>Standard</div>
-                    <div className='price'>$150</div>
-                    <div className='benefits'>
+                <div className='six-card six-card-two'>
+                    <div className='six-card-content six-card-header'>Standard</div>
+                    <div className='six-card-content six-card-price'>$150</div>
+                    <div className='six-card-content six-card-benefits'>
                         pay a moderate amount every month, and a moderate amount when you need help
-
                     </div>
+                    <button className='sec-six-btn'>Learn More</button>
                 </div>
 
-                <div className='card-three'>
-                    <div className='header'>Premium</div>
-                    <div className='price'>$200</div>
-                    <div className='benefits'>
+                <div className='six-card six-card-three'>
+                    <div className='six-card-content six-card-header'>Premium</div>
+                    <div className='six-card-content six-card-price'>$200</div>
+                    <div className='six-card-content six-card-benefits'>
                         pay more every month, but less or nothing when you need help
                     </div>
-                        <button className='sec-six-btn'>Learn More</button>
+                    <button className='sec-six-btn'>Learn More</button>
                     </div>
 
             </div>

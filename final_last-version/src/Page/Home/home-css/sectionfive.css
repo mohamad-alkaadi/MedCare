@@ -6,6 +6,22 @@
 
 }
 
+
+/* 
+ <div className='header'>
+        <h1>Our Pricing</h1>
+        <div className='toggle'>
+            <label>Annually</label>
+            <div className='toggle-btn'>
+                <input type='checkbox' id='checkbox' className='checkbox'/>
+                <label for='checkbox' className='sub' id='suv'>
+                    <div className='circle'></div>
+                </label>
+            </div>
+            <label>Monthly</label>
+        </div>
+        </div>
+*/
 .header{
     color: hsl(233,13%,49%);
     margin: 3.3rem 0;
@@ -28,6 +44,7 @@
 .checkbox{
     display: none ;
 }
+
 .sub{
     background:linear-gradient(
         135deg,rgba(163,168,240,1) 0%,

@@ -40,7 +40,12 @@
 
 .sec-five-img{
     grid-column: span 6;
+    display: grid;
+    padding: 2rem 1rem;
+
+    
 }
 .five-img{
-    width: 95%;
+    width: 100%;
+    justify-self: center;
 }

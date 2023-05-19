@@ -11,11 +11,9 @@
     justify-self: center;
     font-size: 4rem;
     color: #005450;
+    text-align: center;
 }
-.sec-six-header{
-    grid-column: span 12;
-    justify-self: center;
-}
+
 
 .six-toggle-time{
     grid-column: span 12;
@@ -148,12 +146,71 @@
     font-size: 1.2rem;
 
 }
-.six-card:hover{
-    color: #005450;
-    background-color: #fff;
+@media (min-width:1400px){
 
+    .six-card:hover{
+        color: #005450;
+        background-color: #fff;
+        
+    }
+    .six-card:hover  button{
+        color: #fff;
+        background: #005450;
+    }
 }
-.six-card:hover  button{
-    color: #fff;
-    background: #005450;
+/* ======================================================= */
+.six-slide{
+    display: none;
 }
+
+
+@media (max-width:1400px){
+    .six-normal{
+        display: none;
+    }
+    
+    .six-slide{
+        display: grid;
+        margin-left: 2rem;   
+    }
+    
+   
+    .six-inner-carousel{
+       display: grid;
+       justify-content: space-between;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    .six-carousel{
+        overflow: hidden;
+        grid-column: span 12;
+    }
+}
+
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* background-color: red; */
+        margin:auto;
+        width: 100%;
+    }
+    .six-header{
+        grid-column: span 4;
+    }
+    .six-toggle-time{
+        grid-column: span 4;
+    }
+    .six-cards{
+        grid-column: span 4;
+    }
+    .six-carousel{   
+        grid-column: span 4;
+    }
+    
+  }
+  
+  @media (max-width:362px){
+    .six-header{
+        font-size: 3.5rem;
+    }
+  }

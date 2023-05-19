@@ -1,164 +1,46 @@
 .sec-five-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-
-}
-
-
-/* 
- <div className='header'>
-        <h1>Our Pricing</h1>
-        <div className='toggle'>
-            <label>Annually</label>
-            <div className='toggle-btn'>
-                <input type='checkbox' id='checkbox' className='checkbox'/>
-                <label for='checkbox' className='sub' id='suv'>
-                    <div className='circle'></div>
-                </label>
-            </div>
-            <label>Monthly</label>
-        </div>
-        </div>
-*/
-.header{
-    color: hsl(233,13%,49%);
-    margin: 3.3rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.toggle{
-    margin-top:2rem;
-    color:hdl(234,14%,74%);
-    display: flex;
-    align-items: center;
-}
-
-.toggle-btn{
-    margin: 0 1rem;
-}
-
-.checkbox{
-    display: none ;
-}
-
-.sub{
-    background:linear-gradient(
-        135deg,rgba(163,168,240,1) 0%,
-        rgba(105,111,221,1)100%
-    );
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 1.6rem;
-    width: 3.3rem;
-    border-radius: 1.6rem;
-    padding: 0.3rem;
-}
-
-.circle{
     background-color: #fff;
-    height: 1.4rem;
-    width: 1.4rem;
-    border-radius: 50%;
+    min-height: 700px;
+    display: grid;
+    align-content: center;
 }
-.checkbox:checked + .sub{
-    justify-content: flex-end;
+.section-five{
+    max-width: 1500px;
+    margin:30px auto;
+    color: #00544f;
+}
+.sec-five-text{
+    grid-column: span 6;
+    display: grid;
+    padding: 2rem 1rem;
+    grid-template-rows: 20% 60% 20%;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.five-title{
+    display: grid;
+    align-content: center;
+    font-size: 4rem;
 }
 
-.card{
+.five-para{
+    display: grid;
+    align-content: center;
+    font-size: 1.4rem;
+}
+
+.sec-five-button{
+    width: fit-content;
+    height: fit-content;
     background-color: #fff;
-    color: hsl(223,13%,49%);
-    border-radius: 0.8rem;
+    color: #00544f;
+    padding: .8rem 3rem;
+    font-size: 1.2rem;
+    border: #00544f solid 1px;
 }
 
-.cards .card.active{
-    background: linear-gradient(
-        135deg,rgba(163,168,240,1) 0%,
-        rgba(105,111,221,1)100%
-
-    );
-    color: #fff;
-    display: flex;
-    align-items: center;
-    transform: scale(1.1);
-    z-index: 1;
+.sec-five-img{
+    grid-column: span 6;
 }
-
-ul{
-    margin: 2.6rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-ul li{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 1rem 0;
-}
-
-ul li.price{
-    font-size: 3rem;
-    color:hsl(232,13%,33%);
-    padding-bottom: 2rem;
-
-    }
- 
-.shadow{
-    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
-}
-
-.card.active .price{
-    color: #fff;
-}
-
-.btn{
-    margin-top: 1rem; 
-    height: 2.6rem;
-    width: 13.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background: linear-gradient(
-        135deg,
-        rgba(163,168,240,1) 0%,
-        rgba(195,111,221,1) 100%,
-    );
-    color: #fff;
-    outline: none;
-    border: 0;
-    font-weight: bold;
-}
-
-.action-btn{
-    background: #fff;
-    color: hsl(237,63%,64%);
-}
-
-.bottom-bar{
-    border-bottom: 2px solid hsl(240,8%,85%,0.583);
-}
-
-.card.active .bottom-bar{
-    border-bottom: 2px solid hsl(240,8%,85%,0.583);
-}
-
-.pack{
-    font-size: 1.1rem;
+.five-img{
+    width: 95%;
 }

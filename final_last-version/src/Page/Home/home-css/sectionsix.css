@@ -88,7 +88,6 @@
 
 .six-card{
     color: #fff;
-    height: 00px;
     width: 29rem;
     height: 35rem;
     border-radius: 0.8rem;
@@ -148,4 +147,13 @@
     color: #005450;
     font-size: 1.2rem;
 
+}
+.six-card:hover{
+    color: #005450;
+    background-color: #fff;
+
+}
+.six-card:hover  button{
+    color: #fff;
+    background: #005450;
 }

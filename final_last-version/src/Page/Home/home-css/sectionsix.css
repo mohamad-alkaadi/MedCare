@@ -1,0 +1,21 @@
+.sec-six-header{
+    grid-column: span 12;
+    justify-self: center;
+}
+
+.toggle-time{
+    grid-column: span 12;
+    justify-self: center;
+}
+
+/* 
+             <div className='toggle-time'>
+                <div className='toggle-btn'>
+                    <input type='checkbox' className='checkbox'/>
+                    <label for="checkbox" className='sub'>
+                        <div className='circle'></div>
+                    </label>
+                </div>
+            </div>
+*/
+

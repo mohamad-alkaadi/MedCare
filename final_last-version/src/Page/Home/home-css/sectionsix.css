@@ -1,215 +1,95 @@
+.section-six-container{
+    background-color: #00544f;
+    min-height: 350px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
 .section-six{
     max-width:1500px;
     margin: 30px auto;
-    /* background-color: red; */
-}
-
-
-.six-header{
-    margin-top: 2rem;
-    grid-column: span 12;
-    justify-self: center;
-    font-size: 4rem;
-    color: #005450;
-    text-align: center;
-}
-
-
-.six-toggle-time{
-    grid-column: span 12;
-    justify-self: center;
-    color: #005450;
-    display: grid;
-    justify-content: center;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    /* margin: 1.5rem 0; */
-    
-}
-
-.six-toggle-btn{
-    display: grid;
-    align-items: center;
-    justify-items: start;
-    padding: 0 10px;
-    height:100%;
-}
-
-.six-checkbox{
-    visibility: hidden;
-    position: absolute;
-    width: 3.3rem;
-}
-
-.six-sub{
-    background:linear-gradient(
-        135deg,#3e7059,
-       #005450);
-    display: grid;
-    justify-content: start;
-    align-content: center;
-    height: 1.6rem;
-    width: 3.3rem;
-    border-radius: 1.6rem;
-    padding: 0.3rem;
-    justify-self: center;
-}
-
-.toggle-time{
-    justify-self: center;
-    align-self: center;
-    font-size: 1.4rem;
-}
-
-.six-circle{
-    background-color: #fff;
-    height: 1.4rem;
-    width: 1.4rem;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.six-checkbox:checked + .six-sub{
-    justify-content: end;
-    
-}
-
-.six-cards{
-    margin-top: 2rem;
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 600px;
-    
-}
-
-.six-card{
-    color: #fff;
-    width: 29rem;
-    height: 35rem;
-    border-radius: 0.8rem;
-    justify-self: center;
-    display: grid;
-    align-content: center;
-    grid-template-rows: 20% 25% 30% 25%;
-    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
-    background-color:  #005450;
-    /* background-image: linear-gradient(#3e7059, #005450); */
-}
-
-
-
-.six-card-one{
-    justify-self: end;
-
-}
-.six-card-two{
-    justify-self: center;
-
-}
-.six-card-three{
-    justify-self: start;
-
-}
-
-.six-card-content{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 80%;
-    justify-self: center;
-
-}
-
-.six-card-header{
-    font-size: 1.4rem;
-}
-.six-card-price{
-    font-size: 4rem; 
-    border-bottom: 2px solid hsl(240,8%,85%,0.583);
-}
-.six-card-benefits{
-    font-size: 1.4rem;
-    border-bottom: 2px solid hsl(240,8%,85%,0.583);
-}
-.sec-six-btn{
-    justify-self: center;
-    align-self: center;
-    border: none;
-    height: 2.6rem;
-    width: 13.3rem;
-    border-radius: 4px;
-    background: #fff;
-    color: #005450;
-    font-size: 1.2rem;
-
-}
-@media (min-width:1400px){
-
-    .six-card:hover{
-        color: #005450;
-        background-color: #fff;
-        
-    }
-    .six-card:hover  button{
-        color: #fff;
-        background: #005450;
-    }
-}
-/* ======================================================= */
-.six-slide{
-    display: none;
-}
-
-
-@media (max-width:1400px){
-    .six-normal{
-        display: none;
-    }
-    
-    .six-slide{
-        display: grid;
-        margin-left: 2rem;   
-    }
-    
-   
-    .six-inner-carousel{
-       display: grid;
-       justify-content: space-between;
-       grid-template-columns: 1fr 1fr 1fr;
-    }
-    .six-carousel{
-        overflow: hidden;
-        grid-column: span 12;
-    }
-}
-
-@media (max-width:464px){
-    .grid-system{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        margin:auto;
-        width: 100%;
-    }
-    .six-header{
-        grid-column: span 4;
-    }
-    .six-toggle-time{
-        grid-column: span 4;
-    }
-    .six-cards{
-        grid-column: span 4;
-    }
-    .six-carousel{   
-        grid-column: span 4;
-    }
-    
-  }
+    color:#fff;
   
-  @media (max-width:362px){
-    .six-header{
-        font-size: 3.5rem;
+}
+
+.sec-six-text{
+    grid-column: span 12;
+    justify-self: center;
+    text-align: center;
+    font-size: 4rem;
+}
+.sec-six-subtext{
+    grid-column: span 12;
+    text-align: center;
+    justify-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 11px;
+    width: 90%;
+}
+@media (max-width:1270px){
+    .sec-six-text{
+        font-size: 3.41rem;
     }
-  }
+    .sec-six-subtext{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:1093px){
+    .sec-six-text{
+        font-size: 3.1rem;
+    }
+    .sec-six-subtext{
+        font-size: 1rem;
+    }
+}
+@media (max-width:1000px){
+    .sec-six-text{
+        font-size: 2.8rem;
+    }
+
+}
+@media (max-width:910px){
+    .sec-six-text{
+        font-size: 2.7rem;
+    }
+    .sec-six-subtext{
+        font-size: .9rem;
+    }
+}
+@media (max-width:616px){
+    .sec-six-text{
+        font-size: 2.6rem;
+    }
+    .sec-six-subtext{
+        font-size: .8rem;
+    }
+}
+@media (max-width:593px){
+    .sec-six-text{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:593px){
+    .sec-six-text{
+        font-size: 2.2rem;
+    }
+}
+@media (max-width:502px){
+    .section-six-container{
+        min-height: 250px;
+    }
+
+    .sec-six-text{
+        font-size: 2rem;
+    }
+}
+@media (max-width:456px){
+    .sec-six-text{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:411px){
+    .sec-six-text{
+        font-size: 1.7rem;
+    }
+}

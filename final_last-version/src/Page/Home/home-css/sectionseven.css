@@ -1,95 +1,215 @@
-.section-seven-container{
-    background-color: #00544f;
-    min-height: 350px;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
 .section-seven{
     max-width:1500px;
     margin: 30px auto;
-    color:#fff;
-  
+    /* background-color: red; */
 }
 
-.sec-seven-text{
+
+.seven-header{
+    margin-top: 2rem;
     grid-column: span 12;
     justify-self: center;
-    text-align: center;
     font-size: 4rem;
-}
-.sec-seven-subtext{
-    grid-column: span 12;
+    color: #005450;
     text-align: center;
+}
+
+
+.seven-toggle-time{
+    grid-column: span 12;
     justify-self: center;
+    color: #005450;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    /* margin: 1.5rem 0; */
+    
+}
+
+.seven-toggle-btn{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    padding: 0 10px;
+    height:100%;
+}
+
+.seven-checkbox{
+    visibility: hidden;
+    position: absolute;
+    width: 3.3rem;
+}
+
+.seven-sub{
+    background:linear-gradient(
+        135deg,#3e7059,
+       #005450);
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+    justify-self: center;
+}
+
+.toggle-time{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.4rem;
+}
+
+.seven-circle{
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.seven-checkbox:checked + .seven-sub{
+    justify-content: end;
+    
+}
+
+.seven-cards{
+    margin-top: 2rem;
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 600px;
+    
+}
+
+.seven-card{
+    color: #fff;
+    width: 29rem;
+    height: 35rem;
+    border-radius: 0.8rem;
+    justify-self: center;
+    display: grid;
+    align-content: center;
+    grid-template-rows: 20% 25% 30% 25%;
+    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
+    background-color:  #005450;
+    /* background-image: linear-gradient(#3e7059, #005450); */
+}
+
+
+
+.seven-card-one{
+    justify-self: end;
+
+}
+.seven-card-two{
+    justify-self: center;
+
+}
+.seven-card-three{
+    justify-self: start;
+
+}
+
+.seven-card-content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+
+}
+
+.seven-card-header{
+    font-size: 1.4rem;
+}
+.seven-card-price{
+    font-size: 4rem; 
+    border-bottom: 2px solid hsl(240,8%,85%,0.583);
+}
+.seven-card-benefits{
+    font-size: 1.4rem;
+    border-bottom: 2px solid hsl(240,8%,85%,0.583);
+}
+.sec-seven-btn{
+    justify-self: center;
+    align-self: center;
+    border: none;
+    height: 2.6rem;
+    width: 13.3rem;
+    border-radius: 4px;
+    background: #fff;
+    color: #005450;
     font-size: 1.2rem;
-    margin-bottom: 11px;
-    width: 90%;
-}
-@media (max-width:1270px){
-    .sec-seven-text{
-        font-size: 3.41rem;
-    }
-    .sec-seven-subtext{
-        font-size: 1.1rem;
-    }
-}
-@media (max-width:1093px){
-    .sec-seven-text{
-        font-size: 3.1rem;
-    }
-    .sec-seven-subtext{
-        font-size: 1rem;
-    }
-}
-@media (max-width:1000px){
-    .sec-seven-text{
-        font-size: 2.8rem;
-    }
 
 }
-@media (max-width:910px){
-    .sec-seven-text{
-        font-size: 2.7rem;
-    }
-    .sec-seven-subtext{
-        font-size: .9rem;
-    }
-}
-@media (max-width:616px){
-    .sec-seven-text{
-        font-size: 2.6rem;
-    }
-    .sec-seven-subtext{
-        font-size: .8rem;
-    }
-}
-@media (max-width:593px){
-    .sec-seven-text{
-        font-size: 2.5rem;
-    }
-}
-@media (max-width:593px){
-    .sec-seven-text{
-        font-size: 2.2rem;
-    }
-}
-@media (max-width:502px){
-    .section-seven-container{
-        min-height: 250px;
-    }
+@media (min-width:1400px){
 
-    .sec-seven-text{
-        font-size: 2rem;
+    .seven-card:hover{
+        color: #005450;
+        background-color: #fff;
+        
+    }
+    .seven-card:hover  button{
+        color: #fff;
+        background: #005450;
     }
 }
-@media (max-width:456px){
-    .sec-seven-text{
-        font-size: 1.8rem;
+/* ======================================================= */
+.seven-slide{
+    display: none;
+}
+
+
+@media (max-width:1400px){
+    .seven-normal{
+        display: none;
+    }
+    
+    .seven-slide{
+        display: grid;
+        margin-left: 2rem;   
+    }
+    
+   
+    .seven-inner-carousel{
+       display: grid;
+       justify-content: space-between;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    .seven-carousel{
+        overflow: hidden;
+        grid-column: span 12;
     }
 }
-@media (max-width:411px){
-    .sec-seven-text{
-        font-size: 1.7rem;
+
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
     }
-}
+    .seven-header{
+        grid-column: span 4;
+    }
+    .seven-toggle-time{
+        grid-column: span 4;
+    }
+    .seven-cards{
+        grid-column: span 4;
+    }
+    .seven-carousel{   
+        grid-column: span 4;
+    }
+    
+  }
+  
+  @media (max-width:362px){
+    .seven-header{
+        font-size: 3.5rem;
+    }
+  }

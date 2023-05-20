@@ -1,0 +1,54 @@
+.footer-container{
+    background-color: #00544f;
+}
+.footer{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+    grid-template-rows: repeat(1fr,5);
+}
+.footer-logo{
+    grid-column: span 3;
+    background-color: lightblue;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.footer-company-links{
+    grid-column: span 3;
+    background-color: lightcoral;
+}
+.footer-quick-links{
+    grid-column: span 3;
+    background-color: lightcyan;
+}
+.footer-company-title , .footer-quick-title,.subscribe-title{
+    justify-self: start;
+}
+.footer-links{
+    justify-self: center;
+    margin: 2rem 0;
+}
+
+.footer-subscribe{
+    grid-column: span 3;
+    display: grid;
+    background-color: lightgoldenrodyellow; 
+}
+
+.subscribe-box{
+    justify-self: start;
+}
+
+.footer-copyright{
+    grid-column: span 6;
+    background-color: lightseagreen;
+}
+
+.footer-social{
+    grid-column: span 6;
+    display: flex;
+    justify-content: flex-end;
+    background-color: lightskyblue;
+}
+

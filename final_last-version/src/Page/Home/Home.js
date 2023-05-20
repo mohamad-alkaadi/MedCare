@@ -22,7 +22,7 @@ const Home = () => {
         <SectionSix/>
         <SectionSeven/>
         <Footer/>
-        <SectionOne/>
+        {/* <SectionOne/> */}
         
     </div>
   )

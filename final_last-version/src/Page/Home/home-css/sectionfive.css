@@ -1,6 +1,6 @@
 .sec-five-container{
     background-color: #fff;
-    min-height: 700px;
+    min-height: 800px;
     display: grid;
     align-content: center;
 }
@@ -8,6 +8,7 @@
     max-width: 1500px;
     margin:30px auto;
     color: #00544f;
+        
 }
 .sec-five-text{
     grid-column: span 6;
@@ -49,3 +50,114 @@
     width: 100%;
     justify-self: center;
 }
+
+@media(max-width:1370px){
+    .sec-five-container{
+        min-height: 600px;
+    }
+}
+
+@media(max-width:1200px){
+    .five-title{
+        font-size: 3.8rem;
+    }
+    .five-para{
+        font-size: 1.3rem;
+    }
+    .sec-five-button{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:1113px){
+    .five-title{
+        font-size: 3.5rem;
+    }
+    .five-para{
+        font-size: 1.2rem;
+    }
+    .sec-five-button{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1035px){
+    .sec-five-text{
+        grid-column: span 12;
+        grid-row: 2;
+    }
+    .five-title{
+        font-size: 4rem;
+    }
+    .five-para{
+        font-size: 1.2rem;
+    }
+    .sec-five-button{
+        font-size: .9rem;
+    }
+    .sec-five-img{
+        grid-column: span 12;
+    }
+    
+}
+
+
+@media(max-width:958px){
+    
+    .five-title{
+        font-size: 3.6rem;
+    }
+    .five-para{
+        font-size: 1.1rem;
+    }
+    
+}
+@media(max-width:866px){
+    
+    .five-title{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .five-para{
+        font-size: 1.1rem;
+    }
+    .sec-five-button{
+        font-size: .9rem;
+    }
+}
+@media(max-width:672px){
+    
+    .five-title{
+        font-size: 3.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .five-para{
+        font-size: 1rem;
+    }
+    .sec-five-button{
+        font-size: .8rem;
+    }
+}
+@media(max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+    .sec-five-text{
+        grid-column: span 4;
+    }
+    .sec-five-img{
+        grid-column: span 4;
+    }
+    
+}
+
+@media(max-width:359px){
+    
+    
+    .five-para{
+        margin-bottom: .5rem;
+    }
+    
+}
+

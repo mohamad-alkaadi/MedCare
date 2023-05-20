@@ -1,78 +1,95 @@
-.section-four-container{
+.section-seven-container{
     background-color: #00544f;
     min-height: 350px;
     display: grid;
     align-content: center;
     justify-content: center;
 }
-.section-four{
-    background-color: #00544f;
-
+.section-seven{
     max-width:1500px;
     margin: 30px auto;
     color:#fff;
   
 }
 
-.sec-four-text{
+.sec-seven-text{
     grid-column: span 12;
     justify-self: center;
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 11px;
 }
-
+.sec-seven-subtext{
+    grid-column: span 12;
+    text-align: center;
+    justify-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 11px;
+    width: 90%;
+}
 @media (max-width:1270px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 3.41rem;
+    }
+    .sec-seven-subtext{
+        font-size: 1.1rem;
     }
 }
 @media (max-width:1093px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 3.1rem;
+    }
+    .sec-seven-subtext{
+        font-size: 1rem;
     }
 }
 @media (max-width:1000px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2.8rem;
     }
+
 }
 @media (max-width:910px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2.7rem;
+    }
+    .sec-seven-subtext{
+        font-size: .9rem;
     }
 }
 @media (max-width:616px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2.6rem;
+    }
+    .sec-seven-subtext{
+        font-size: .8rem;
     }
 }
 @media (max-width:593px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2.5rem;
     }
 }
 @media (max-width:593px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2.2rem;
     }
 }
 @media (max-width:502px){
-    .section-four-container{
+    .section-seven-container{
         min-height: 250px;
     }
 
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 2rem;
     }
 }
 @media (max-width:456px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 1.8rem;
     }
 }
 @media (max-width:411px){
-    .sec-four-text{
+    .sec-seven-text{
         font-size: 1.7rem;
     }
 }

@@ -24,9 +24,9 @@ const Footer = () => {
 
                 <div className='footer-subscribe'>
                     <div className='subscribe-title'>Subscribe</div>
-                    <div className='subscribe-box'>
-                        <input type="text" className='subscribe-input' placeholder='Get product updates'/>
-                        <button className='sub-button'><FaArrowRight/></button>
+                    <div className='footer-subscribe-box'>
+                        <input type="text" className='footer-subscribe-input' placeholder='Get product updates'/>
+                        <button className='footer-sub-button'><FaArrowRight className='footer-arrow'/></button>
                     </div>
                 </div>
 
@@ -34,9 +34,9 @@ const Footer = () => {
                     © 2023 MedCare. All rights reserved
                 </div>
                 <div className='footer-social'>
-                    <a className='social-icon footer-facebook' href='#'><FaFacebookF/></a>
-                    <a className='social-icon footer-linkedin' href='#'><FaLinkedinIn/></a>
-                    <a className='social-icon footer-twitter' href='#'><FaTwitter/></a>
+                    <a className='social-icon footer-facebook' href='#'><FaFacebookF className='footer-social-icon'/></a>
+                    <a className='social-icon footer-linkedin' href='#'><FaLinkedinIn className='footer-social-icon'/></a>
+                    <a className='social-icon footer-twitter' href='#'><FaTwitter className='footer-social-icon'/></a>
                </div>
             </div>
         </div>

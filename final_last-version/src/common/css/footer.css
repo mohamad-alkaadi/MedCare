@@ -2,38 +2,48 @@
     background-color: #00544f;
 }
 .footer{
-    max-width: 1500px;
-    margin:30px auto;
-    padding: 20px;
+    padding: 40px 20px;
     grid-template-rows: repeat(1fr,5);
 }
+
 .footer-logo{
     grid-column: span 3;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display: grid;
     justify-content: center;
     align-content: center;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+
 }
 .footer-company-links{
     grid-column: span 3;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 .footer-quick-links{
     grid-column: span 3;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 .footer-company-title , .footer-quick-title,.subscribe-title{
     justify-self: start;
+    font-size: 1.7rem;
+    color: #fff;
 }
 .footer-links{
     justify-self: center;
     margin: 2rem 0;
 }
+.footer-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
 
 .footer-subscribe{
     grid-column: span 3;
     display: grid;
-    background-color: lightgoldenrodyellow; 
+    /* background-color: lightgoldenrodyellow;  */
 }
 
 .subscribe-box{
@@ -42,13 +52,44 @@
 
 .footer-copyright{
     grid-column: span 6;
-    background-color: lightseagreen;
+    color: #fff;
+
 }
 
 .footer-social{
     grid-column: span 6;
     display: flex;
     justify-content: flex-end;
-    background-color: lightskyblue;
 }
 
+.footer-social-icon{
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.footer-subscribe-box{
+    display: flex;
+}
+
+.footer-subscribe-input{
+    height: 48px;
+    width: 270px;
+    grid-area: field;
+    border: none;
+}
+
+.footer-sub-button{
+    height: 48px;
+    width: 50px;
+    grid-area: button;
+    border: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-arrow{
+    color: #00544f;
+    font-size: 1rem;
+    
+}

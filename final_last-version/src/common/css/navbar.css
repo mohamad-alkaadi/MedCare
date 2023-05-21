@@ -1,15 +1,11 @@
 
 .nav-container{
     background-color: white;
-    
-
 }
 
 .navigation{
-    
     height: 4.875rem;
     padding: 20px 40px;
-    /* background-color: lightgray; */
     align-items: center;
 }
 .navigation .headerlogo{

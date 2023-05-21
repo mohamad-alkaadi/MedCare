@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
+import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaYoutube,FaInstagram,FaTwitter} from 'react-icons/fa'
 import './css/footer.css'
 const Footer = () => {
   return (
@@ -37,6 +37,8 @@ const Footer = () => {
                     <a className='social-icon footer-facebook' href='#'><FaFacebookF className='footer-social-icon'/></a>
                     <a className='social-icon footer-linkedin' href='#'><FaLinkedinIn className='footer-social-icon'/></a>
                     <a className='social-icon footer-twitter' href='#'><FaTwitter className='footer-social-icon'/></a>
+                    <a className='social-icon footer-twitter' href='#'><FaYoutube className='footer-social-icon'/></a>
+                    <a className='social-icon footer-twitter' href='#'><FaInstagram className='footer-social-icon'/></a>
                </div>
             </div>
         </div>

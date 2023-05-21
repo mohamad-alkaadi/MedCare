@@ -73,14 +73,16 @@
 
 .footer-subscribe-input{
     height: 48px;
-    width: 270px;
+    width: 65%;
+    /* width: 270px; */
     grid-area: field;
     border: none;
 }
 
 .footer-sub-button{
     height: 48px;
-    width: 50px;
+    width: 12%;
+    /* width: 50px; */
     grid-area: button;
     border: none;
     display: grid;
@@ -92,4 +94,110 @@
     color: #00544f;
     font-size: 1rem;
     
+}
+
+@media(max-width:1700px){
+    .footer-subscribe-input{
+        height: 48px;
+        width: 70%;
+    }
+    
+    .footer-sub-button{
+        height: 48px;
+        width: 14%;
+        
+    }
+}
+/* @media(max-width:1550px){
+    .footer-subscribe-input{
+        height: 48px;
+        width: 75%;
+    }
+    
+    .footer-sub-button{
+        height: 48px;
+        width: 15%;
+        
+    }
+} */
+/* @media(max-width:1400px){
+    .footer-subscribe-input{
+        height: 48px;
+        width: 84%;
+    }
+    
+    .footer-sub-button{
+        height: 48px;
+        width: 16%;
+        
+    }
+} */
+
+
+@media(max-width:1580px){
+    .footer-logo{
+        grid-column: span 3;
+        justify-content: start;
+        align-content: center;
+    }
+    .footer-company-links{
+        grid-column: span 6;
+        grid-row: 2;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-company-title,.footer-quick-title{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-right: 1rem;
+    }
+    .footer-links{
+        margin-right: 1rem;
+    }
+    .footer-quick-links{
+        grid-column: span 6;
+        grid-row: 3;
+        display: flex;
+        justify-content: flex-start;
+        display: flex;
+    }
+    .footer-subscribe{
+        grid-row: 4;
+        grid-column: span 12;
+        display: flex;
+        margin-bottom: 1rem;
+        border-bottom: #fff solid 1px;
+    }
+
+    .subscribe-title{
+        margin-right: 1rem;
+    }
+    .footer-subscribe-input{
+        height: 38px;
+        width: 270px;
+        visibility: hidden;
+    }
+    
+    .footer-sub-button{
+        height: 38px;
+        width: 50px;
+        visibility: hidden;
+
+    }
+    .footer-social{
+        grid-column: span 9;
+        /* grid-row: 1; */
+        justify-content: end;
+    }
+
+    .footer-social-icon{
+        margin-left: 0px;
+        margin-right: 1rem;
+    }
+
+    .footer-copyright{
+        grid-row: 5;
+        grid-column: span 12;
+    }
 }

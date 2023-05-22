@@ -1,7 +1,24 @@
-import React from 'react'
+import React,{useEffect,useState,useRef} from 'react'
 import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaYoutube,FaInstagram,FaTwitter} from 'react-icons/fa'
 import './css/footer.css'
+
+function useWindowSize(){
+    const [size,setSize]=useState(window.innerWidth);
+    useEffect(()=>{
+      const handleResize = () => {
+      setSize(window.innerWidth);
+      };
+      window.addEventListener('resize',handleResize);
+    },[]);
+    return size;
+  }
+
+
+
 const Footer = () => {
+
+  const width = useWindowSize();
+
   return (
     <div>
         <div className='footer-container'>
@@ -21,14 +38,34 @@ const Footer = () => {
                     <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>blank</a></div>
                     <div className='footer-links'><a className='footer-link footer-quick-three' href='/'>blank</a></div>
                 </div>
+            {width>1500? 
+                    <div className='footer-subscribe'>
+                        <div className='subscribe-title'>Subscribe</div>
+                        <div className='footer-subscribe-box'>
+                            <input type="text" className='footer-subscribe-input' placeholder='Get product updates'/>
+                            <button className='footer-sub-button'><FaArrowRight className='footer-arrow'/></button>
+                        </div>
+                    </div>
+                :
+                    <div className='footer-subscribe'>
+                        <div class="sub-hidden field">
+                            <input type="input" className="sub-hidden-input" placeholder="Subscribe" name="subscribe" id='subscribe'/>
+                            <label for="subscribe" className="sub-hidden-label">Subscribe</label>
+                        </div>
+                    </div>}
 
-                <div className='footer-subscribe'>
+                
+
+
+
+
+                {/* <div className='footer-subscribe'>
                     <div className='subscribe-title'>Subscribe</div>
                     <div className='footer-subscribe-box'>
                         <input type="text" className='footer-subscribe-input' placeholder='Get product updates'/>
                         <button className='footer-sub-button'><FaArrowRight className='footer-arrow'/></button>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='footer-copyright'>
                     © 2023 MedCare. All rights reserved

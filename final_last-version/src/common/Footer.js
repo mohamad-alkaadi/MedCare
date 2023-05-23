@@ -38,7 +38,7 @@ const Footer = () => {
                     <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>blank</a></div>
                     <div className='footer-links'><a className='footer-link footer-quick-three' href='/'>blank</a></div>
                 </div>
-            {width>1500? 
+            {width>1581? 
                     <div className='footer-subscribe'>
                         <div className='subscribe-title'>Subscribe</div>
                         <div className='footer-subscribe-box'>
@@ -51,7 +51,9 @@ const Footer = () => {
                         <div class="sub-hidden field">
                             <input type="input" className="sub-hidden-input" placeholder="Subscribe" name="subscribe" id='subscribe'/>
                             <label for="subscribe" className="sub-hidden-label">Subscribe</label>
+                            <button className='sub-hid-button'><FaArrowRight className='footer-arrow'/></button>
                         </div>
+
                     </div>}
 
                 

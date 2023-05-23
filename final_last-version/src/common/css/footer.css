@@ -138,7 +138,7 @@
 } */
 
 
-@media(max-width:1580px){
+@media(max-width:1581px){
     .footer-logo{
         grid-column: span 3;
         justify-content: start;
@@ -171,9 +171,18 @@
     .footer-subscribe{
         grid-row: 4;
         grid-column: span 12;
-        
+    }
+    .sub-hid-button{
+        background: none;
+        border: none;
+        border-bottom: #fff solid 1px;
+        display: none;
+    }
+    .footer-arrow{
+        color: #fff;
     }
     .sub-hidden {
+        display: flex;
         position: relative;
         padding: 15px 0 0;
         /* margin-top: 10px; */
@@ -191,6 +200,7 @@
         padding: 10px 0;
         background: transparent;
         transition: border-color 0.2s;
+        font-weight: 300;
       }
       .sub-hidden-input::placeholder {
         color: transparent;
@@ -208,11 +218,12 @@
         transition: 0.2s;
         font-size: 1rem;
         color: #fff;
+        font-weight: 400;
       }
       
       .sub-hidden-input:focus {
         padding-bottom: 6px;
-        font-weight: 700;
+        font-weight: 300;
         border-width: 1px;
         border-image: #fff;
         /* border-image: linear-gradient(to right, #11998e, #38ef7d); */
@@ -225,9 +236,12 @@
         transition: 0.2s;
         font-size: 1rem;
         color: #fff;
-        font-weight: 700;
+        font-weight: 400;
       }
-      
+      .sub-hidden-input:focus ~  .sub-hid-button{
+        display: block;
+    }
+
       /* reset input */
       .sub-hidden-input:required, .sub-hidden-input:invalid {
         box-shadow: none;

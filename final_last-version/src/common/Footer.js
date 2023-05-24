@@ -1,5 +1,6 @@
 import React,{useEffect,useState,useRef} from 'react'
-import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaYoutube,FaInstagram,FaTwitter} from 'react-icons/fa'
+import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaYoutube,FaInstagram,FaTwitter,FaHome,FaBuilding,FaPhone} from 'react-icons/fa'
+import {GrMail} from 'react-icons/gr'
 import './css/footer.css'
 
 function useWindowSize(){
@@ -28,46 +29,23 @@ const Footer = () => {
                 <div className='footer-company-links'>
                     <div className='footer-company-title'>Company</div>
                     <div className='footer-links'><a className='footer-link footer-company-one' href='/'>How it works</a></div>
-                    <div className='footer-links'><a className='footer-link footer-company-two' href='/'>Pricing</a></div>
-                    <div className='footer-links'><a className='footer-link footer-company-three' href='/'>blank</a></div>
+                    <div className='footer-links'><a className='footer-link footer-company-two' href='/'>Our app</a></div>
+                    <div className='footer-links'><a className='footer-link footer-company-three' href='/'>Our values</a></div>
                 </div>
 
                 <div className='footer-quick-links'>
                     <div className='footer-quick-title'>Quick links</div>
-                    <div className='footer-links'><a className='footer-link footer-quick-one' href='/'>blank</a></div>
-                    <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>blank</a></div>
+                    <div className='footer-links'><a className='footer-link footer-quick-one' href='/'>Pricing</a></div>
+                    <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>using the watch</a></div>
                     <div className='footer-links'><a className='footer-link footer-quick-three' href='/'>blank</a></div>
                 </div>
-            {width>1581? 
-                    <div className='footer-subscribe'>
-                        <div className='subscribe-title'>Subscribe</div>
-                        <div className='footer-subscribe-box'>
-                            <input type="text" className='footer-subscribe-input' placeholder='Get product updates'/>
-                            <button className='footer-sub-button'><FaArrowRight className='footer-arrow'/></button>
-                        </div>
-                    </div>
-                :
-                    <div className='footer-subscribe'>
-                        <div class="sub-hidden field">
-                            <input type="input" className="sub-hidden-input" placeholder="Subscribe" name="subscribe" id='subscribe'/>
-                            <label for="subscribe" className="sub-hidden-label">Subscribe</label>
-                            <button className='sub-hid-button'><FaArrowRight className='footer-arrow'/></button>
-                        </div>
+                <div className='footer-contact-us'>
+                    <div className='footer-contact-title'>Contact us</div>                    
+                    <div className='footer-contact'><FaBuilding className='contact-icon'/><a>SY, Damascous</a></div>
+                    <div className='footer-contact'><GrMail className='contact-icon'/><a href='mailto: medcareofficial@outlook.com'>medcareofficial@outlook.com</a></div>
+                    <div className='footer-contact'><FaPhone className='contact-icon'/><a href='tel:+963112233444'>+963 11 22334444</a></div>
+                </div>
 
-                    </div>}
-
-                
-
-
-
-
-                {/* <div className='footer-subscribe'>
-                    <div className='subscribe-title'>Subscribe</div>
-                    <div className='footer-subscribe-box'>
-                        <input type="text" className='footer-subscribe-input' placeholder='Get product updates'/>
-                        <button className='footer-sub-button'><FaArrowRight className='footer-arrow'/></button>
-                    </div>
-                </div> */}
 
                 <div className='footer-copyright'>
                     © 2023 MedCare. All rights reserved

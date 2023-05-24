@@ -2,7 +2,7 @@
     background-color: #00544f;
 }
 .footer{
-    padding: 40px 20px;
+    padding: 40px 0px 10px 0px;
     grid-template-rows: repeat(1fr,5);
 }
 
@@ -22,7 +22,10 @@
 .footer-quick-links{
     grid-column: span 3;
 }
-.footer-company-title , .footer-quick-title,.subscribe-title{
+.footer-contact-us{
+    grid-column: span 3;
+}
+.footer-company-title , .footer-quick-title,.footer-contact-title{
     justify-self: start;
     font-size: 1.7rem;
     color: #fff;
@@ -30,10 +33,7 @@
     width: fit-content;
     padding-bottom: 5px;
 }
-.subscribe-title{
-    border-bottom: 1px solid #fff;
-    height: fit-content;
-}
+
 .footer-links{
     justify-self: center;
     margin: 2rem 0;
@@ -44,19 +44,21 @@
     color: #fff;
 }
 
-.footer-subscribe{
-    grid-column: span 3;
-    display: grid;
+.footer-contact a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.2rem;
 }
 
-.subscribe-box{
-    justify-self: start;
+.contact-icon{
+    margin-right: .5rem;
+    font-size: .9rem;
 }
 
-.sublabel{
-    display: none;
+.footer-contact{
+    color:#fff;
+    margin:2rem 0;
 }
-
 .footer-copyright{
     grid-column: span 6;
     color: #fff;
@@ -74,43 +76,9 @@
     margin-left: 1rem;
 }
 
-.footer-subscribe-box{
-    display: flex;
-}
-
-.footer-subscribe-input{
-    height: 48px;
-    width: 65%;
-    grid-area: field;
-    border: none;
-}
-
-.footer-sub-button{
-    height: 48px;
-    width: 12%;
-    grid-area: button;
-    border: none;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
-.footer-arrow{
-    color: #00544f;
-    font-size: 1rem;
-    
-}
-
-@media(max-width:1700px){
-    .footer-subscribe-input{
-        height: 48px;
-        width: 70%;
-    }
-    
-    .footer-sub-button{
-        height: 48px;
-        width: 14%;
-        
+@media(max-width:1264px){
+    .footer{
+        column-gap: 1px;
     }
 }
 
@@ -119,11 +87,14 @@
 
 
 
-@media(max-width:1581px){
+
+@media(max-width:1171px){
     .footer-logo{
         grid-column: span 3;
+        grid-row: 1;
         justify-content: start;
         align-content: center;
+        margin-bottom: 1rem;
     }
     .footer-company-links{
         grid-column: span 12;
@@ -138,6 +109,7 @@
         margin-right: 2rem;
     }
     .footer-links{
+        margin:0;
         margin-right: 2rem;
     }
     .footer-quick-links{
@@ -148,90 +120,13 @@
         display: flex;
     }
 
-    /* -------------------hidden subscribe----------------- */
-    .footer-subscribe{
-        grid-row: 4;
+    .footer-contact-us{
         grid-column: span 12;
     }
-    .sub-hid-button{
-        background: none;
-        border: none;
-        border-bottom: #fff solid 1px;
-        display: none;
-    }
-    .footer-arrow{
-        color: #fff;
-    }
-    .sub-hidden {
-        display: flex;
-        position: relative;
-        padding: 15px 0 0;
-        /* margin-top: 10px; */
-        width: 50%;
-      }
-      
-      .sub-hidden-input {
-        font-family: inherit;
-        width: 100%;
-        border: 0;
-        border-bottom: 1px solid #fff;
-        outline: 0;
-        font-size: 1.3rem;
-        color: #fff;
-        padding: 10px 0;
-        background: transparent;
-        transition: border-color 0.2s;
-        font-weight: 300;
-      }
-      .sub-hidden-input::placeholder {
-        color: transparent;
-      }
-      .sub-hidden-input:placeholder-shown ~ .sub-hidden-label {
-        font-size: 1.7rem;
-        cursor: text;
-        top: 20px;
-      }
-      
-      .sub-hidden-label {
-        position: absolute;
-        top: 0;
-        display: block;
-        transition: 0.2s;
-        font-size: 1rem;
-        color: #fff;
-        font-weight: 400;
-      }
-      
-      .sub-hidden-input:focus {
-        padding-bottom: 6px;
-        font-weight: 300;
-        border-width: 1px;
-        border-image: #fff;
-        /* border-image: linear-gradient(to right, #11998e, #38ef7d); */
-        border-image-slice: 1;
-      }
-      .sub-hidden-input:focus ~ .sub-hidden-label {
-        position: absolute;
-        top: 0;
-        display: block;
-        transition: 0.2s;
-        font-size: 1rem;
-        color: #fff;
-        font-weight: 400;
-      }
-      .sub-hidden-input:focus ~  .sub-hid-button{
-        display: block;
-    }
-
-      /* reset input */
-      .sub-hidden-input:required, .sub-hidden-input:invalid {
-        box-shadow: none;
-      }
-      
-/* -------------------end of hidden subscribe---------------------------- */
-
+    
     .footer-social{
         grid-column: span 9;
+        grid-row: 1;
         justify-content: end;
     }
 
@@ -262,6 +157,7 @@
     .grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        padding-left: 1rem;
         margin:auto;
         width: 100%;
         row-gap: 1px;        
@@ -269,7 +165,7 @@
 
     .footer-logo{
         grid-column: span 4;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
 
     .footer-company-links, .footer-quick-links{
@@ -278,8 +174,9 @@
         flex-direction: column;
     }
 
-    .footer-company-title,.footer-quick-title{
-        display: none;
+    .footer-company-title,.footer-quick-title,.footer-contact-title{
+        /* display: none; */
+        margin-top: 2rem;
     }
 
     .footer-links{
@@ -287,10 +184,7 @@
         margin-top: 1rem;
     }
 
-    .footer-subscribe{
-        grid-column: span 4;
-        margin-bottom: 2.5rem;
-    }
+    
     
     .footer-social{
         grid-column: span 4;

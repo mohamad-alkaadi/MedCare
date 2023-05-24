@@ -61,19 +61,7 @@
         font-size: 4rem;
         
     }
-    .one-subheadline{
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width:1100px){
-    .one-headline{
-        font-size: 4rem;
-        
-    }
-    .one-subheadline{
-        font-size: 1.1rem;
-    }
+   
 }
 
 @media (max-width:970px){
@@ -81,17 +69,13 @@
         font-size: 3rem;
         
     }
-    .one-subheadline{
-        font-size: 1.1rem;
-    }
+   
 }
 @media (max-width:830px){
     .one-headline{
         font-size: 2.5rem;        
     }
-    .one-subheadline{
-        font-size: 1.1rem;
-    }
+
 }
 
 

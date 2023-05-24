@@ -45,10 +45,9 @@
     padding: 2.5rem;
     background-color: #fff;
     color: #00544f;
-    display: grid;
-    
-    
+    display: grid; 
 } 
+
 .card-heading{
     font-size: 1.6rem;
     text-align: center;
@@ -86,13 +85,10 @@
     .inner-carousel{
        display: grid;
        justify-content: space-between;
-       /* background-color: lightblue; */
     }
     .carousel{
-        /* cursor: grab; */
         overflow: hidden;
         grid-column: span 12;
-        /* background-color: #d36969; */
     }
 }
 
@@ -104,10 +100,9 @@
         width: 100%;
     }
     .carousel{
-        
         grid-column: span 4;
-        
     }
+    
     .two-headline{
         grid-column: span 4;
         justify-self: center;

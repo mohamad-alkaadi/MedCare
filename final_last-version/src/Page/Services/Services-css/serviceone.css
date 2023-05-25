@@ -1,0 +1,145 @@
+.service-one-container{
+    /* background-color: #abbde5; */
+    background-color: #abbde5;
+
+}
+.section-one{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
+.ser-one-text{
+    grid-column: span 6;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.ser-one-stitle{
+    font-size: 1.5rem;
+    color: #00544f;
+}
+
+.ser-one-btitle{
+    font-size: 6rem;
+    /* maybe 5 or 5.5 */
+    color: #00544f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ser-one-img{
+    grid-column: span 6;
+    display: grid;
+}
+
+.ser-one-watch{
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+@media (max-width:1744px){
+    .ser-one-btitle{
+        font-size: 5.5rem;
+        
+    }
+}
+@media (max-width:1607px){
+    .ser-one-btitle{
+        font-size: 5rem;
+        
+    }
+}
+@media (max-width:1469px){
+    .ser-one-btitle{
+        font-size: 4.5rem;
+        
+    }
+}
+@media (max-width:1332px){
+    .ser-one-btitle{
+        font-size: 4rem;
+        
+    }
+}
+@media (max-width:1195px){
+    .ser-one-btitle{
+        font-size: 3.5rem;
+        
+    }
+}
+@media (max-width:1085px){
+    .ser-one-btitle{
+        font-size: 3.2rem;
+        
+    }
+}
+@media (max-width:975px){
+    .ser-one-btitle{
+        font-size: 3rem;
+        
+    }
+}
+@media (max-width:920px){
+    .ser-one-btitle{
+        font-size: 2.8rem;
+        
+    }
+}
+@media (max-width:865px){
+    .ser-one-btitle{
+        font-size: 2.5rem;
+        
+    }
+}
+@media (max-width:800px){
+    .ser-one-text{
+        grid-column: span 12;
+        grid-row: 2;
+        margin-bottom: 4rem;
+        
+    }
+    .ser-one-img{
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .ser-one-btitle{
+        font-size: 5rem;
+        
+    }
+}
+
+@media (max-width:751px){
+    .ser-one-btitle{
+        font-size: 4.5rem;
+        
+    }
+}
+@media (max-width:682px){
+    .ser-one-btitle{
+        font-size: 4rem;
+        
+    }
+}
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-left: 1rem;
+        margin:auto;
+        width: 100%;
+        row-gap: 1px;        
+    }
+    .ser-one-img{
+        grid-column: span 4;
+        display: grid;
+    }
+    
+    .ser-one-text{
+        grid-column: span 4;        
+    }
+}
+@media (max-width:336px){
+    .ser-one-btitle{
+        font-size: 3.5rem;
+    }
+    
+}

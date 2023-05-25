@@ -1,9 +1,29 @@
 
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./css/navbar.css"
 import {links} from './Data/navbar_data'
 
 function NavBar() { 
+
+  //navbar scroll when active state
+  const [navbar, setNavbar] = useState(false)
+  const changeBackground = ()=>{
+      console.log(window.scrollY);
+      if(window.scrollY>=75){
+          setNavbar(true);
+      }else{
+          setNavbar(false);
+      }
+  }
+
+  useEffect(()=>{
+      changeBackground();
+      // adding the event when scroll change background
+      window.addEventListener("scroll", changeBackground)
+  },[])
+
+
+
     return (
        <>
        <div className='nav-container'>

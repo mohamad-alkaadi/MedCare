@@ -13,7 +13,7 @@ import Footer from '../../common/Footer'
 const Home = () => {
   return (
     <div className='home'>
-        <NavBar/>
+        {/* <NavBar/> */}
         <SectionOne/>
         <SectionTwo/>
         <SectionThree/>
@@ -21,7 +21,7 @@ const Home = () => {
         <SectionFive/>
         <SectionSix/>
         <SectionSeven/>
-        <Footer/>
+        {/* <Footer/> */}
         {/* <SectionOne/> */}
         
     </div>

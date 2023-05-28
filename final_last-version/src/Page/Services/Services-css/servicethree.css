@@ -1,0 +1,163 @@
+.ser-three-container{
+    background-color: #fff;
+    min-height: 800px;
+    display: grid;
+    align-content: center;
+}
+.service-three{
+    max-width: 1500px;
+    margin:30px auto;
+    color: #00544f;
+        
+}
+.service-three-text{
+    grid-column: span 6;
+    display: grid;
+    padding: 2rem 1rem;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.ser-three-title{
+    display: grid;
+    align-content: center;
+    font-size: 4rem;
+}
+
+.ser-three-para{
+    display: grid;
+    align-content: center;
+    font-size: 1.4rem;
+}
+
+.ser-three-button{
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    color: #00544f;
+    padding: .8rem 3rem;
+    font-size: 1.2rem;
+    border: #00544f solid 1px;
+}
+
+.service-three-img{
+    grid-column: span 6;
+    display: grid;
+    padding: 2rem 1rem;
+
+    
+}
+.ser-three-img{
+    width: 100%;
+    justify-self: center;
+}
+
+@media(max-width:1370px){
+    .ser-three-container{
+        min-height: 600px;
+    }
+}
+
+@media(max-width:1200px){
+    .ser-three-title{
+        font-size: 3.8rem;
+    }
+    .ser-three-para{
+        font-size: 1.3rem;
+    }
+    .ser-three-button{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:1113px){
+    .ser-three-title{
+        font-size: 3.5rem;
+    }
+    .ser-three-para{
+        font-size: 1.2rem;
+    }
+    .ser-three-button{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1035px){
+    .service-three-text{
+        grid-column: span 12;
+        grid-row: 2;
+    }
+    .ser-three-title{
+        font-size: 4rem;
+    }
+    .ser-three-para{
+        font-size: 1.2rem;
+    }
+    .ser-three-button{
+        font-size: .9rem;
+    }
+    .service-three-img{
+        grid-column: span 12;
+    }
+    
+}
+
+
+@media(max-width:958px){
+    
+    .ser-three-title{
+        font-size: 3.6rem;
+    }
+    .ser-three-para{
+        font-size: 1.1rem;
+    }
+    
+}
+@media(max-width:866px){
+    
+    .ser-three-title{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .ser-three-para{
+        font-size: 1.1rem;
+    }
+    .ser-three-button{
+        font-size: .9rem;
+    }
+}
+@media(max-width:672px){
+    
+    .ser-three-title{
+        font-size: 3.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .ser-three-para{
+        font-size: 1rem;
+    }
+    .ser-three-button{
+        font-size: .8rem;
+    }
+}
+@media(max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+    .service-three-text{
+        grid-column: span 4;
+    }
+    .service-three-img{
+        grid-column: span 4;
+    }
+    
+}
+
+@media(max-width:359px){
+    
+    
+    .ser-three-para{
+        margin-bottom: .5rem;
+    }
+    
+}
+

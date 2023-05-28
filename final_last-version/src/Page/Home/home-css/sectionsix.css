@@ -1,6 +1,7 @@
 .section-six-container{
     background-color: #00544f;
-    min-height: 350px;
+    min-height: 450px;
+    /* min-height: 350px; */
     display: grid;
     align-content: center;
     justify-content: center;

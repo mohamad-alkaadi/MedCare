@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceOne from './ServiceOne'
 import NavBar from '../../common/NavBar'
 import ServiceTwo from './ServiceTwo'
+import ServiceThree from './ServiceThree'
 
 const Services = () => {
   return (
@@ -9,6 +10,7 @@ const Services = () => {
         {/* <NavBar/> */}
         <ServiceOne/>
         <ServiceTwo/>
+        <ServiceThree/>
     </div>
   )
 }

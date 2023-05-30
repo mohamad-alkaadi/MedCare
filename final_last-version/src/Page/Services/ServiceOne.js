@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import watch from './Services-assets/smartwatch.png'
-import dod from './Services-assets/dodo.png'
+// import dod from './Services-assets/dodo.png'
 import './Services-css/serviceone.css'
 
 const ServiceOne = () => {

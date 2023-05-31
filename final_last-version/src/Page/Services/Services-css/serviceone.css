@@ -2,7 +2,6 @@
     /* background-color: #abbde5; */
     background-color: #fff;
 
-
 }
 .section-one{
     max-width: 1500px;
@@ -14,6 +13,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
+    /* background-color: blue; */
 }
 .ser-one-stitle{
     font-size: 1.5rem;
@@ -31,10 +31,14 @@
 .ser-one-img{
     grid-column: span 6;
     display: grid;
+    align-self: center;
+    /* background-color: red; */
+    padding: 10px 0;
 }
 
 .ser-one-watch{
-    width: 75%;
+    width: 90%;
+    /* height: 50%; */
     justify-self: center;
     align-self: center;
 }

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import watch from './Services-assets/smartwatch.png'
+import logo from './Services-assets/servicelogo.png'
+// import watch from './Services-assets/last-edit-black.png'
 // import dod from './Services-assets/dodo.png'
 import './Services-css/serviceone.css'
 
@@ -17,7 +18,7 @@ const ServiceOne = () => {
                 </div>
             </div>
             <div className='ser-one-img'>
-                <img className='ser-one-watch' src={watch} draggable="false"/>
+                <img className='ser-one-watch' src={logo} draggable="false"/>
             </div>
            
 

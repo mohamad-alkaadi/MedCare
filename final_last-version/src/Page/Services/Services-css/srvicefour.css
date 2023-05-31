@@ -2,6 +2,11 @@
     padding-bottom: 2rem;
     background-color: #00544f;
 }
+/* .ser-four{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+} */
 .ser-four-title{
     grid-column: span 12;
     text-align: center;

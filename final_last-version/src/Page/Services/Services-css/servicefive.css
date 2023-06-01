@@ -3,3 +3,18 @@
     font-size: 5rem;
 }
 
+.ser-five-title{
+    grid-column: span 12;
+}
+
+.five-right-pone{
+    grid-column: span 6;
+}
+.five-right-ptwo{
+    grid-column: span 6;
+}
+
+.five-right{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}

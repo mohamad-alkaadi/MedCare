@@ -19,11 +19,13 @@ const ServiceFive = () => {
                 <div className='five-right-img'>
                     <img src={access}/>
                 </div>
-                <div className='five-right-title'>
-                    24/7 access to patient record
-                </div>
-                <div className='five-right-para'>
-                View health data anytime with our secure online platform.                
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                        24/7 access to patient record
+                    </div>
+                    <div className='five-right-para'>
+                    View health data anytime with our secure online platform.                
+                    </div>
                 </div>
             </div>
 
@@ -31,22 +33,26 @@ const ServiceFive = () => {
                 <div className='five-right-img'>
                     <img src={status}/>
                 </div>
-                <div className='five-right-title'>
-                    24/7 online patent status view
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                        24/7 online patent status view
+                    </div>
+                    <div className='five-right-para'>
+                    View your patent status anytime on our website with real-time data.                </div>
+                    </div>
                 </div>
-                <div className='five-right-para'>
-                View your patent status anytime on our website with real-time data.                </div>
-            </div>
 
             <div className='five-right five-right-three'>
                 <div className='five-right-img'>
                     <img src={visit}/>
                 </div>
-                <div className='five-right-title'>
-                    easily book appointments with our partners                
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                        easily book appointments with our partners                
+                    </div>
+                    <div className='five-right-para'>
+                        Our service lets you schedule visits with health experts in a few clicks.                </div>
                 </div>
-                <div className='five-right-para'>
-                    Our service lets you schedule visits with health experts in a few clicks.                </div>
             </div>
             </div>
 
@@ -55,11 +61,13 @@ const ServiceFive = () => {
                 <div className='five-right-img'>
                     <img src={coverage}/>
                 </div>
-                <div className='five-right-title'>
-                coverage when you need it                
-                 </div>
-                <div className='five-right-para'>
-                our medical team is on call 24/7 via phone, email, and our app so you can leave the after-hour calls to us
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                    coverage when you need it                
+                    </div>
+                    <div className='five-right-para'>
+                    our medical team is on call 24/7 via phone, email, and our app so you can leave the after-hour calls to us
+                    </div>
                 </div>
             </div>
 
@@ -67,11 +75,13 @@ const ServiceFive = () => {
                 <div className='five-right-img'>
                     <img src={doctor}/>
                 </div>
-                <div className='five-right-title'>
-                    doctor on your hand
-                </div>
-                <div className='five-right-para'>
-                we monitor your health and provide medical advice based on your symptoms and data.
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                        doctor on your hand
+                    </div>
+                    <div className='five-right-para'>
+                    we monitor your health and provide medical advice based on your symptoms and data.
+                    </div>
                 </div>
             </div>
 
@@ -79,11 +89,13 @@ const ServiceFive = () => {
                 <div className='five-right-img'>
                     <img src={reminder}/>
                 </div>
-                <div className='five-right-title'>
-                    appointment and medicine reminder
-                </div>
-                <div className='five-right-para'>
-                    We Help you stay on track with appointments and medications using our smartwatch
+                <div className='five-right-text'>
+                    <div className='five-right-title'>
+                        appointment and medicine reminder
+                    </div>
+                    <div className='five-right-para'>
+                        We Help you stay on track with appointments and medications using our smartwatch
+                    </div>
                 </div>
             </div>
             </div>

@@ -1,3 +1,13 @@
+.ser-five-container{
+    /* background-color: #abbde5; */
+    background-color: #fff;
+
+}
+.ser-five{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
 .ser-five-title{
     grid-column: span 12;
     font-size: 5rem;
@@ -5,16 +15,112 @@
 
 .ser-five-title{
     grid-column: span 12;
+    text-align: center;
 }
 
 .five-right-pone{
     grid-column: span 6;
+    /* background-color: lightblue; */
 }
 .five-right-ptwo{
     grid-column: span 6;
+    /* background-color: lightcoral; */
+}
+.ser-five-right{
+    display: grid;
+    justify-content: space-between;
 }
 
 .five-right{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    margin: 1rem 0;
+    height: 200px;
 }
+
+.five-right-img{
+    max-width: 150px;
+    margin-right:1rem;
+    /* background-color: lightgreen; */
+    align-self: center;
+}
+
+.five-right-img img{
+    width: 100%;
+}
+
+.five-right-text{
+    grid-area: text;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    /* background-color: lightgoldenrodyellow; */
+    align-self: center;
+    height: 70%;
+
+}
+.five-right-title{
+    align-self: start;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.five-right-para{
+    margin-top: 1rem;
+    align-self: start;
+    font-size: 1.1rem;
+
+}
+
+@media(max-width:1449px){
+    .five-right-para{
+        margin-top: 2.5rem;
+    }
+}
+
+@media(max-width:1022px){
+    .five-right-para{
+        margin-top: 0rem;
+    }
+    .five-right-pone, .five-right-ptwo{
+        grid-column: span 12;
+        /* background-color: lightblue; */
+    }
+}
+
+@media(max-width:647px){
+    .five-right-para{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:515px){
+    .five-right-title{
+        font-size: 1.6rem;
+    }
+    
+    .five-right-para{
+        font-size: 1rem;
+        margin-top: 1.8rem;
+    }
+    
+    
+}
+@media(max-width:497px){
+    .five-right-para{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+   
+    }
+
+@media (max-width:400px){
+    .five-right-para{
+        margin-top: 6rem;
+    }
+   
+    }

@@ -72,7 +72,7 @@
 @media(max-width:1035px){
     .sec-three-text{
         grid-column: span 12;
-        grid-row: 2;
+        grid-row: 1;
     }
     .ser-three-title{
         font-size: 4rem;
@@ -137,8 +137,6 @@
 }
 
 @media(max-width:359px){
-    
-    
     .ser-three-para{
         margin-bottom: .5rem;
     }

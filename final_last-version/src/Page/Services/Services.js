@@ -3,6 +3,7 @@ import ServiceOne from './ServiceOne'
 import NavBar from '../../common/NavBar'
 import ServiceTwo from './ServiceTwo'
 import ServiceThree from './ServiceThree'
+import ServiceFour from './ServiceFour'
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
         <ServiceOne/>
         <ServiceTwo/>
         <ServiceThree/>
+        <ServiceFour/>
     </div>
   )
 }

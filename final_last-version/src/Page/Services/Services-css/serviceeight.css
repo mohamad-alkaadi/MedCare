@@ -1,0 +1,63 @@
+.service-eight-container{
+    padding-top: 4rem;
+}
+.section-eight{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
+
+.ser-eight-title{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 4rem;
+    color: #00544f;
+
+}
+.ser-eight-table{
+    grid-column: span 12;
+    width: 80%;
+    justify-self: center;
+    margin: 5rem 0;
+}
+.ser-eight-table table{
+    width: 100%;
+    border-collapse: collapse; 
+
+}
+.ser-eight-head{
+    padding: 1rem 0;
+}
+.ser-eight-oddrow{
+    background-color: #f0f0f0;
+}
+.ser-eight-evenrow{
+    background-color: #fff;
+}
+.ser-eight-body{
+    padding: 1rem 5rem;
+
+}
+
+.ser-eight-headdata{
+    font-size: 1.6rem;
+    color: #00544f;
+    text-align: center;
+    padding-bottom: .7rem;
+}
+.ser-eight-bodytitle{
+    font-size: 1.6rem;
+    color: #00544f;
+    padding-left: .4rem;
+
+}
+
+.ser-eight-bodydata{
+    font-size: 1.2rem;
+    color: #00544f;
+    text-align: center;
+
+}
+.ser-eight-icon{
+    color: #00544f;
+}

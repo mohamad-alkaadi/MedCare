@@ -1,5 +1,4 @@
 import React from 'react'
-import syMap from './Services-assets/syria-map-big.png'
 import "./Services-css/servicetwo.css"
 const ServiceTwo = () => {
   return (

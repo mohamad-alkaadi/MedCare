@@ -7,6 +7,7 @@
     max-width: 1500px;
     margin:30px auto;
     padding: 20px;
+    color: #00544f;;
 }
 .ser-five-title{
     grid-column: span 12;
@@ -70,7 +71,7 @@
 
 }
 
-@media(max-width:1449px){
+@media(max-width:1335px){
     .five-right-para{
         margin-top: 2.5rem;
     }
@@ -103,11 +104,11 @@
     
     
 }
-@media(max-width:497px){
+/* @media(max-width:497px){
     .five-right-para{
         margin-top: 4rem;
     }
-}
+} */
 
 @media (max-width:464px){
     .grid-system{
@@ -118,9 +119,9 @@
    
     }
 
-@media (max-width:400px){
+@media (max-width:441px){
     .five-right-para{
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
    
     }

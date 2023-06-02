@@ -5,7 +5,7 @@ import ServiceTwo from './ServiceTwo'
 import ServiceThree from './ServiceThree'
 import ServiceFour from './ServiceFour'
 import ServiceFive from './ServiceFive'
-
+import ServiceSix from './ServiceSix'
 const Services = () => {
   return (
     <div>
@@ -15,6 +15,7 @@ const Services = () => {
         <ServiceThree/>
         <ServiceFour/>
         <ServiceFive/>
+        <ServiceSix/>
     </div>
   )
 }

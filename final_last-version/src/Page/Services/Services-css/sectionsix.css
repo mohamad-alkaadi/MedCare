@@ -1,0 +1,49 @@
+.service-six-container{
+    background-color: #eef6f4;
+
+}
+.section-six{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
+
+.ser-six-title{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 4rem;
+    color: #00544f;
+
+}
+.ser-six-table{
+    grid-column: span 12;
+}
+.ser-six-table table{
+    width: 100%;
+}
+.ser-six-head{
+    padding: 1rem 0;
+}
+.ser-six-body{
+    padding: 1rem 0;
+    border-bottom: #00544f solid 1px;
+}
+.ser-six-headdata{
+    font-size: 1.5rem;
+    color: #00544f;
+    text-align: center;
+}
+.ser-six-bodytitle{
+    font-size: 1.5rem;
+    color: #00544f;
+}
+
+.ser-six-bodydata{
+    font-size: 1.2rem;
+    color: #00544f;
+    text-align: center;
+
+}
+.ser-six-icon{
+    color: #00544f;
+}

@@ -28,32 +28,32 @@ const ServiceSix = () => {
               <tbody>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>Same/next-day appointments</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
                   <td className='ser-six-body ser-six-bodydata'>Not likely</td>
                 </tr>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>24/7 virtual care</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
-                  <td className='ser-six-body ser-six-bodydata'><XCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><XCircle size="1.3rem" className='ser-six-icon'/></td>
                 </tr>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>Provide on-site care for patients</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
-                  <td className='ser-six-body ser-six-bodydata'><XCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><XCircle size="1.3rem" className='ser-six-icon'/></td>
                 </tr>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>Appointments start on time</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
                   <td className='ser-six-body ser-six-bodydata'>Not likely</td>
                 </tr>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>treating patents with respect and care</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
                   <td className='ser-six-body ser-six-bodydata'>Not likely</td>
                 </tr>
                 <tr className='ser-six-row'>
                   <td className='ser-six-body ser-six-bodytitle'>Same/next-day appointments</td>
-                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.2rem" className='ser-six-icon'/></td>
+                  <td className='ser-six-body ser-six-bodydata'><CheckCircle size="1.3rem" className='ser-six-icon'/></td>
                   <td className='ser-six-body ser-six-bodydata'>Not likely</td>
                 </tr>
               </tbody>

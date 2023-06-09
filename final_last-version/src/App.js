@@ -11,7 +11,7 @@ function App() {
       <NavBar/>
       {/* <Home/> */}
       {/* <Services/> */}
-      <Register/>
+      {/* <Register/> */}
       <Footer/>
     </div>
   );

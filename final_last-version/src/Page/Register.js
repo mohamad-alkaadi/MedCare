@@ -5,7 +5,7 @@ import './page css/Register.css'
 
 // const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const USER_REGEX = /^[A-Za-z]{3,23}$/;
-const EMAIL_REGEX = /^[A-Za-z][@][.][a-zA-Z]{10,30}$/;
+const EMAIL_REGEX =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
@@ -75,6 +75,7 @@ const Register = () => {
         // or setValidName(USER_REGEX.test(user))
     },[fname])
     
+    
     useEffect(()=>{
         const result = USER_REGEX.test(lname)
         console.log(result)
@@ -83,7 +84,16 @@ const Register = () => {
         // or setValidName(USER_REGEX.test(user))
     },[lname])
     
+    
     //===============================================
+    useEffect(()=>{
+        const result = EMAIL_REGEX.test(email)
+        console.log(result)
+        console.log(email);
+        setValidEmail(result)
+        // or setValidName(USER_REGEX.test(user))
+    },[email])
+    // ================================================
     useEffect(()=>{
         const result = PWD_REGEX.test(pwd)
         console.log(result)
@@ -103,8 +113,9 @@ const Register = () => {
         e.preventDefault();
         const v1 = USER_REGEX.test(fname)
         const v2 = USER_REGEX.test(lname)
-        const v3 = PWD_REGEX.test(pwd)
-        if (!v1 || !v2 || !v3){
+        const v3 = EMAIL_REGEX.test(email)
+        const v4 = PWD_REGEX.test(pwd)
+        if (!v1 || !v2 || !v3 || !v4){
             setErrMsg("Invalid Entry")
             return
         }
@@ -146,72 +157,65 @@ const Register = () => {
                 Letters, numbers, underscores, hyphens allowed.
             </p>
              */}
-
-            <label htmlFor='fname' className="reg-fname">
-                First name:
-                <span className={validFname ? "valid": "hide"}>
-                    <FontAwesomeIcon icon={faCheck}/>
-                </span>
-                <span className={validFname || !fname ?"hide":"invalid"}>
-                    <FontAwesomeIcon icon={faTimes}/>
-                </span>
-            </label>
-            <input
-                type='text'
-                id='fname'
-                ref={fnameRef}
-                autoComplete='off'
-                onChange={(e) => setFname(e.target.value)}
-                required
-                aria-invalid={validFname ? "false":"true"}
-                aria-describedby='fnnote'
-                onFocus={() => setFnameFocus(true)}
-                onBlur={() => setFnameFocus(false)}/>
-            <p id='fnnote' className={fnameFocus && fname && !validFname ? "instructions" : "offscreen"}>
-                <FontAwesomeIcon icon={faInfoCircle}/>
-                4 to 24 characters.<br/>
-                Must begin with a letter.<br/>
-                Letters, numbers, underscores, hyphens allowed.
-            </p>
-
-            <label htmlFor='lname' className="reg-lname">
-                Last name:
-                <span className={validLname ? "valid": "hide"}>
-                    <FontAwesomeIcon icon={faCheck}/>
-                </span>
-                <span className={validLname || !lname ?"hide":"invalid"}>
-                    <FontAwesomeIcon icon={faTimes}/>
-                </span>
-            </label>
-            <input
-                type='text'
-                id='fname'
-                ref={lnameRef}
-                autoComplete='off'
-                onChange={(e) => setLname(e.target.value)}
-                required
-                aria-invalid={validLname ? "false":"true"}
-                aria-describedby='lnnote'
-                onFocus={() => setLnameFocus(true)}
-                onBlur={() => setLnameFocus(false)}/>
-            <p id='lnnote' className={lnameFocus && lname && !validLname ? "instructions" : "offscreen"}>
-                <FontAwesomeIcon icon={faInfoCircle}/>
-                4 to 24 characters.<br/>
-                Must begin with a letter.<br/>
-                Letters, numbers, underscores, hyphens allowed.
-            </p>
-
+             <div className="reg-fulln-container reg-form-layout">
+                Full Name
+             </div>
+            <div className="reg-fname-container reg-form-layout">
+                <input
+                    className="reg-name-input"
+                    type='text'
+                    id='fname'
+                    ref={fnameRef}
+                    autoComplete='off'
+                    placeholder="First name"
+                    onChange={(e) => setFname(e.target.value)}
+                    required
+                    aria-invalid={validFname ? "false":"true"}
+                    aria-describedby='fnnote'
+                    onFocus={() => setFnameFocus(true)}
+                    onBlur={() => setFnameFocus(false)}/>
+                {/* <p id='fnnote' className={fnameFocus && fname && !validFname ? "instructions" : "offscreen"}>
+                    <FontAwesomeIcon icon={faInfoCircle}/>
+                    4 to 24 characters.<br/>
+                    Must begin with a letter.<br/>
+                    Letters, numbers, underscores, hyphens allowed.
+                </p> */}
+            </div>
+            <div className="reg-lname-container reg-form-layout">
+                <input
+                    className="reg-name-input"
+                    type='text'
+                    id='fname'
+                    ref={lnameRef}
+                    placeholder="Last name"
+                    autoComplete='off'
+                    onChange={(e) => setLname(e.target.value)}
+                    required
+                    aria-invalid={validLname ? "false":"true"}
+                    aria-describedby='lnnote'
+                    onFocus={() => setLnameFocus(true)}
+                    onBlur={() => setLnameFocus(false)}/>
+                {/* <p id='lnnote' className={lnameFocus && lname && !validLname ? "instructions" : "offscreen"}>
+                    <FontAwesomeIcon icon={faInfoCircle}/>
+                    4 to 24 characters.<br/>
+                    Must begin with a letter.<br/>
+                    Letters, numbers, underscores, hyphens allowed.
+                </p> */}
+            </div>
             {/* ==================================================================== */}
-            <label htmlFor='email' className="reg-email">
+             <div className="reg-email-container reg-form-layout">
+            <label htmlFor='email' className="reg-email reg-form-label">
                 Email:
-                <span className={validLname ? "valid": "hide"}>
+                <span className={validEmail ? "valid": "hide"}>
                     <FontAwesomeIcon icon={faCheck}/>
                 </span>
-                <span className={validLname || !lname ?"hide":"invalid"}>
+                <span className={validEmail || !email ?"hide":"invalid"}>
                     <FontAwesomeIcon icon={faTimes}/>
                 </span>
             </label>
+            
             <input
+                className="reg-full-input"
                 type='email'
                 id='email'
                 ref={emailRef}
@@ -224,13 +228,12 @@ const Register = () => {
                 onBlur={() => setEmailFocus(false)}/>
 
             <p id='emailnote' className={emailFocus && email && !validEmail ? "instructions" : "offscreen"}>
-                <FontAwesomeIcon icon={faInfoCircle}/>
-                4 to 24 characters.<br/>
-                Must begin with a letter.<br/>
-                Letters, numbers, underscores, hyphens allowed.
+                Please enter a valid email
             </p>
+            </div>
 {/* ==================================================================================== */}
-            <label htmlFor='password' className="reg-password">
+             <div className="reg-pass-container reg-form-layout">
+            <label htmlFor='password' className="reg-password reg-form-label">
                 Password:
                 <span className={validPwd ? "valid": "hide"}>
                     <FontAwesomeIcon icon={faCheck}/>
@@ -240,6 +243,7 @@ const Register = () => {
                 </span>
             </label>
             <input
+                className="reg-full-input"
                 type='password'
                 id='password'
                 onChange={(e) => setPwd(e.target.value)}
@@ -255,8 +259,9 @@ const Register = () => {
                 Must include uppercase and lowercaseletters, a number and a special charcter.<br/>
                 Allowed special characters: ! @ # $ % 
             </p>
-
-            <label htmlFor='password'>
+            </div>
+             <div className="reg-match-container reg-form-layout">
+            <label className="reg-form-label" htmlFor='confirm_pwd'>
                 Conform Password:
                 <span className={validMatch && matchPwd ? "valid": "hide"}>
                     <FontAwesomeIcon icon={faCheck}/>
@@ -266,6 +271,7 @@ const Register = () => {
                 </span>
             </label>
             <input
+                className="reg-full-input"
                 type='password'
                 id='confirm_pwd'
                 onChange={(e) => setMatchPwd(e.target.value)}
@@ -279,7 +285,9 @@ const Register = () => {
                 <FontAwesomeIcon icon={faInfoCircle}/>
                 Must match the first password input field.    
             </p>
-            <button disabled={!validFname || !validLname || !validPwd || !validMatch ? true : false}>
+            </div>
+            
+            <button className="reg-form-layout" disabled={!validFname || !validLname || !validPwd || !validMatch ? true : false}>
                 Sign up
             </button>
         </form>

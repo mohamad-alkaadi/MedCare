@@ -195,12 +195,7 @@ const Register = () => {
                     aria-describedby='lnnote'
                     onFocus={() => setLnameFocus(true)}
                     onBlur={() => setLnameFocus(false)}/>
-                {/* <p id='lnnote' className={lnameFocus && lname && !validLname ? "instructions" : "offscreen"}>
-                    <FontAwesomeIcon icon={faInfoCircle}/>
-                    4 to 24 characters.<br/>
-                    Must begin with a letter.<br/>
-                    Letters, numbers, underscores, hyphens allowed.
-                </p> */}
+                
             </div>
             {/* ==================================================================== */}
              <div className="reg-email-container reg-form-layout">
@@ -215,7 +210,7 @@ const Register = () => {
             </label>
             
             <input
-                className="reg-full-input"
+                className={validEmail ? "valid reg-full-input": "hide reg-full-input"}
                 type='email'
                 id='email'
                 ref={emailRef}

@@ -92,7 +92,7 @@ button{
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
 }
 
 .register-form{
@@ -133,6 +133,7 @@ button{
     display: grid;
 }
 
+
 a, a:visited {
     color: #fff;
 }
@@ -145,7 +146,9 @@ textarea {
   font-size: 22px;
   padding: 0.25rem;
   border-radius: 0.5rem;
+  border:1px solid #a3a3a3;
 }
+
 label,
 button {
   margin-top: 1rem;
@@ -187,7 +190,6 @@ button{
     margin-left: 0.25rem;
 }
 .errmsg {
-    background-color: lightpink;
     color: firebrick;
     font-weight: bold;
     padding: 0.5rem;

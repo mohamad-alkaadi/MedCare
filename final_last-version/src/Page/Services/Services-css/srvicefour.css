@@ -1,5 +1,6 @@
 .ser-four-container{
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     background-color: #00544f;
 }
 /* .ser-four{
@@ -27,9 +28,10 @@
 .ser-four-video{
     grid-column: span 12;
     display: grid;
+    
 }
 .ser-watch-video{
-    width: 95%;
+    width: 90%;
     justify-self: center;
 }
 

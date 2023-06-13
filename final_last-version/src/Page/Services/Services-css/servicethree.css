@@ -3,6 +3,8 @@
     min-height: 800px;
     display: grid;
     align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .ser-three{
     max-width: 1500px;

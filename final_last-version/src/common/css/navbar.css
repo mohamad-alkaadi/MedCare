@@ -16,6 +16,9 @@
     font-size: 30px;
 
 }
+.headerlogo:hover{
+  color: #068466;
+}
 
 .navigation .nav-sec{
     grid-column: 4 / span 9;
@@ -29,9 +32,13 @@
     font-family: 'Roboto', sans-serif;
 
 }
+.navigation nav a:hover{
+  border-bottom: #068466 1px solid;
+  color: #068466;
+}
 
-#s-up-button{
-    border: #00544f solid 1px;
+#s-in-button{
+    /* border: #00544f solid 1px; */
     border-radius: 50px;
     padding: 11px 17px;
     background-color: #00544f;
@@ -39,6 +46,10 @@
     font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
 
+}
+
+#s-in-button:hover{
+  background-color: #068466;
 }
 .mob-nav-sec{
     display: none;

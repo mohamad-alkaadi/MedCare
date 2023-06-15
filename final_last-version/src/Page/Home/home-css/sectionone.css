@@ -36,7 +36,6 @@
 }
 
 .one-button{
-    border: #00544f solid 1px;
     border-radius: 50px;
     padding: 11px 17px;
     background-color: #00544f;
@@ -48,6 +47,9 @@
     text-decoration: none;
 }
 
+.one-button:hover{
+    background-color: #068466;
+}
 
 @media (max-width:1300px){
     .one-headline{

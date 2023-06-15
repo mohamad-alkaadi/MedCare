@@ -146,6 +146,7 @@
     font-size: 1.2rem;
 
 }
+
 @media (min-width:1400px){
 
     .seven-card:hover{
@@ -156,7 +157,9 @@
     .seven-card:hover  button{
         color: #fff;
         background: #005450;
+        cursor: pointer;
     }
+    
 }
 /* ======================================================= */
 .seven-slide{

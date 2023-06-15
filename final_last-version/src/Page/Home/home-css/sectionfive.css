@@ -38,6 +38,12 @@
     font-size: 1.2rem;
     border: #00544f solid 1px;
 }
+.sec-five-button:hover{
+    background-color: #005450;
+    color: #fff;
+    border: none;
+    
+}
 
 .sec-five-img{
     grid-column: span 6;

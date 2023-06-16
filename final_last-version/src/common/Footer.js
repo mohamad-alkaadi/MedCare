@@ -24,7 +24,7 @@ const Footer = () => {
     <div>
         <div className='footer-container'>
             <div className='footer grid-system'>
-                <div className='footer-logo'>MedCare</div>
+                <div className='footer-logo'><p>MedCare</p></div>
 
                 <div className='footer-company-links'>
                     <div className='footer-company-title'>Company</div>

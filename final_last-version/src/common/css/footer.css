@@ -14,8 +14,15 @@
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-size: 2rem;
-
 }
+
+.footer-logo p{
+    cursor: pointer;
+}
+.footer-logo p:hover{
+    color: #07c79a;
+}
+
 .footer-company-links{
     grid-column: span 3;
 }
@@ -38,6 +45,9 @@
     justify-self: center;
     margin: 2rem 0;
 }
+.footer-link:hover{
+    color: #07c79a;
+}
 .footer-link{
     text-decoration: none;
     font-size: 1.2rem;
@@ -48,6 +58,9 @@
     text-decoration: none;
     color:#fff;
     font-size: 1.2rem;
+}
+.footer-contact a:hover{
+   color: #07c79a;
 }
 
 .contact-icon{

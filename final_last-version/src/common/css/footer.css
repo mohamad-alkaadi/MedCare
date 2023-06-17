@@ -46,7 +46,9 @@
     margin: 2rem 0;
 }
 .footer-link:hover{
-    color: #07c79a;
+    /* color: #07c79a; */
+    border-bottom: .5px solid #fff;
+
 }
 .footer-link{
     text-decoration: none;
@@ -59,9 +61,12 @@
     color:#fff;
     font-size: 1.2rem;
 }
-.footer-contact a:hover{
+/* .footer-contact a:hover{
    color: #07c79a;
-}
+       border-bottom: .5px solid #fff;
+
+} */
+
 
 .contact-icon{
     margin-right: .5rem;

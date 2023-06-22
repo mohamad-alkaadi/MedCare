@@ -1,0 +1,153 @@
+.about-one-container{
+    /* background-color: #abbde5; */
+    background-color: #fff;
+    /* background-color: #eef6f4; */
+    padding-bottom: 2rem;
+
+}
+.section-one{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
+.abo-one-text{
+    grid-column: span 6;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* background-color: blue; */
+}
+.abo-one-stitle{
+    font-size: 1.5rem;
+    color: #00544f;
+
+}
+
+.abo-one-btitle{
+    font-size: 6rem;
+    /* maybe 5 or 5.5 */
+    color: #00544f;
+    font-family: 'Roboto', sans-aboif;
+}
+
+.abo-one-img{
+    grid-column: span 6;
+    display: grid;
+    align-self: center;
+    /* background-color: red; */
+    padding: 10px 0;
+}
+
+.abo-one-watch{
+    width: 90%;
+    /* height: 50%; */
+    justify-self: center;
+    align-self: center;
+}
+@media (max-width:1744px){
+    .abo-one-btitle{
+        font-size: 5.5rem;
+        
+    }
+}
+@media (max-width:1607px){
+    .abo-one-btitle{
+        font-size: 5rem;
+        
+    }
+}
+@media (max-width:1469px){
+    .abo-one-btitle{
+        font-size: 4.5rem;
+        
+    }
+}
+@media (max-width:1332px){
+    .abo-one-btitle{
+        font-size: 4rem;
+        
+    }
+}
+@media (max-width:1195px){
+    .abo-one-btitle{
+        font-size: 3.5rem;
+        
+    }
+}
+@media (max-width:1085px){
+    .abo-one-btitle{
+        font-size: 3.2rem;
+        
+    }
+}
+@media (max-width:975px){
+    .abo-one-btitle{
+        font-size: 3rem;
+        
+    }
+}
+@media (max-width:920px){
+    .abo-one-btitle{
+        font-size: 2.8rem;
+        
+    }
+}
+@media (max-width:865px){
+    .abo-one-btitle{
+        font-size: 2.5rem;
+        
+    }
+}
+@media (max-width:800px){
+    .abo-one-text{
+        grid-column: span 12;
+        grid-row: 2;
+        margin-bottom: 4rem;
+        
+    }
+    .abo-one-img{
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .abo-one-btitle{
+        font-size: 5rem;
+        
+    }
+}
+
+@media (max-width:751px){
+    .abo-one-btitle{
+        font-size: 4.5rem;
+        
+    }
+}
+@media (max-width:682px){
+    .abo-one-btitle{
+        font-size: 4rem;
+        
+    }
+}
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-left: 1rem;
+        margin:auto;
+        width: 100%;
+        row-gap: 1px;        
+    }
+    .abo-one-img{
+        grid-column: span 4;
+        display: grid;
+    }
+    
+    .abo-one-text{
+        grid-column: span 4;        
+    }
+}
+@media (max-width:336px){
+    .abo-one-btitle{
+        font-size: 3.5rem;
+    }
+    
+}

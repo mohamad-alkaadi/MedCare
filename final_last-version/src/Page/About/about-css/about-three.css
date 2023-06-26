@@ -1,0 +1,48 @@
+.about-three-container{
+    /* background-color: red; */
+    /* padding-bottom: 2rem; */
+    /* padding-top: 2rem; */
+}
+
+.about-three{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+    min-height: 550px;
+
+}
+.about-three-img{
+    grid-column: span 6;
+    display: grid;
+    /* background-color: lightblue; */
+
+}
+
+.about-one-photo{
+    justify-self: start;
+    align-self: center;
+    width: 98%;
+}
+
+.about-three-text{
+    grid-column: span 6;
+    display: grid;
+    /* background-color: lightblue; */
+
+}
+
+.about-three-title{
+    align-self: end;
+    justify-self: center;
+    font-size: 3rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.about-three-para{
+    align-self: start;
+    justify-self: center;
+    font-size: 1.1rem;
+    width:90%;
+
+}

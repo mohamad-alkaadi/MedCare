@@ -1,0 +1,48 @@
+.about-four-container{
+    /* background-color: red; */
+    /* padding-bottom: 2rem; */
+    /* padding-top: 2rem; */
+}
+
+.about-four{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+    min-height: 550px;
+
+}
+.about-four-img{
+    grid-column: span 6;
+    display: grid;
+    /* background-color: lightblue; */
+
+}
+
+.about-one-photo{
+    justify-self: start;
+    align-self: center;
+    width: 98%;
+}
+
+.about-four-text{
+    grid-column: span 6;
+    display: grid;
+    /* background-color: lightblue; */
+
+}
+
+.about-four-title{
+    align-self: end;
+    justify-self: center;
+    font-size: 3rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.about-four-para{
+    align-self: start;
+    justify-self: center;
+    font-size: 1.1rem;
+    width:90%;
+
+}

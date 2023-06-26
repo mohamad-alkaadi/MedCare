@@ -1,7 +1,8 @@
 .about-two-container{
     background-color: #fbfbfb;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     min-height: 550px;
+    padding-top: 2rem;
 }
 
 .section-two{
@@ -11,10 +12,31 @@
 }
 .about-two-img{
     grid-column: span 6;
+    display: grid;
+    /* background-color: red; */
+
 }
+
+.about-one-photo{
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
 .about-two-text{
     grid-column: span 6;
+    display: grid;
 }
-.about-one-photo{
-    width: 90%;
+
+.about-two-title{
+    align-self: end;
+    font-size: 3rem;
+    width: 70%;
+}
+
+.about-two-para{
+    align-self: start;
+    font-size: 1.1rem;
+    width:70%;
+
 }

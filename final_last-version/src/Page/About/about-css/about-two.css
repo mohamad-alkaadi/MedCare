@@ -1,0 +1,20 @@
+.about-two-container{
+    background-color: #fbfbfb;
+    padding-bottom: 2rem;
+    min-height: 550px;
+}
+
+.section-two{
+    max-width: 1500px;
+    margin:30px auto;
+    padding: 20px;
+}
+.about-two-img{
+    grid-column: span 6;
+}
+.about-two-text{
+    grid-column: span 6;
+}
+.about-one-photo{
+    width: 90%;
+}

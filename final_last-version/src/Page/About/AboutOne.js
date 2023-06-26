@@ -7,7 +7,7 @@ const AboutOne = () => {
     <div className='about-one grid-system'>
         <div className="abo-one-text">
             <div className='abo-one-stitle'>
-                abouts
+                About us
             </div>
             <div className='abo-one-btitle'>
                 Healthcare, without the headaches

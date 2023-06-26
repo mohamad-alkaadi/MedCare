@@ -1,6 +1,6 @@
 import React from 'react'
 import './about-css/about-four.css'
-import imgOne from './about-assets/aboutThree.png'
+import imgThree from './about-assets/imgThree.png'
 const AboutFour = () => {
   return (
     <div className='about-four-container'>

@@ -2,6 +2,8 @@
     /* background-color: red; */
     /* padding-bottom: 2rem; */
     /* padding-top: 2rem; */
+    background-color: #f7f7f7;
+
 }
 
 .about-two{
@@ -27,7 +29,7 @@
 .about-two-text{
     grid-column: span 6;
     display: grid;
-    /* background-color: lightblue; */
+    color: #00544f;
 
 }
 

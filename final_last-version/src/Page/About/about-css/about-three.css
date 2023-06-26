@@ -2,11 +2,14 @@
     /* background-color: red; */
     /* padding-bottom: 2rem; */
     /* padding-top: 2rem; */
+    /* background-color: #f7f7f7; */
+
 }
 
 .about-three{
     max-width: 1500px;
     margin:30px auto;
+    /* margin: 0 auto; */
     padding: 20px;
     min-height: 550px;
 
@@ -27,7 +30,7 @@
 .about-three-text{
     grid-column: span 6;
     display: grid;
-    /* background-color: lightblue; */
+    color: #00544f;
 
 }
 

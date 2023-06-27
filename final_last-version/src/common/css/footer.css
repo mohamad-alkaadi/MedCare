@@ -47,8 +47,9 @@
 }
 .footer-link:hover{
     /* color: #07c79a; */
-    border-bottom: .5px solid #fff;
-
+    /* border-bottom: .5px solid #fff; */
+    color: #e7e6e6;
+    /* color: #cfcfcf; */
 }
 .footer-link{
     text-decoration: none;

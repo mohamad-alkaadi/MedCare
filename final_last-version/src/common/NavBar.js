@@ -34,7 +34,7 @@ function NavBar() {
                         const {url,text} = link;
                         return <a href={url}>{text}</a>
                         })}
-                        <a href='#' className='s-up-button'>Register</a>
+                        <a href='#' className='s-up-button'>Sign up</a>
                         <a href='#' id='s-in-button'>Sign in</a>      
                     </nav>
                     {/*----------------------------  */}

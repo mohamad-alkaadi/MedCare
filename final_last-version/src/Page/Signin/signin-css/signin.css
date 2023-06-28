@@ -1,0 +1,93 @@
+.sign-in-container{
+    /* background-color: red; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.sign-in{
+    row-gap: 0;
+    background-color: #FFF;
+    padding:3rem 3rem 3rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signin-title{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 3rem;
+    font-family: 'Comfortaa', cursive;
+    color: #00544f;
+}
+.sign-in-email{
+    grid-column: span 12;
+}
+.sign-in-email input{
+    /* width: 100%; */
+    width: 400px;
+    font-size: .9rem;
+    border-radius: 0;
+    height: 3.5rem;
+    margin-bottom: 0;
+    border:1px #f1f1f1 solid;
+    /* margin: 0 2rem; */
+    padding-left: 1rem;
+}
+
+.sign-in-email input:focus{
+    outline: solid #00544f 1px;
+    /* border-radius: 2px; */
+    margin-bottom: 1px;
+}
+
+.sign-in-password{
+    grid-column: span 12;
+}
+.sign-in-password input{
+    /* width: 100%; */
+    width: 400px;
+    /* margin: 0 2rem; */
+    font-size: .9rem;
+    border-radius: 0;
+    /* height: 36px; */
+    height: 3.5rem;
+    border:1px #f1f1f1 solid;
+    padding-left: 1rem;
+
+}
+
+.sign-in-password input:focus{
+    outline: solid #00544f 1px;
+    /* border-radius: 2px; */
+}
+
+.sign-in-submit{
+    grid-column: span 12;
+    margin-top: 1rem;
+}
+.sign-in-submit input{
+    /* width: 100%; */
+    width: 400px;
+    /* margin: 0 2rem; */
+    text-align: center;
+    height: 38px;
+    background-color: #007e78;
+    color: #fff;
+    /* border-radius: 100px; */
+    height: 3.5rem;
+
+}
+.sign-in-forget{
+    grid-column: span 12;
+    margin: 0 auto;   
+    margin-top: 2.5rem;  
+    /* color: #007e78; */
+}
+
+.sign-in-forget a{
+    color: #007e78;
+    /* color: #0067b8; */
+    text-decoration: none;
+    cursor: pointer;
+}

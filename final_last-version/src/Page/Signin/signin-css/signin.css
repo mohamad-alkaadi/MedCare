@@ -83,11 +83,31 @@
     margin: 0 auto;   
     margin-top: 2.5rem;  
     /* color: #007e78; */
+    font-size: .95rem;
 }
 
-.sign-in-forget a{
+.sign-in-forget button{
     color: #007e78;
-    /* color: #0067b8; */
     text-decoration: none;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: .95rem;
+}
+
+.forgotPass-sloganOne{
+    grid-column: span 12;
+    margin: auto;
+}
+
+.forgotPass-sloganTwo{
+    grid-column: span 12;
+    margin: auto;
+}
+.forgot-submit{
+    grid-column: span 12;
+}
+.forgot-back{
+    grid-column: span 12; 
 }

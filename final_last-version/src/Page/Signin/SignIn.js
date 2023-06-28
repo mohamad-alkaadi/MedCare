@@ -12,16 +12,13 @@ function useHeightWindowSize(){
     return heightSize;
   }
 
-
 function SignIn() {
+  function ShowHidden(){
+    setForgotPassword(!forgotPassword)
+  }  
     const SignInHeight = useHeightWindowSize();
     const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
-    // const LoginStyles = {
-    //     signInContainer:{
-    //         height:{SignInHeight},
-    //         backgroundColor:"red",
-    //     }
-    // }
+    const [forgotPassword,setForgotPassword] = useState(false)
 
     console.log(SignInHeight)
     const emailRef = useRef();
@@ -37,6 +34,7 @@ function SignIn() {
 
   return (
     <div className='sign-in-container' style={LoginStyles.signInContainer}>
+      {!forgotPassword? 
       <form>
         <div className='sign-in grid-system'>
             <div className='signin-title'>
@@ -83,12 +81,50 @@ function SignIn() {
                     value='SIGN IN'/>
                 </div>
                 <div className="sign-in-forget">
-                  Forgot <a href='#'>Email / Password?</a>
+                  Forgot <button onClick={ShowHidden}>Password?</button>
                 </div>
             
         </div>
-        </form>
+        </form>:
+        
+        <form>
+          <div className='sign-in grid-system'>
+              <div className='forgotPass-sloganOne'>
+                Forgot password?
+              </div>
+              <div className='forgotPass-sloganTwo'>
+                No worries. we'll send you reset instructions.
+              </div>
+              <div className='sign-in-email'>
+                    {/* <label htmlFor='signin-email' className="signin-email-label">
+                        Email
+                    </label> */}
+                    {/* <br/> */}
+                    <input 
+                        type='email'
+                        placeholder='Enter your email'
+                        id='signin-email'
+                        ref={emailRef}
+                        autoComplete='off'
+                        required
+                        aria-invalid={validEmail ? "false":"true"}
+                        onChange={(e) => setEmail(e.target.value)}
+                        onFocus={() => setEmailFocus(true)}
+                        onBlur={() => setEmailFocus(false)}/>
+            </div>
+            <div className='forgot-submit'>
+                  <input 
+                    type='submit'
+                    value='Reset password'/>
+                </div>
+              <div className='forgot-back'>
+                <button onClick={ShowHidden}>Back</button>
+              </div>
+          </div>
+        </form>}
+         {console.log(forgotPassword)}
     </div>
+   
   )
 }
 

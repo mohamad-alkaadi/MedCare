@@ -1,5 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './signin-css/signin.css'
+import { FaArrowLeft } from 'react-icons/fa';
 
 function useHeightWindowSize(){
     const [heightSize,setHeightSize]=useState(window.innerHeight);
@@ -118,7 +119,7 @@ function SignIn() {
                     value='Reset password'/>
                 </div>
               <div className='forgot-back'>
-                <button onClick={ShowHidden}>Back</button>
+                <button onClick={ShowHidden}><FaArrowLeft className='forgot-back-arrow'/> Back to Sign in</button>
               </div>
           </div>
         </form>}

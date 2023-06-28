@@ -99,15 +99,59 @@
 .forgotPass-sloganOne{
     grid-column: span 12;
     margin: auto;
+    font-size: 2.2em;
+    margin-bottom: 1rem;
 }
 
 .forgotPass-sloganTwo{
     grid-column: span 12;
+    font-size: 1.05em;
     margin: auto;
+    margin-bottom: 3rem;
 }
 .forgot-submit{
     grid-column: span 12;
+    margin-top: 1rem;
+}
+
+.forgot-submit input{
+    text-align: center;
+    width: 400px;
+    text-align: center;
+    height: 38px;
+    background-color: #007e78;
+    color: #fff;
+    height: 3.5rem;
 }
 .forgot-back{
-    grid-column: span 12; 
+    grid-column: span 12;
+    
+}
+/* .sign-in-submit{
+    grid-column: span 12;
+    margin-top: 1rem;
+}
+.sign-in-submit input{
+    width: 400px;
+    text-align: center;
+    height: 38px;
+    background-color: #007e78;
+    color: #fff;
+    height: 3.5rem;
+} */
+
+.forgot-back button{
+    width: 400px;
+    text-align: start;
+    height: 38px;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.forgot-back-arrow{
+    color: #00544f;
+    font-size: .9rem;
 }

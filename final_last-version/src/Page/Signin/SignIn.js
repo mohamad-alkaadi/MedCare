@@ -1,6 +1,7 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './signin-css/signin.css'
 import { FaArrowLeft } from 'react-icons/fa';
+import key from './sigin-assets/key-circle.png'
 
 function useHeightWindowSize(){
     const [heightSize,setHeightSize]=useState(window.innerHeight);
@@ -20,6 +21,7 @@ function SignIn() {
     const SignInHeight = useHeightWindowSize();
     const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
     const [forgotPassword,setForgotPassword] = useState(false)
+    const [emailSent,setEmailSent] = useState(false)
 
     console.log(SignInHeight)
     const emailRef = useRef();
@@ -42,10 +44,7 @@ function SignIn() {
                 MedCare
             </div>
             <div className='sign-in-email'>
-                    {/* <label htmlFor='signin-email' className="signin-email-label">
-                        Email
-                    </label> */}
-                    {/* <br/> */}
+                    
                     <input 
                         type='email'
                         placeholder='Email'
@@ -61,10 +60,6 @@ function SignIn() {
 
             
                 <div className='sign-in-password'>
-                    {/* <label htmlFor='signin-password' className="signin-password-label">
-                        Password
-                    </label> */}
-                    {/* <br/> */}
                     <input
                         type='password'
                         placeholder='Password'
@@ -87,20 +82,19 @@ function SignIn() {
             
         </div>
         </form>:
-        
+        // {}
         <form>
           <div className='sign-in grid-system'>
+            <div className='forgot-key'>
+              <img className='forgot-key-icon' src={key}/> 
+            </div>
               <div className='forgotPass-sloganOne'>
                 Forgot password?
               </div>
               <div className='forgotPass-sloganTwo'>
-                No worries. we'll send you reset instructions.
+                No worries, we'll send you reset instructions.
               </div>
               <div className='sign-in-email'>
-                    {/* <label htmlFor='signin-email' className="signin-email-label">
-                        Email
-                    </label> */}
-                    {/* <br/> */}
                     <input 
                         type='email'
                         placeholder='Enter your email'
@@ -108,6 +102,7 @@ function SignIn() {
                         ref={emailRef}
                         autoComplete='off'
                         required
+                        value=""
                         aria-invalid={validEmail ? "false":"true"}
                         onChange={(e) => setEmail(e.target.value)}
                         onFocus={() => setEmailFocus(true)}

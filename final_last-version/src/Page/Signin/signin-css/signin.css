@@ -19,6 +19,7 @@
     margin-bottom: 3rem;
     font-family: 'Comfortaa', cursive;
     color: #00544f;
+    margin-top: 2.375rem;
 }
 .sign-in-email{
     grid-column: span 12;
@@ -84,6 +85,7 @@
     margin-top: 2.5rem;  
     /* color: #007e78; */
     font-size: .95rem;
+    margin-bottom: 2.375rem;
 }
 
 .sign-in-forget button{
@@ -101,6 +103,7 @@
     margin: auto;
     font-size: 2.2em;
     margin-bottom: 1rem;
+    color: #003f3b;
 }
 
 .forgotPass-sloganTwo{
@@ -108,6 +111,8 @@
     font-size: 1.05em;
     margin: auto;
     margin-bottom: 3rem;
+    color: #3e5553;
+
 }
 .forgot-submit{
     grid-column: span 12;
@@ -122,36 +127,37 @@
     background-color: #007e78;
     color: #fff;
     height: 3.5rem;
+    font-size: 1.02rem;
 }
 .forgot-back{
     grid-column: span 12;
     
 }
-/* .sign-in-submit{
-    grid-column: span 12;
-    margin-top: 1rem;
-}
-.sign-in-submit input{
-    width: 400px;
-    text-align: center;
-    height: 38px;
-    background-color: #007e78;
-    color: #fff;
-    height: 3.5rem;
-} */
 
 .forgot-back button{
     width: 400px;
     text-align: start;
+    color: #003f3b;
     height: 38px;
     text-decoration: none;
     cursor: pointer;
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: .95rem;
 }
 
 .forgot-back-arrow{
-    color: #00544f;
-    font-size: .9rem;
+    color: #003f3b;
+    font-size: .7rem;
+}
+
+.forgot-key{
+    grid-column: span 12;
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.forgot-key-icon{
+    width: 90px;
+    justify-self: center;
 }

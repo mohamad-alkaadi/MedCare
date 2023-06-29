@@ -235,8 +235,138 @@
 .email-sent-icon{
     width: 90px;
     justify-self: center;
-}
-
-@media(max-width: 565px){
     
 }
+
+/* ---------------------------------------------------------------------- */
+@media(max-width: 565px){
+    .sign-in-container{
+        display: block;
+    }
+    .grid-system{
+        display: grid;
+        /* grid-template-columns: repeat(4,1fr); */
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin:auto 1rem;
+        width: 100%;
+        
+
+    }
+    
+    .sign-in{
+        /* row-gap: 0; */
+        background-color: #ecfafe;
+        padding:0;
+        box-shadow: none;
+        
+    }
+    
+    .signin-title{
+        grid-column: span 4;
+    }
+    
+
+    .sign-in-email{
+        grid-column: span 4;
+
+    }
+    .sign-in-email input{
+        width: 95%;
+        
+    }
+    
+    .sign-in-email input:focus{
+        outline: solid #00544f 1px;
+        margin-bottom: 1px;
+    }
+    
+    .sign-in-password{
+        grid-column: span 4;
+    }
+    .sign-in-password input{
+        width: 95%;
+    }
+    
+    .sign-in-submit{
+        grid-column: span 4;        
+    }
+  
+    .sign-in-submit button{  
+        width: 95%;
+    }
+    .sign-in-forget{
+        grid-column: span 4;
+        margin-top: 2.5rem; 
+        display: block;
+        justify-content: center;
+        align-content: center;
+    }
+    
+
+    .forgotPass-sloganOne{
+        grid-column: span 4;
+    }
+    
+    .forgotPass-sloganTwo{
+        grid-column: span 4;
+    
+    }
+    .forgot-submit{
+        grid-column: span 4;
+        margin-top: 1rem;
+    }
+    
+    
+    .forgot-submit button{
+        width: 95%;
+    }
+    .forgot-back{
+        grid-column: span 4;
+    }
+    
+    .forgot-back button{
+        width: 400px;
+    }
+    
+    
+    .forgot-key{
+        grid-column: span 4;
+        margin-top: 2rem;
+    }
+    
+    .email-sent-sloganOne{
+        grid-column: span 4;
+    }
+    
+    .email-sent-sloganTwo{
+        grid-column: span 4;
+        font-size: 1.05em;
+        margin: auto;
+        margin-bottom: .3rem;
+        color: #3e5553;
+    }
+    
+    .email-sent-email{
+        grid-column: span 4;
+        text-align: center;
+    
+    }
+    
+    .email-sent-notReceive{
+        grid-column: span 4;
+        margin-bottom: 1rem;
+    }
+    
+    .forgot-back{
+        grid-column: span 4;
+    }
+    
+    .email-sent{
+        grid-column: span 4;
+    }
+    
+    .email-sent-icon{
+        margin-top: 2rem;
+    }
+}
+

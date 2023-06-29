@@ -4,8 +4,20 @@ import { FaArrowLeft } from 'react-icons/fa';
 import key from './sigin-assets/key-circle.png'
 import emailPic from './sigin-assets/email-circle.png'
 
+// function useHeightWindowSize(){
+//     const [heightSize,setHeightSize]=useState(window.innerHeight);
+    
+//     useEffect(()=>{
+//       const handleHeightResize = () => {
+//         setHeightSize(window.innerHeight);
+//       };
+//       window.addEventListener('resize',handleHeightResize);
+//     },[]);
+//     return heightSize;
+//   }
 function useHeightWindowSize(){
     const [heightSize,setHeightSize]=useState(window.innerHeight);
+    
     useEffect(()=>{
       const handleHeightResize = () => {
         setHeightSize(window.innerHeight);
@@ -13,9 +25,21 @@ function useHeightWindowSize(){
       window.addEventListener('resize',handleHeightResize);
     },[]);
     return heightSize;
-  }
+  } 
+
+function useWidthWindowSize(){
+    const [widthSize,setWidthSize]=useState(window.innerWidth);
+    useEffect(()=>{
+      const handleWidthResize = () => {
+        setWidthSize(window.innerWidth);
+      };
+      window.addEventListener('resize',handleWidthResize);
+    },[]);
+    return widthSize;
+  } 
 
 function SignIn() {
+  const width = useWidthWindowSize();
   function ShowHidden(){
     setForgotPassword(!forgotPassword)
 
@@ -36,6 +60,8 @@ function SignIn() {
   }
     const SignInHeight = useHeightWindowSize();
     const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
+    const SmallLoginStyles = { signInContainer:{ minHeight:SignInHeight, backgroundColor:"#ecfafe", width:`${width}px`} }
+
     const [forgotPassword,setForgotPassword] = useState(false)
     const [resetEmailSent,setResetEmailSent] = useState(false)
     const [resetEmailSave,setResetEmailSave] = useState("")
@@ -55,18 +81,20 @@ function SignIn() {
     const [validPwd, setValidPwd] = useState(false);
     const [pwdFocus, setPwdFocus] = useState(false);
 
-    console.log()    
+    const hightStyles = LoginStyles.signInContainer
+    const SmallStyles = SmallLoginStyles.signInContainer
 
   return (
     <div>
       {!resetEmailSent?
-    <div className='sign-in-container' style={LoginStyles.signInContainer}>
+    <div className='sign-in-container' style={width>565?hightStyles:SmallStyles}>
       {!forgotPassword? 
       <form>
         <div className='sign-in grid-system'>
             <div className='signin-title'>
                 MedCare
             </div>
+            
             <div className='sign-in-email'>
                     
                     <input 

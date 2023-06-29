@@ -15,7 +15,7 @@ function App() {
       {/* <Services/> */}
       {/* <About/> */}
       <SignIn/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

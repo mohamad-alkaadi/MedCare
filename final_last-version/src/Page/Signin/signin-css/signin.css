@@ -67,23 +67,32 @@
     grid-column: span 12;
     margin-top: 1rem;
 }
-.sign-in-submit input{
-    /* width: 100%; */
+/* .sign-in-submit input{
     width: 400px;
-    /* margin: 0 2rem; */
     text-align: center;
     height: 38px;
     background-color: #007e78;
     color: #fff;
-    /* border-radius: 100px; */
     height: 3.5rem;
+} */
 
+.sign-in-submit button{
+    margin-top: 0;
+    width: 400px;
+    text-align: center;
+    height: 38px;
+    background-color: #007e78;
+    color: #fff;
+    font-size: .9rem;
+    height: 3.5rem;
+    border-radius: 0;
+    /* font-weight: 100; */
 }
 .sign-in-forget{
     grid-column: span 12;
     margin: 0 auto;   
     margin-top: 2.5rem;  
-    /* color: #007e78; */
+    /* color: #003f3b; */
     font-size: .95rem;
     margin-bottom: 2.375rem;
 }
@@ -129,6 +138,19 @@
     height: 3.5rem;
     font-size: 1.02rem;
 }
+
+.forgot-submit button{
+    margin-top: 0;
+    text-align: center;
+    width: 400px;
+    text-align: center;
+    height: 38px;
+    background-color: #007e78;
+    color: #fff;
+    height: 3.5rem;
+    font-size: .9rem;
+    border-radius: 0;
+}
 .forgot-back{
     grid-column: span 12;
     
@@ -160,4 +182,61 @@
 .forgot-key-icon{
     width: 90px;
     justify-self: center;
+}
+
+.email-sent-sloganOne{
+    grid-column: span 12;
+    margin: auto;
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+    color: #003f3b;
+}
+
+.email-sent-sloganTwo{
+    grid-column: span 12;
+    font-size: 1.05em;
+    margin: auto;
+    color: #3e5553;
+}
+
+.email-sent-email{
+    grid-column: span 12;
+    text-align: center;
+    /* margin-bottom: .5rem; */
+
+}
+
+.email-sent-notReceive{
+    grid-column: span 12;
+    text-align: center;
+    margin-bottom: 7.5625rem;
+}
+
+.email-sent-notReceive button{
+    color: #007e78;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: .95rem;
+}
+
+.forgot-back{
+    grid-column: span 12;
+}
+
+.email-sent{
+    grid-column: span 12;
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.email-sent-icon{
+    width: 90px;
+    justify-self: center;
+}
+
+@media(max-width: 565px){
+    
 }

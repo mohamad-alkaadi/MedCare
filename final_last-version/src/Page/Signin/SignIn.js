@@ -4,17 +4,6 @@ import { FaArrowLeft } from 'react-icons/fa';
 import key from './sigin-assets/key-circle.png'
 import emailPic from './sigin-assets/email-circle.png'
 
-// function useHeightWindowSize(){
-//     const [heightSize,setHeightSize]=useState(window.innerHeight);
-    
-//     useEffect(()=>{
-//       const handleHeightResize = () => {
-//         setHeightSize(window.innerHeight);
-//       };
-//       window.addEventListener('resize',handleHeightResize);
-//     },[]);
-//     return heightSize;
-//   }
 function useHeightWindowSize(){
     const [heightSize,setHeightSize]=useState(window.innerHeight);
     

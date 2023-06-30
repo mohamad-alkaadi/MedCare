@@ -60,7 +60,7 @@ function SignIn() {
   }
     const SignInHeight = useHeightWindowSize();
     const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
-    const SmallLoginStyles = { signInContainer:{ minHeight:SignInHeight, backgroundColor:"#ecfafe", width:`${width}px`} }
+    const SmallLoginStyles = { signInContainer:{ minHeight:SignInHeight, backgroundColor:"#ecfafe", } }
 
     const [forgotPassword,setForgotPassword] = useState(false)
     const [resetEmailSent,setResetEmailSent] = useState(false)

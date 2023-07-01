@@ -1,3 +1,11 @@
+/* 
+.grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:0 2rem;
+  }
+   */
 .section-four-container{
     background-color: #00544f;
     min-height: 450px;
@@ -62,6 +70,21 @@
 
     .sec-four-text{
         font-size: 2rem;
+    }
+}
+@media (max-width:464px){
+    .grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+    .sec-four-text{
+        grid-column: span 4;
+        justify-self: center;
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 11px;
     }
 }
 @media (max-width:456px){

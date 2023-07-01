@@ -1,45 +1,60 @@
-.section-two-container{
+.section-two-containerNew{
     background-color: #00544f;
 }
-.section-two{
+
+.grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    /* margin:0 2rem; */
+    margin:auto;
+  }
+.section-twoNew{
     max-width: 1500px;
     margin:30px auto;
     padding: 20px;
-    min-height: 800px;
+    /* min-height: 800px; */
+    row-gap: 0;
 }
-.two-headline{
+
+.two-headlineNew{
     grid-column: span 12;
-    justify-self: center;
+    /* justify-self: center; */
+    margin-bottom: 4rem;
     text-align: center;
     font-size: 3rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
     color: #fff;
+    height: 10px;
 }
-.two-subheadline{
+
+.two-subheadlineNew{
     grid-column: span 12;
     justify-self: center;
     text-align: center;
     font-size: 1.3rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     color: #fff;
 }
-.card1{
+
+.card1New{
     grid-column: 1/5;
     background-color: #fff;
     justify-self: end;
 }
-.card2{
+.card2New{
     grid-column: 5/9;
     background-color: #fff;
     justify-self: center;
 
 }
-.card3{
+.card3New{
     grid-column: 9/13;
     justify-self: start;
 
 }
-.mission-card{
+
+.mission-cardNew{
     border-radius: 20px;
     width: fit-content;
     padding: 2.5rem;
@@ -48,48 +63,77 @@
     display: grid; 
 } 
 
-.card-heading{
+.card-headingNew{
     font-size: 1.6rem;
     text-align: center;
     font-weight: 500;
     margin: .5rem 0;
 }
 
-.card-subheading{
+.card-subheadingNew{
     font-size: 1.1rem;
     text-align: center;
     min-width: 210px;
 }
-.card-img{
+.card-imgNew{
     max-height: 130px;
     justify-self: center;
     pointer-events: none;
 }
-.slide-mission-card{
-    border-radius: 20px;
-    width: fit-content;
-    padding: 2.5rem;
-    background-color: #fff;
-    color: #00544f;
-    display: none;
 
+.swiper{
+    grid-column: span 12;
+    overflow: hidden;
+} 
+
+@media (max-width:876px){
+    .mission-cardNew{
+        padding-right:5.5rem;
+        padding-left:5.5rem;
+    } 
+    
 }
-@media (max-width:975px){
-    .mission-card{
-        display: none;
-    }
-    .slide-mission-card{
-        display: grid;
-        margin-left: 2rem;
-    }
-    .inner-carousel{
-       display: grid;
-       justify-content: space-between;
-    }
-    .carousel{
-        overflow: hidden;
-        grid-column: span 12;
-    }
+@media (max-width:782px){
+    .mission-cardNew{
+        padding-right:4.5rem;
+        padding-left:4.5rem;
+    } 
+    
+}
+@media (max-width:713px){
+    .mission-cardNew{
+        padding-right:3.5rem;
+        padding-left:3.5rem;
+    } 
+    
+}
+@media (max-width:648px){
+    .mission-cardNew{
+        padding-right:2.5rem;
+        padding-left:2.5rem;
+    } 
+    
+}
+@media (max-width:586px){
+    .mission-cardNew{
+        padding-right:2rem;
+        padding-left:2rem;
+    } 
+    
+}
+@media (max-width:555px){
+    .mission-cardNew{
+        padding-right:6.5rem;
+        padding-left:6.5rem;
+    } 
+    
+}
+@media (max-width:426px){
+    .mission-cardNew{
+        padding-right:2.5rem;
+        padding-left:2.5rem;
+    } 
+    
 }
 
 @media (max-width:464px){
@@ -99,82 +143,25 @@
         margin:auto;
         width: 100%;
     }
-    .carousel{
-        grid-column: span 4;
+
+.two-headlineNew{
+    grid-column: span 4;
+    
+}
+
+.two-subheadlineNew{
+    grid-column: span 4;
+    
+}
+.swiper{
+    grid-column: span 4;
+}
+}
+
+@media(max-width:296px) {
+    .two-headlineNew{
+        height: fit-content;
+        margin-bottom: 2rem;
     }
     
-    .two-headline{
-        grid-column: span 4;
-        justify-self: center;
-        text-align: center;
-        font-size: 3rem;
-        margin: 1rem 0;
-        color: #fff;
-    }
-    .two-subheadline{
-        grid-column: span 4;
-        justify-self: center;
-        text-align: center;
-        font-size: 1.3rem;
-        margin-bottom: 3rem;
-        color: #fff;
-    }
-    
-    
-  }
-  
-  
-
-.two-headline-new{
-    justify-self: center;
-    text-align: center;
-    font-size: 3rem;
-    margin: 1rem 0;
-    color: #fff;
-}
-.two-subheadline-new{
-    justify-self: center;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-    color: #fff;
-}
-
-.card1-new{
-    background-color: lightcoral;
-    justify-self: end;
-}
-.card2-new{
-    background-color: #fff;
-    justify-self: center;
-}
-.card3-new{
-    justify-self: start;
-
-}
-.mission-card-new{
-    border-radius: 20px;
-    width: fit-content;
-    padding: 2.5rem;
-    background-color: #fff;
-    color: #00544f;
-    display: grid; 
-} 
-
-.card-heading-new{
-    font-size: 1.6rem;
-    text-align: center;
-    font-weight: 500;
-    margin: .5rem 0;
-}
-
-.card-subheading-new{
-    font-size: 1.1rem;
-    text-align: center;
-    min-width: 210px;
-}
-.card-img-new{
-    max-height: 130px;
-    justify-self: center;
-    pointer-events: none;
 }

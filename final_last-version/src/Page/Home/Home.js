@@ -9,6 +9,7 @@ import SectionFive from './SectionFive'
 import SectionSeven from './SectionSeven'
 import SectionSix from './SectionSix'
 import Footer from '../../common/Footer'
+import SectionTwoNew from './SectionTwoNew'
 
 const Home = () => {
   return (
@@ -16,11 +17,12 @@ const Home = () => {
         {/* <NavBar/> */}
         <SectionOne/>
         <SectionTwo/>
-        <SectionThree/>
-        <SectionFour/>
-        <SectionFive/>
-        <SectionSix/>
-        <SectionSeven/>
+        {/* <SectionTwoNew/> */}
+        {/* <SectionThree/> */}
+        {/* <SectionFour/> */}
+        {/* <SectionFive/> */}
+        {/* <SectionSix/> */}
+        {/* <SectionSeven/> */}
         {/* <Footer/> */}
         {/* <SectionOne/> */}
         

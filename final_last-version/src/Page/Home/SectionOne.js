@@ -5,7 +5,7 @@ import imgOne from './Home-assets/img-1.png'
 const SectionOne = () => {
   return (
     <div className='section-one-container'>
-        <div className='section-one grid-system'>
+        <div className='section-one secOne-grid-system'>
           
           <img src={imgOne} draggable="false" />
           <div className='section-one-para'>

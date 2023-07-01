@@ -27,13 +27,13 @@ const SectionTwoNew = () => {
     const viewportWidth = useWindowSize();
   return (
     <div className='section-two-containerNew'>
-        <div className='section-twoNew grid-system'>
+        <div className='section-twoNew secTwoNew-grid-system'>
           <p className='two-headlineNew'>Our Mission</p>     
           <p className='two-subheadlineNew'>At our company, we are committed to serving and enriching the holistic wellness of older adults. We do that {viewportWidth>1030 ? <br/>:null}by providing them with a wearable device that monitors their health and safety, and connects them with {viewportWidth>1030 ? <br/>:null}their loved ones and caregivers. Our mission is to erase boundaries and empower older adults to live life to {viewportWidth>1030 ? <br/>:null}the fullest.</p>
         </div>
 
         {viewportWidth>975?
-        <div className='section-twoNew grid-system'>
+        <div className='section-twoNew secTwoNew-grid-system'>
         <div className='mission-cardNew card1New'>
                 <img className='card-imgNew card-img-oneNew' src={quality1}/>
                 <p className='card-headingNew'>Quality</p>
@@ -87,6 +87,7 @@ const SectionTwoNew = () => {
                     <p className='card-subheadingNew'>We provide personalized<br/>care for elderly people<br/>using advanced<br/>technology that monitors<br/>their health and well<br/>being.</p>
                 </div>
           </SwiperSlide>
+          
         </Swiper>:null}
         </div>
   )

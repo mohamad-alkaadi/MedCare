@@ -7,7 +7,6 @@ import Register from './Page/Register';
 import About from './Page/About/About';
 import SignIn from './Page/Signin/SignIn';
 import SectionTwoNew from './Page/Home/SectionTwoNew';
-import Hello from './Hello'
 function App() {
   return (
     <div className="App">

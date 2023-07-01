@@ -144,10 +144,10 @@ const SectionThree = () => {
 
   return (
     <div className='section-three-container'>
-        <div className='section-three grid-system'>
+        <div className='section-three secThree-grid-system'>
   
           <div className='benefits-text'>
-            <p className='ben-title'>Membership benefits<br/>you'll enjoy</p>
+            <p className='ben-title'>Membership benefits{width>294?<br/>:null} you'll enjoy</p>
             <div className='sub-benefits'>
             <div className='sub-ben text-one'>
                   

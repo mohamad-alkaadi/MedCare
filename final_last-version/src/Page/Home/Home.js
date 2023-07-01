@@ -10,22 +10,22 @@ import SectionSeven from './SectionSeven'
 import SectionSix from './SectionSix'
 import Footer from '../../common/Footer'
 import SectionTwoNew from './SectionTwoNew'
-
+import Hello from './Hello'
 const Home = () => {
   return (
     <div className='home'>
         {/* <NavBar/> */}
         <SectionOne/>
-        <SectionTwo/>
-        {/* <SectionTwoNew/> */}
-        {/* <SectionThree/> */}
-        {/* <SectionFour/> */}
-        {/* <SectionFive/> */}
-        {/* <SectionSix/> */}
+        {/* <SectionTwo/> */}
+        <SectionTwoNew/>
+        <SectionThree/>
+        <SectionFour/>
+        <SectionFive/>
+        <SectionSix/>
         {/* <SectionSeven/> */}
         {/* <Footer/> */}
         {/* <SectionOne/> */}
-        
+        {/* <Hello/> */}
     </div>
   )
 }

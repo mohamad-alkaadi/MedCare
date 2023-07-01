@@ -1,11 +1,10 @@
-/* 
-.grid-system{
+.secFour-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
     margin:0 2rem;
   }
-   */
+  
 .section-four-container{
     background-color: #00544f;
     min-height: 450px;
@@ -73,7 +72,7 @@
     }
 }
 @media (max-width:464px){
-    .grid-system{
+    .secFour-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin:auto;

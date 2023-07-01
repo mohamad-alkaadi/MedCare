@@ -5,7 +5,7 @@ import secFive from './Home-assets/sec5.png'
 const SectionFive = () => {
   return (
     <div className='sec-five-container'>
-        <div className='section-five grid-system'>
+        <div className='section-five secFive-grid-system'>
             <div className='sec-five-text'>
                 <div className='five-title'>
                     About us

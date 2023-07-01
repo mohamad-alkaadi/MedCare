@@ -2,7 +2,7 @@
     background-color: #00544f;
 }
 
-.grid-system{
+.secTwoNew-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
@@ -137,7 +137,7 @@
 }
 
 @media (max-width:464px){
-    .grid-system{
+    .secTwoNew-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin:auto;

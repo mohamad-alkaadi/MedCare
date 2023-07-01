@@ -1,7 +1,13 @@
+.secSix-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:0 2rem;
+  }
+  
 .section-six-container{
     background-color: #00544f;
     min-height: 450px;
-    /* min-height: 350px; */
     display: grid;
     align-content: center;
     justify-content: center;
@@ -18,51 +24,32 @@
     justify-self: center;
     text-align: center;
     font-size: 4rem;
-}
-.sec-six-subtext{
-    grid-column: span 12;
-    text-align: center;
-    justify-self: center;
-    font-size: 1.2rem;
     margin-bottom: 11px;
-    width: 90%;
 }
+
 @media (max-width:1270px){
     .sec-six-text{
         font-size: 3.41rem;
-    }
-    .sec-six-subtext{
-        font-size: 1.1rem;
     }
 }
 @media (max-width:1093px){
     .sec-six-text{
         font-size: 3.1rem;
     }
-    .sec-six-subtext{
-        font-size: 1rem;
-    }
 }
 @media (max-width:1000px){
     .sec-six-text{
         font-size: 2.8rem;
     }
-
 }
 @media (max-width:910px){
     .sec-six-text{
         font-size: 2.7rem;
     }
-    .sec-six-subtext{
-        font-size: .9rem;
-    }
 }
 @media (max-width:616px){
     .sec-six-text{
         font-size: 2.6rem;
-    }
-    .sec-six-subtext{
-        font-size: .8rem;
     }
 }
 @media (max-width:593px){
@@ -82,6 +69,21 @@
 
     .sec-six-text{
         font-size: 2rem;
+    }
+}
+@media (max-width:464px){
+    .secSix-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+    .sec-six-text{
+        grid-column: span 4;
+        justify-self: center;
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 11px;
     }
 }
 @media (max-width:456px){

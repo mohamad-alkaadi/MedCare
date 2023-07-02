@@ -22,7 +22,7 @@ const Home = () => {
         <SectionFour/>
         <SectionFive/>
         <SectionSix/>
-        {/* <SectionSeven/> */}
+        <SectionSeven/>
         {/* <Footer/> */}
         {/* <SectionOne/> */}
         {/* <Hello/> */}

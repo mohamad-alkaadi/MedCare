@@ -1,5 +1,6 @@
 .section-two-containerNew{
     background-color: #00544f;
+    padding-bottom: 1rem;
 }
 
 .secTwoNew-grid-system{
@@ -81,7 +82,7 @@
     pointer-events: none;
 }
 
-.swiper{
+.swiper-secTwoNew{
     grid-column: span 12;
     overflow: hidden;
 } 
@@ -125,6 +126,7 @@
     .mission-cardNew{
         padding-right:6.5rem;
         padding-left:6.5rem;
+        margin: auto;
     } 
     
 }
@@ -153,7 +155,7 @@
     grid-column: span 4;
     
 }
-.swiper{
+.swiper-secTwoNew{
     grid-column: span 4;
 }
 }

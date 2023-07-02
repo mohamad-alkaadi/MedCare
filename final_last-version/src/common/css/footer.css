@@ -1,6 +1,15 @@
 .footer-container{
     background-color: #00544f;
 }
+
+.footer-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    /* margin:0 2rem; */
+    margin:auto;
+  }
+
 .footer{
     padding: 40px 0px 10px 0px;
     grid-template-rows: repeat(1fr,5);
@@ -169,7 +178,7 @@
 
 /* ------------for small screens */
 @media (max-width:464px){
-    .grid-system{
+    .footer-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         padding-left: 1rem;

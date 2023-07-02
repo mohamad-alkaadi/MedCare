@@ -27,7 +27,7 @@ function NavBar() {
     return (
        <>
        <div className='nav-container'>
-        <div className='navigation grid-system'>
+        <div className='navigation navBar-grid-system'>
                     <p className='headerlogo'>MedCare</p>
                     <nav className='nav-sec'>
                         {links.map((link) => {

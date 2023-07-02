@@ -2,8 +2,16 @@
     max-width:1500px;
     margin: 30px auto;
     /* background-color: red; */
+    /* background-color: lightcoral; */
 }
 
+.secSeven-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    /* margin:0 2rem; */
+    margin:auto;
+  }
 
 .seven-header{
     margin-top: 2rem;
@@ -147,6 +155,11 @@
 
 }
 
+@media (max-width:1401px){
+    .seven-toggle-time{
+        margin-bottom: 2rem;
+    }
+}
 @media (min-width:1400px){
 
     .seven-card:hover{
@@ -162,39 +175,106 @@
     
 }
 /* ======================================================= */
-.seven-slide{
-    display: none;
+.swiper-secSeven{
+    grid-column: span 12;
 }
 
+@media (max-width:1349px){
+       
+    .seven-card{
+        width: 40rem;
+    }
+}
+@media (max-width:1285px){
+       
+    .seven-card{
+        width: 37rem;
+    }
+}
+@media (max-width:1187px){
+       
+    .seven-card{
+        width: 35rem;
+    }
+}
+@media (max-width:1123px){
+       
+    .seven-card{
+        width: 32rem;
+    }
+}
+@media (max-width:1123px){
+       
+    .seven-card{
+        width: 28rem;
+    }
+}
+@media (max-width:885px){
+       
+    .seven-card{
+        width: 30rem;
+        margin: auto;
+    }
 
-@media (max-width:1400px){
-    .seven-normal{
-        display: none;
-    }
+}
+@media (max-width:565px){
     
-    .seven-slide{
-        display: grid;
-        margin-left: 2rem;   
-    }
-    
-   
-    .seven-inner-carousel{
-       display: grid;
-       justify-content: space-between;
-       grid-template-columns: 1fr 1fr 1fr;
-    }
-    .seven-carousel{
-        overflow: hidden;
-        grid-column: span 12;
+    .seven-toggle-time{
+        margin-bottom: 2rem;
     }
 }
 
+@media (max-width:487px){
+    .seven-card {
+        /* width: 24rem; */
+        width: 24rem;
+    }
+}
+@media (max-width:391px){
+    .seven-card {
+        /* width: 24rem; */
+        width: 22rem;
+        height: 30rem;
+    }
+}
+@media (max-width:487px){
+    .seven-card-header{
+        font-size: 1.4rem;
+    }
+    .seven-card-price{
+        font-size: 3.5rem; 
+    }
+}
+
+@media (max-width:354px){
+    .seven-card {
+        width: 19rem;
+        height: 27rem;
+    }
+    .seven-card-header{
+        font-size: 1.4rem;
+    }
+    .seven-card-price{
+        font-size: 3rem; 
+    }
+    .seven-card-benefits{
+        font-size: 1.3rem;
+    }
+    .sec-seven-btn{
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------------------------------- */
 @media (max-width:464px){
-    .grid-system{
+    .secSeven-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin:auto;
         width: 100%;
+    }
+    .swiper-secSeven{
+        grid-column: span 4;
     }
     .seven-header{
         grid-column: span 4;

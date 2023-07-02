@@ -10,14 +10,14 @@ import SectionTwoNew from './Page/Home/SectionTwoNew';
 function App() {
   return (
     <div className="App">
-      {/* <NavBar/> */}
+      <NavBar/>
       <Home/>
       {/* <Register/> */}
       {/* <Services/> */}
       {/* <About/> */}
       {/* <SignIn/> */}
       {/* <SectionTwoNew/> */}
-      {/* <Footer/> */}
+      <Footer/>
       {/* <Hello/> */}
     </div>
   );

@@ -1,9 +1,16 @@
 
 .nav-container{
-    background-color: gray;
-    /* background-color: #abbde5; */
+    background-color: #fff;
 }
 
+.navBar-grid-system{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 2rem;
+  /* margin:0 2rem; */
+  margin:auto;
+}
+  
 .navigation{
     height: 4.875rem;
     padding: 20px 40px;
@@ -167,7 +174,7 @@
 
 /* ------------4 column grid for phone */
 @media (max-width:464px){
-  .grid-system{
+  .navBar-grid-system{
       display: grid;
       grid-template-columns: repeat(4,1fr);
       margin:auto;

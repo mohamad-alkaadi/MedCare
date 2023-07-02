@@ -54,6 +54,7 @@ const SectionTwoNew = () => {
         {viewportWidth<975?
         
         <Swiper
+          className='swiper-secTwoNew'
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={1}
           slidesPerView={2}

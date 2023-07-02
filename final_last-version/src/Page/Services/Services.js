@@ -10,14 +10,14 @@ import ServiceEight from './ServiceEight'
 const Services = () => {
   return (
     <div>
-        <ServiceOne/>
+        {/* <ServiceOne/> */}
         <ServiceTwo/>
-        <ServiceThree/>
-        <ServiceFour/>
-        <ServiceFive/>
-        <ServiceSix/>
-        <ServiceSeven/>
-        <ServiceEight/>
+        {/* <ServiceThree/> */}
+        {/* <ServiceFour/> */}
+        {/* <ServiceFive/> */}
+        {/* <ServiceSix/> */}
+        {/* <ServiceSeven/> */}
+        {/* <ServiceEight/> */}
     </div>
   )
 }

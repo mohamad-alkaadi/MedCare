@@ -8,7 +8,7 @@ const ServiceOne = () => {
 
   return (
     <div className='service-one-container'>
-        <div className='service-one grid-system'>
+        <div className='service-one serviceOne-grid-system'>
             <div className="ser-one-text">
                 <div className='ser-one-stitle'>
                     Services

@@ -115,25 +115,30 @@
 @media(max-width:1171px){
     .footer-logo{
         grid-column: span 3;
+        margin-left: 1rem;
         grid-row: 1;
         justify-content: start;
         align-content: center;
         margin-bottom: 1rem;
     }
+    
     .footer-company-links{
         grid-column: span 12;
         grid-row: 2;
         display: flex;
         justify-content: flex-start;
+        
     }
     .footer-company-title,.footer-quick-title{
         display: grid;
         justify-content: center;
         align-content: center;
         margin-right: 2rem;
+        margin-left: 1rem;
     }
     .footer-links{
         margin:0;
+        align-self: center;
         margin-right: 2rem;
     }
     .footer-quick-links{
@@ -146,6 +151,7 @@
 
     .footer-contact-us{
         grid-column: span 12;
+        margin-left: 1rem;
     }
     
     .footer-social{
@@ -162,6 +168,8 @@
     .footer-copyright{
         grid-row: 5;
         grid-column: span 12;
+        margin-left: 1rem;
+
     }
 }
 
@@ -186,10 +194,13 @@
         width: 100%;
         row-gap: 1px;        
     }
-
+    .footer-contact-us{
+        grid-column: span 4;
+        margin-left: 0;
+    }
     .footer-logo{
         grid-column: span 4;
-        /* margin-bottom: 2rem; */
+        margin-left: 0;
     }
 
     .footer-company-links, .footer-quick-links{
@@ -200,11 +211,13 @@
 
     .footer-company-title,.footer-quick-title,.footer-contact-title{
         margin-top: 2rem;
+        margin-left: 0;
     }
 
     .footer-links{
         margin-right: 0;
         margin-top: 1rem;
+        align-self: start;
     }
 
     
@@ -223,6 +236,10 @@
     .footer-copyright{
         grid-column: span 4;
         grid-row: 6;
+        margin-left: 0;
     }
-    
+    .footer-social-icon{
+        margin-left: 0px;
+        margin-right: 1.9rem;
+    }
 }

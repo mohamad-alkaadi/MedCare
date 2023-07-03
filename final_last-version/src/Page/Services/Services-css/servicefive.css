@@ -1,8 +1,13 @@
 .ser-five-container{
-    /* background-color: #abbde5; */
-    background-color: #fff;
-
+    background-color: lightblue;
 }
+.ServiceFive-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+}
+
 .ser-five{
     max-width: 1500px;
     margin:30px auto;
@@ -11,7 +16,8 @@
 }
 .ser-five-title{
     grid-column: span 12;
-    font-size: 5rem;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
 }
 
 .ser-five-title{
@@ -71,6 +77,12 @@
 
 }
 
+@media(max-width:1400px){
+    .ser-five-title{
+        font-size: 4.3rem;
+    }
+}
+
 @media(max-width:1335px){
     .five-right-para{
         margin-top: 2.5rem;
@@ -78,20 +90,73 @@
 }
 
 @media(max-width:1022px){
+    .ser-five-title{
+        text-align: start;
+        font-size: 3.9rem;
+        margin-bottom: 0;
+    }
     .five-right-para{
-        margin-top: 0rem;
+        margin-top: 0;
     }
     .five-right-pone, .five-right-ptwo{
         grid-column: span 12;
-        /* background-color: lightblue; */
     }
 }
 
-@media(max-width:647px){
+
+@media(max-width:851px){
+    .ser-five-title{
+        font-size: 3.7rem;
+    }
     .five-right-para{
+        margin-top: 0;
+    }
+}
+
+@media(max-width:810px){
+    .ser-five-title{
+        font-size: 3.3rem;
+    }
+}
+
+@media(max-width:727px){
+    .ser-five-title{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+}
+@media(max-width:682px){
+    .five-right-para{
+        /* margin-top: 2rem; */
+    }
+}
+
+@media(max-width:673px){
+    .five-right-paraSix{
         margin-top: 2rem;
     }
 }
+@media(max-width:566px){
+    .five-right-paraSix, .five-right-paraTwo{
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media(max-width:545px){
+    .ser-five-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:553px){
+    .five-right-paraOne{
+        margin-top: 2rem;
+    }
+}
+
 @media(max-width:515px){
     .five-right-title{
         font-size: 1.6rem;
@@ -100,28 +165,132 @@
     .five-right-para{
         font-size: 1rem;
         margin-top: 1.8rem;
-    }
-    
-    
+    }   
 }
-/* @media(max-width:497px){
-    .five-right-para{
-        margin-top: 4rem;
-    }
-} */
+
+@media(max-width:500px){
+    .ser-five-title{
+        font-size: 2.7rem;
+        text-align: center;
+    }   
+}
+
 
 @media (max-width:464px){
-    .grid-system{
+    .ServiceFive-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         width: 100%;
     }
-   
+
+    .ser-five-title{
+        grid-column: span 4;
+    }
+    .five-right-pone, .five-right-ptwo{
+        grid-column: span 4;
     }
 
-@media (max-width:441px){
+}
+
+@media (max-width:454px){
+    .ser-five-title{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:442px){
     .five-right-para{
-        margin-top: 4rem;
+        margin-top: 2.2rem;
     }
    
+}
+
+@media (max-width:441px){
+    .five-right-paraSix{
+        margin-top: 4.2rem;
     }
+   
+}
+@media (max-width:410px){
+    .five-right-paraTwo{
+        margin-top: 4.2rem;
+    }
+   
+}
+
+@media (max-width:400px){
+    
+    .five-right-img img{
+        /* width: 80%; */
+    }
+    .five-right-title{
+        font-size: 1.4rem;
+    }
+    
+    .five-right-para{
+        font-size: .9rem;
+        margin-top: 1.4rem;
+    }  
+
+    .five-right-paraSix{
+        margin-top: 3.3rem;
+    }
+}
+
+@media (max-width:384px){
+
+    .five-right-paraTwo{
+        margin-top: 3.3rem;
+    }
+}
+
+@media (max-width:359px){
+
+    .five-right-title{
+        font-size: 1.3rem;
+    }
+
+    .five-right-para{
+        margin-top: 1rem;
+    }
+    .five-right-paraSix, .five-right-paraTwo{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:343px){
+
+    .five-right-title{
+        font-size: 1.3rem;
+    }
+
+    .five-right-para{
+        margin-top: 1rem;
+    }
+    .five-right-paraSix{
+        margin-top: 4.4rem;
+    }
+    .five-right-paraTwo{
+        margin-top: 2.7rem;
+    }
+}
+
+@media (max-width:336px){
+    .five-right-paraOne{
+        margin-top: 2.7rem;
+    }
+   
+}
+
+@media (max-width:311px){
+    .five-right-paraOne{
+        margin-top: 4.3rem;
+    }
+   
+}
+@media (max-width:308px){
+    .five-right-paraFour{
+        margin-top: 2.6rem;
+    }
+   
+}

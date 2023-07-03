@@ -22,7 +22,7 @@ const ServiceFive = () => {
   const viewportWidth = useWindowSize()
   return (
     <div className='ser-five-container'>
-      <div className='ser-five grid-system'>
+      <div className='ser-five ServiceFive-grid-system'>
           <div className='ser-five-title'>
               Why MedCare is right for you
           </div>
@@ -36,7 +36,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                         24/7 access to patient {(viewportWidth<=1334 && viewportWidth>1022)? <br/>:null}record
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraOne'>
                     View health data anytime with our secure online platform.                
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                         24/7 online patent status{(viewportWidth<=1334 && viewportWidth>1022)? <br/>:null} view
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraTwo'>
                     View your patent status anytime on our website with real-time data.                </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                         Easily book {(viewportWidth<=1334 && viewportWidth>1022)? <br/>:null}appointments       
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraThree'>
                         Our service lets you schedule visits with health experts in a few clicks.                </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                     coverage when you {(viewportWidth<=1334 && viewportWidth>1022)? <br/>:null}need it                
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraFour'>
                     our medical team is on call 24/7 via phone, email, and our app so you can leave the after-hour calls to us
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                         Quality care on your {(viewportWidth<=1334 && viewportWidth>1022)? <br/>:null}hand
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraFive'>
                     we monitor your health and provide medical advice based on your symptoms and data.
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const ServiceFive = () => {
                     <div className='five-right-title'>
                         appointment and medication reminder
                     </div>
-                    <div className='five-right-para'>
+                    <div className='five-right-para five-right-paraSix'>
                         We Help you stay on track with appointments and medications using our smartwatch
                     </div>
                 </div>

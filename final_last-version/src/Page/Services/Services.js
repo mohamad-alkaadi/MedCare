@@ -13,8 +13,8 @@ const Services = () => {
         {/* <ServiceOne/> */}
         {/* <ServiceTwo/> */}
         {/* <ServiceThree/> */}
-        <ServiceFour/>
-        {/* <ServiceFive/> */}
+        {/* <ServiceFour/> */}
+        <ServiceFive/>
         {/* <ServiceSix/> */}
         {/* <ServiceSeven/> */}
         {/* <ServiceEight/> */}

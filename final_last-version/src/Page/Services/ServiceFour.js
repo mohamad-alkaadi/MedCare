@@ -11,7 +11,7 @@ const ServiceFour = () => {
   }
   return (
     <div className='ser-four-container'>
-      <div className='ser-four grid-system'>
+      <div className='ser-four serviceFour-grid-system'>
           <div className='ser-four-title'>
           Your on-the-go helper
           </div>

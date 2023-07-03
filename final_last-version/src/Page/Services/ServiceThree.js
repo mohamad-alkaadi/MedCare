@@ -4,7 +4,7 @@ import watch from './Services-assets/last-edit-black.png'
 const ServiceThree = () => {
   return (
     <div className='ser-three-container'>
-        <div className='ser-three grid-system'>
+        <div className='ser-three serviceThree-grid-system'>
             <div className='sec-three-text'>
                 <div className='ser-three-title'>
                 The ultimate solution for your health needs

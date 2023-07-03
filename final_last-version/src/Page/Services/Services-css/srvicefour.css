@@ -3,11 +3,14 @@
     padding-bottom: 5rem;
     background-color: #00544f;
 }
-/* .ser-four{
-    max-width: 1500px;
-    margin:30px auto;
-    padding: 20px;
-} */
+.serviceFour-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+  }
+
+
 .ser-four-title{
     grid-column: span 12;
     text-align: center;
@@ -35,32 +38,125 @@
     justify-self: center;
 }
 
+@media (max-width:1600px){
+    .ser-four-title{
+        font-size: 4.5rem;
+    }
+    .ser-four-subtext{
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width:1300px){
     .ser-four-title{
         font-size: 4rem;
+        margin-bottom: 0;
     }
     .ser-four-subtext{
         font-size: 1.4rem;
     }
 }
-@media (max-width:720px){
+
+
+
+@media (max-width:1240px){
     .ser-four-title{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
     .ser-four-subtext{
         font-size: 1.3rem;
     }
 }
-@media (max-width:464px){
-    .grid-system{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
+
+@media (max-width:1130px){
     .ser-four-title{
-        font-size: 3rem;
+        font-size: 3.6rem;
+        margin-bottom: 1rem;
+    }
+    .ser-four{
+        row-gap: 0;
     }
     .ser-four-subtext{
         font-size: 1.2rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (max-width:950px){
+    .ser-four-title{
+        font-size: 3.5rem;
+    }
+    .ser-four-subtext{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:720px){
+    .ser-four-title{
+        font-size: 3.5rem;
+        /* margin-bottom: 1.2rem; */
+    }
+    .ser-four-subtext{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:660px){
+    .ser-four-title{
+        font-size: 3.2rem;
+    }
+    .ser-four-subtext{
+        /* font-size: 1.15rem; */
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:530px){
+    .ser-four-title{
+        font-size: 2.8rem;
+    }
+    .ser-four-subtext{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:464px){
+    .serviceFour-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+        /* row-gap: 1px;      */
+    }
+    .ser-four-title{
+        font-size: 3rem;
+        grid-column: span 4;
+    }
+    .ser-four-video{
+        grid-column: span 4;
+    }
+
+    .ser-four-subtext{
+        grid-column: span 4;
+        font-size: 1.18rem;
         margin-top:1rem;
+    }
+}
+
+@media (max-width:372px){
+    .ser-four-title{
+        font-size: 2.8rem;
+    }
+    .ser-four-subtext{
+        font-size: 1.15rem;
+     
+    }
+}
+@media (max-width:345px){
+    .ser-four-title{
+        font-size: 2.65rem;
+    }
+    .ser-four-subtext{
+        font-size: 1.1rem;
+     
     }
 }

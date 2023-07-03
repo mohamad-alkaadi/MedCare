@@ -1,3 +1,10 @@
+.serviceThree-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+  }
+
 .ser-three-container{
     background-color: #fff;
     min-height: 800px;
@@ -47,27 +54,75 @@
     justify-self: center;
 }
 
+@media(max-width:1492px){
+    .ser-three-title{
+        font-size: 3.8rem;
+        padding-bottom: 1.4rem;
+    }
+    
+    .ser-three-para{
+        font-size: 1.22rem;
+    }
+}
+
+@media(max-width:1398px){
+    .ser-three-title{
+        font-size: 3.6rem;
+        padding-bottom: 1.4rem;
+    }
+    
+    .ser-three-para{
+        font-size: 1.2rem;
+    }
+}
+
 @media(max-width:1370px){
     .ser-three-container{
         min-height: 600px;
     }
 }
 
-@media(max-width:1200px){
+@media(max-width:1240px){
     .ser-three-title{
-        font-size: 3.8rem;
+        font-size: 3.4rem;
+        padding-bottom: 1rem;
     }
+    
     .ser-three-para{
-        font-size: 1.3rem;
+        font-size: 1.15rem;
     }
 
 }
-@media(max-width:1113px){
+@media(max-width:1175px){
     .ser-three-title{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
+        padding-bottom: 1rem;
     }
+    
     .ser-three-para{
-        font-size: 1.2rem;
+        font-size: 1.12rem;
+    }
+
+}
+@media(max-width:1145px){
+    .ser-three-title{
+        font-size: 3.1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .ser-three-para{
+        font-size: 1.12rem;
+    }
+  
+}
+@media(max-width:1090px){
+    .ser-three-title{
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
+    
+    .ser-three-para{
+        font-size: 1.03rem;
     }
   
 }
@@ -77,16 +132,19 @@
         grid-row: 1;
     }
     .ser-three-title{
-        font-size: 4rem;
+        font-size: 3.6rem;
+        /* margin-bottom: 1rem; */
     }
     .ser-three-para{
-        font-size: 1.2rem;
+        font-size: 1.16rem;
     }
   
     .service-three-img{
         grid-column: span 12;
     }
-    
+    .ser-three-img{
+        width: 80%;
+    }
 }
 
 
@@ -103,27 +161,47 @@
 @media(max-width:866px){
     
     .ser-three-title{
-        font-size: 3.2rem;
-        margin-bottom: 1.5rem;
+        font-size: 3.6rem;
+        margin-bottom: .2rem;
     }
     .ser-three-para{
         font-size: 1.1rem;
     }
 
 }
-@media(max-width:672px){
+@media(max-width:750px){
     
     .ser-three-title{
-        font-size: 3.1rem;
-        margin-bottom: 1.5rem;
+        font-size: 3.2rem;
+        margin-bottom: .2rem;
     }
     .ser-three-para{
         font-size: 1rem;
     }
     
 }
+
+@media(max-width:565px){
+    .ser-three-title{
+        font-size: 3rem;
+        
+    }
+    .ser-three-para{
+        font-size: 1rem;
+    }
+}
+@media(max-width:484px){
+    .ser-three-title{
+        font-size: 3rem;
+        
+    }
+    .ser-three-para{
+        font-size: 1rem;
+    }
+}
+
 @media(max-width:464px){
-    .grid-system{
+    .serviceThree-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin:auto;
@@ -134,13 +212,20 @@
     }
     .service-three-img{
         grid-column: span 4;
+        /* width: 100%; */
     }
     
 }
 
-@media(max-width:359px){
+@media(max-width:384px){
+    .ser-three-title{
+        font-size: 3rem;
+        
+    }
     .ser-three-para{
+        font-size: 1rem;
         margin-bottom: .5rem;
+
     }
     
 }

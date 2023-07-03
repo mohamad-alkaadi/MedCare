@@ -12,8 +12,8 @@ const Services = () => {
     <div>
         {/* <ServiceOne/> */}
         {/* <ServiceTwo/> */}
-        <ServiceThree/>
-        {/* <ServiceFour/> */}
+        {/* <ServiceThree/> */}
+        <ServiceFour/>
         {/* <ServiceFive/> */}
         {/* <ServiceSix/> */}
         {/* <ServiceSeven/> */}

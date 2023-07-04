@@ -1,3 +1,10 @@
+.serviceSeven-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:0 2rem;
+  }
+  
 .service-seven-container{
     background-color: #00544f;
     min-height: 450px;
@@ -62,6 +69,20 @@
 
     .ser-seven-text{
         font-size: 2rem;
+    }
+}
+@media (max-width:464px){
+    .serviceSeven-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+    }
+    .ser-seven-text{
+        grid-column: span 4;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 11px;
     }
 }
 @media (max-width:456px){

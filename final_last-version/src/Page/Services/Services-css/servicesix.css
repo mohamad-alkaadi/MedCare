@@ -5,6 +5,13 @@
 
 
 }
+.serviceSix-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+}
+
 .section-six{
     max-width: 1500px;
     margin:30px auto;
@@ -58,4 +65,166 @@
 }
 .ser-six-icon{
     color: #00544f;
+}
+
+@media (max-width:1616px){
+    .ser-six-title{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:1222px){
+    .ser-six-title{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width:1117px){
+    .ser-six-title{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:1100px){
+    
+.ser-six-headdata{
+    font-size: 1.4rem;
+   
+}
+.ser-six-bodytitle{
+    font-size: 1.4rem;
+}
+
+.ser-six-bodydata{
+    font-size: 1.1rem;
+}
+.ser-six-icon{
+    size: 10px;
+}
+}
+
+@media (max-width:1051px){
+    .ser-six-title{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width:993px){
+    .ser-six-title{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:888px){
+    .ser-six-columnThree{
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:699px){
+    .ser-six-title{
+        font-size: 2.5rem;
+        padding:0 1rem
+    }
+}
+
+@media (max-width:430px){
+    .ser-six-title{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:499px){
+    .ser-six-title{
+        font-size: 2.1rem;
+    }
+}
+
+
+@media (max-width:392px){
+    .ser-six-headdata{
+        font-size: 1.2rem;
+    }
+    .ser-six-bodytitle{
+        font-size: 1.2rem;
+    }
+    
+    .ser-six-bodydata{
+        font-size: 1rem;
+    }
+    .ser-six-icon{
+        width: 1rem;
+    }
+}
+
+@media (max-width:370px){    
+.ser-six-table{
+    justify-self: start;
+    padding-left: 1rem;
+}
+
+}
+
+@media (max-width:366px){
+    .ser-six-title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:351px){
+    .ser-six-title{
+        font-size: 1.8rem;
+    }
+}
+/* 
+@media (max-width:575px){
+    .ser-six-title{
+        font-size: 2.2rem;
+    }
+} */
+/* 
+@media (max-width:479px){
+    .ser-six-title{
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 3rem;
+    }
+} */
+/* 
+@media (max-width:405px){
+    .ser-six-title{
+        font-size: 2rem;
+    }
+} */
+
+@media (max-width:464px){
+    .serviceSix-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+
+    .ser-six-title{
+    grid-column: span 4;
+    }
+       
+    .ser-six-table{
+    grid-column: span 4;
+    }
+}
+
+@media (max-width:318px){
+    .ser-six-headdata{
+        font-size: 1.1rem;
+    }
+    .ser-six-bodytitle{
+        font-size: 1.1rem;
+    }
+    
+    .ser-six-bodydata{
+        font-size: .9rem;
+    }
+    .ser-six-icon{
+        width: .9rem;
+    }
 }

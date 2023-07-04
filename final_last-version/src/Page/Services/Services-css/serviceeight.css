@@ -1,7 +1,16 @@
 .service-eight-container{
     padding-top: 4rem;
     padding-bottom: 5rem;
+    background-color: lightblue;
 }
+
+.serviceEight-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+}
+
 .section-eight{
     max-width: 1500px;
     margin:30px auto;
@@ -36,10 +45,19 @@
     background-color: #fff;
 }
 .ser-eight-body{
-    padding: 1rem 5rem;
-
+    padding: 1rem 0;
 }
 
+.ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+    width: 176px;
+    
+}
+
+/* .ser-eight-columnFour{
+    padding-left: 22px;
+    padding-right: 22px;
+
+} */
 .ser-eight-headdata{
     font-size: 1.6rem;
     color: #00544f;
@@ -57,8 +75,187 @@
     font-size: 1.2rem;
     color: #00544f;
     text-align: center;
-
 }
 .ser-eight-icon{
     color: #00544f;
+}
+
+@media (max-width:1616px){
+    .ser-eight-title{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:1265px){
+    .ser-eight-body{
+        padding: 1rem 3rem;
+    
+    }
+    
+}
+
+@media (max-width:1222px){
+    .ser-eight-title{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width:1174px){
+    .ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+        width: 136px;
+    }
+}
+
+@media (max-width:1117px){
+    .ser-eight-title{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:1051px){
+    .ser-eight-title{
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (max-width:1000px){
+    .ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+        width: 116px;
+        
+    }
+    .ser-eight-columnTwo{
+        width: 126px;
+    }
+}
+
+
+@media (max-width:993px){
+    .ser-eight-title{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:985px){
+    .ser-eight-body{
+        padding: 1rem 3rem;
+    
+    }
+    
+}
+
+@media (max-width:964px){
+    .ser-eight-headdata{
+        font-size: 1.4rem;
+    }
+    .ser-eight-bodytitle{
+        font-size: 1.4rem;
+    }
+    .ser-eight-icon{
+        width: 1.4rem;
+    }
+    .ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+        width: 108px;
+        
+    }
+}
+@media (max-width:964px){
+    .ser-eight-headdata{
+        font-size: 1rem;
+    }
+    .ser-eight-bodytitle{
+        font-size: 1rem;
+    }
+    .ser-eight-icon{
+        width: 1rem;
+    }
+    .ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+        width: 88px;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .ser-eight-columnOne{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width:699px){
+    .ser-eight-title{
+        font-size: 2.5rem;
+        padding:0 1rem
+    }
+}
+
+@media (max-width:430px){
+    .ser-eight-title{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:499px){
+    .ser-eight-title{
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width:464px){
+    .serviceEight-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+    .ser-eight-title{
+        grid-column: span 4;
+        text-align: center;
+        font-size: 4rem;
+        color: #00544f;
+    
+    }
+    .ser-eight-table{
+        grid-column: span 4;
+        width: 80%;
+        justify-self: center;
+        margin: 5rem 0;
+    }
+}
+  
+@media (max-width:416px){
+    .ser-eight-table{
+        width: 95%;
+    }
+}
+@media (max-width:366px){
+    .ser-eight-title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:338px) {
+    .ser-eight-columnOne{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .ser-eight-headdata{
+        font-size: .9rem;
+    }
+    .ser-eight-bodytitle{
+        font-size: .9rem;
+    }
+    .ser-eight-icon{
+        width: .9rem;
+    }
+    .ser-eight-columnTwo,.ser-eight-columnThree,.ser-eight-columnFour{
+        width: 88px;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+}
+
+@media (max-width:351px){
+    .ser-eight-title{
+        font-size: 1.8rem;
+    }
 }

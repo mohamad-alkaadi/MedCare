@@ -2,8 +2,6 @@
     background-color: #eef6f4;
     padding-top: 4rem;
     padding-bottom: 4rem;
-
-
 }
 .serviceSix-grid-system{
     display: grid;
@@ -44,7 +42,6 @@
 }
 .ser-six-body{
     padding: 1rem 0;    
-    /* border-bottom: #00544f solid 2px; */
 }
 
 .ser-six-headdata{

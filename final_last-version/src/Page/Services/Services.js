@@ -10,13 +10,13 @@ import ServiceEight from './ServiceEight'
 const Services = () => {
   return (
     <div>
-        {/* <ServiceOne/> */}
-        {/* <ServiceTwo/> */}
-        {/* <ServiceThree/> */}
-        {/* <ServiceFour/> */}
-        {/* <ServiceFive/> */}
-        {/* <ServiceSix/> */}
-        {/* <ServiceSeven/> */}
+        <ServiceOne/>
+        <ServiceTwo/>
+        <ServiceThree/>
+        <ServiceFour/>
+        <ServiceFive/>
+        <ServiceSix/>
+        <ServiceSeven/>
         <ServiceEight/>
     </div>
   )

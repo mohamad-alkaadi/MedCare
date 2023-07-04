@@ -13,7 +13,7 @@ const AboutTwo = () => {
             Our Mission
           </div>
           <div className='about-two-para'>
-            we provide advanced and compassionate care to elderly individuals. We strive to enhance their quality of life by ensuring their physical, emotional, and social needs are met. Our team of highly trained professionals work closely with families and loved ones to create personalized care plans that promote independence and dignity. We are committed to fostering a safe and comfortable environment that promotes overall well-being and happiness.          
+          Our company is dedicated to improving the quality of life for the elderly by providing advanced care solutions that enable them to live independently. We leverage cutting-edge technology to monitor our clients' health and wellbeing, ensuring that they receive the attention they need whenever they need it. Our mission is to empower seniors to age with dignity and grace, knowing that they are always connected to the care and support they require to thrive.      
           </div>
         </div>
       </div>

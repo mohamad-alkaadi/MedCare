@@ -10,7 +10,7 @@ const AboutThree = () => {
             Our Story
           </div>
           <div className='about-three-para'>
-            we provide advanced and compassionate care to elderly individuals. We strive to enhance their quality of life by ensuring their physical, emotional, and social needs are met. Our team of highly trained professionals work closely with families and loved ones to create personalized care plans that promote independence and dignity. We are committed to fostering a safe and comfortable environment that promotes overall well-being and happiness.          
+            At our company, we care about the well-being and happiness of the elderly. We know that they deserve to live with dignity, independence and peace of mind. That's why we offer a service that allows them to stay connected with their loved ones and their health professionals, wherever they are.
           </div>
         </div>
         <div className='about-three-img'>

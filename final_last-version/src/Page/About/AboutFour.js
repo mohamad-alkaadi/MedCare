@@ -13,7 +13,7 @@ const AboutFour = () => {
             Our Goal
           </div>
           <div className='about-four-para'>
-            we provide advanced and compassionate care to elderly individuals. We strive to enhance their quality of life by ensuring their physical, emotional, and social needs are met. Our team of highly trained professionals work closely with families and loved ones to create personalized care plans that promote independence and dignity. We are committed to fostering a safe and comfortable environment that promotes overall well-being and happiness.          
+            Our goal is to provide the best care for the elderly in a convenient and advanced way. We understand that seniors have different needs and preferences, and we respect their independence and dignity. That's why we offer a service that allows them to stay connected with their loved ones and health professionals wherever they are, using a device that is easy to use and discreet. Our service monitors their well-being and alerts them and their caregivers in case of any issues, so they can enjoy their life with peace of mind.
           </div>
         </div>
       </div>

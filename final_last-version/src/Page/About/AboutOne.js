@@ -4,22 +4,22 @@ import logo from './about-assets/helthlogo.png'
 const AboutOne = () => {
   return (
     <div className='about-one-container'>
-    <div className='about-one grid-system'>
-        <div className="abo-one-text">
-            <div className='abo-one-stitle'>
-                About us
+        <div className='about-one aboutOne-grid-system'>
+            <div className="abo-one-text">
+                <div className='abo-one-stitle'>
+                    About us
+                </div>
+                <div className='abo-one-btitle'>
+                    Changing Healthcare for Good
+                </div>
             </div>
-            <div className='abo-one-btitle'>
-                Healthcare, without the headaches
+            <div className='abo-one-img'>
+                <img className='abo-one-watch' src={logo} draggable="false"/>
             </div>
-        </div>
-        <div className='abo-one-img'>
-            <img className='abo-one-watch' src={logo} draggable="false"/>
-        </div>
-       
+           
 
+        </div>
     </div>
-</div>
   )
 }
 

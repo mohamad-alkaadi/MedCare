@@ -3,13 +3,15 @@ import AboutOne from './AboutOne'
 import AboutTwo from './AboutTwo'
 import AboutThree from './AboutThree'
 import AboutFour from './AboutFour'
+import AboutNew from './AboutNew'
 const About = () => {
   return (
     <div>
-      <AboutOne/>
-      <AboutTwo/>
-      <AboutThree/>
-      <AboutFour/>
+      <AboutNew/>
+      {/* <AboutOne/> */}
+      {/* <AboutTwo/> */}
+      {/* <AboutThree/> */}
+      {/* <AboutFour/> */}
     </div>
   )
 }

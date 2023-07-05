@@ -4,7 +4,7 @@ import imgOne from './about-assets/aboutOne.png'
 const AboutTwo = () => {
   return (
     <div className='about-two-container'>
-      <div className='about-two grid-system'>
+      <div className='about-two aboutTwo-grid-system'>
         <div className='about-two-img'>
           <img className='about-one-photo' src={imgOne}/>
         </div>

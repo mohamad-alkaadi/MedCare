@@ -32,7 +32,7 @@
 }
 
 .abo-one-btitle{
-    font-size: 6rem;
+    font-size: 5rem;
     /* maybe 5 or 5.5 */
     color: #00544f;
     font-family: 'Roboto', sans-aboif;
@@ -49,7 +49,7 @@
 }
 
 .abo-one-watch{
-    width: 90%;
+    width: 85%;
     /* height: 50%; */
     justify-self: center;
     align-self: center;

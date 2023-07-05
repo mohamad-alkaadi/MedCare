@@ -1,6 +1,8 @@
 import React from 'react'
 import './about-css/about-one.css'
 import logo from './about-assets/helthlogo.png'
+// import logo from './about-assets/AboutUsGirl.png'
+
 const AboutOne = () => {
   return (
     <div className='about-one-container'>

@@ -1,7 +1,7 @@
 export const links = [
     {
         id:1,
-        url:'/home',
+        url:'/',
         text:'Home'
     },
     {

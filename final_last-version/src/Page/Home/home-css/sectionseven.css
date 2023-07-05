@@ -153,9 +153,15 @@
     width: 13.3rem;
     border-radius: 4px;
     background: #fff;
-    color: #005450;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-decoration: none;    
+    display: grid;
+    justify-content: center;
+    align-content: center;
 
+}
+.sec-seven-btn p{
+    color: #005450;
 }
 
 @media (max-width:1401px){
@@ -170,10 +176,16 @@
         background-color: #fff;
         
     }
-    .seven-card:hover  button{
+    .seven-card:hover  .sec-seven-btn p{
         color: #fff;
         background: #005450;
         cursor: pointer;
+        height: 2.6rem;
+        width: 13.3rem;
+        border-radius: 4px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
     
 }

@@ -13,11 +13,12 @@
   
 .navigation{
     height: 4.875rem;
-    padding: 20px 40px;
+    padding: 20px 20px;
     align-items: center;
 }
 .navigation .headerlogo{
     grid-column: span 3;
+    text-decoration: none;
     color: #00544f;
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
@@ -32,14 +33,14 @@
     justify-self: end;
 }
 
-.navigation nav a{
+.navigation nav .navbar-custom-link{
     margin-left: 2rem;
     text-decoration: none;
     color: #00544f;
     font-family: 'Roboto', sans-serif;
 
 }
-.navigation nav a:hover{
+.navigation nav .navbar-custom-link:hover{
   border-bottom: #068466 1px solid;
   color: #068466;
 }
@@ -52,6 +53,9 @@
     color: #ffffff;
     font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
+    margin-left: 2rem;
+    text-decoration: none;
+
 
 }
 

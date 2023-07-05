@@ -90,6 +90,7 @@
 .footer-copyright{
     grid-column: span 6;
     color: #fff;
+    margin-left: 10px;
 
 }
 
@@ -97,6 +98,7 @@
     grid-column: span 6;
     display: flex;
     justify-content: flex-end;
+    margin-right: 10px;
 }
 
 .footer-social-icon{

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './home-css/sectionone.css'
 import imgOne from './Home-assets/img-1.png'
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 const SectionOne = () => {
   return (
@@ -13,7 +14,7 @@ const SectionOne = () => {
             <p className='one-headline'>Where<br/>healthcare<br/>happens<br/>24/7</p>
          
             <p className='one-subheadline'>The best way to protect your loved ones without<br/>worrying about wasting your time</p>
-            <a className='one-button' href='#'>Sign up</a>
+            <Link className='one-button' to='/signin'>Sign in</Link>
           </div>
         </div>
         

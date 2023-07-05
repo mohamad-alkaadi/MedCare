@@ -1,7 +1,7 @@
-
 import React,{useState,useEffect} from 'react'
 import "./css/navbar.css"
-import {links} from './Data/navbar_data'
+import {links } from './Data/navbar_data'
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 function NavBar() { 
 
@@ -28,15 +28,17 @@ function NavBar() {
        <>
        <div className='nav-container'>
         <div className='navigation navBar-grid-system'>
-                    <p className='headerlogo'>MedCare</p>
+                    <Link to="/" className='headerlogo'>MedCare</Link>
                     <nav className='nav-sec'>
                         {links.map((link) => {
                         const {url,text} = link;
-                        return <a href={url}>{text}</a>
+                        return <CustomLink className="navbar-custom-link" to={url}>{text}</CustomLink>
                         })}
                         {/* <a href='#' className='s-up-button'>Sign up</a> */}
-                        <a href='#' id='s-in-button'>Sign in</a>      
+                        <CustomLink to='/signin' id='s-in-button'>Sign in</CustomLink>      
                     </nav>
+                    
+
                     {/*----------------------------  */}
 
                     <nav className="mob-nav-sec">
@@ -65,4 +67,15 @@ function NavBar() {
      )
    }
 
+   function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  
+    return (
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+    )
+  }
+  
 export default NavBar

@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import { useLocation } from "react-router-dom"
 import NavBar from '../../common/NavBar'
 import './home-css/home.css'
 import SectionOne from './SectionOne'
@@ -13,6 +14,11 @@ import SectionTwoNew from './SectionTwoNew'
 import Hello from './Hello'
 import BackToTop from '../../common/BackToTop'
 const Home = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className='home'>
         {/* <NavBar/> */}

@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from 'react-router-dom';
 
 function useWindowSize(){
     const [size,setSize]=useState(window.innerWidth);
@@ -54,7 +55,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay less every month, but more when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link to="/services" className='sec-seven-btn'><p>Learn More</p></Link>
                 </div>
 
                 <div className='seven-normal seven-card seven-card-two'>
@@ -65,7 +66,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay a moderate amount every month, and a moderate amount when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link className='sec-seven-btn'><p>Learn More</p></Link>
                 </div>
 
                 <div className='seven-normal seven-card seven-card-three'>
@@ -77,7 +78,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay more every month, but less or nothing when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link className='sec-seven-btn'><p>Learn More</p></Link>
                     </div></div></div>:null}
 
                     {/*------------------------- slider --------------------------------*/}
@@ -111,7 +112,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay less every month, but more when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link className='sec-seven-btn'><p>Learn More</p></Link>
                 </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -123,7 +124,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay a moderate amount every month, and a moderate amount when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link className='sec-seven-btn'><p>Learn More</p></Link>
                 </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -136,7 +137,7 @@ const SectionSeven = () => {
                     <div className='seven-card-content seven-card-benefits'>
                         pay more every month, but less or nothing when you need help
                     </div>
-                    <button className='sec-seven-btn'>Learn More</button>
+                    <Link className='sec-seven-btn'><p>Learn More</p></Link>
                     </div>
           </SwiperSlide>
           

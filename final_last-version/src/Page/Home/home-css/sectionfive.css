@@ -47,11 +47,20 @@
     font-size: 1.2rem;
     border: #00544f solid 1px;
 }
+
+.sec-five-button p{
+    text-decoration: none;
+    color: #00544f;
+}
+
 .sec-five-button:hover{
     background-color: #005450;
-    color: #fff;
-    border: none;
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.sec-five-button:hover p{
+    color: #fff;
 }
 
 .sec-five-img{

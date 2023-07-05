@@ -56,6 +56,7 @@
 
 .sub-ben-text{
     align-self: center;
+    border-radius: 0;
 }
 .section-three img{
     grid-column: 7/span 6;
@@ -81,7 +82,6 @@
 .sub-ben-text:hover{
     color: #fff;
     background-color: #00544f;
-    /* box-shadow: 0 0 10px #00544f, 0 0 40px #00544f, 0 0 80px #00544f; */
     text-align: center;
     padding: .5rem;
     transition-delay: 1s;

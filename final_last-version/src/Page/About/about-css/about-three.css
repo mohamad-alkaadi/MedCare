@@ -8,6 +8,15 @@
     gap: 2rem;
     margin:auto;
 }
+.hiddenAboutThree{
+    opacity: 0; 
+    /* transform: translateX(-100px); */
+    transition: opacity 1s, transform 1s;
+}
+.showAboutThree{
+    opacity: 1;
+    transform: translateX(0);
+}
 .about-three{
     max-width: 1500px;
     margin:30px auto;

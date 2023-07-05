@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './home-css/sectionone.css'
 import imgOne from './Home-assets/img-1.png'
 

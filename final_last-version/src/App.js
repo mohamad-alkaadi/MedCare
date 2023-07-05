@@ -7,14 +7,15 @@ import Register from './Page/Register';
 import About from './Page/About/About';
 import SignIn from './Page/Signin/SignIn';
 import SectionTwoNew from './Page/Home/SectionTwoNew';
+
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Home/>
+      {/* <Home/> */}
       {/* <Register/> */}
       {/* <Services/> */}
-      {/* <About/> */}
+      <About/>
       {/* <SignIn/> */}
       {/* <SectionTwoNew/> */}
       <Footer/>

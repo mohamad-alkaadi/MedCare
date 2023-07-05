@@ -1,6 +1,13 @@
 .about-four-container{
     background-color: #f7f7f7;
-    /* background-color: lightcoral; */
+}
+.hiddenAboutFour{
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+.showAboutFour{
+    opacity: 1;
+    transform: translateX(0);
 }
 .aboutFour-grid-system{
     display: grid;

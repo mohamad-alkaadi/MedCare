@@ -34,7 +34,7 @@ function NavBar() {
                         const {url,text} = link;
                         return <a href={url}>{text}</a>
                         })}
-                        <a href='#' className='s-up-button'>Sign up</a>
+                        {/* <a href='#' className='s-up-button'>Sign up</a> */}
                         <a href='#' id='s-in-button'>Sign in</a>      
                     </nav>
                     {/*----------------------------  */}
@@ -53,7 +53,7 @@ function NavBar() {
                               <a id='menu-item' href="#">Home</a>
                               <a id='menu-item' href="#">About</a>
                               <a id='menu-item' href="#">Services</a>
-                              <a id='menu-item' href="#">Sign in</a>
+                              {/* <a id='menu-item' href="#">Sign in</a> */}
                               <a id='menu-item' href="#">Sign up</a>
                           </div>                        
                     </nav>

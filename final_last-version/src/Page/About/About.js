@@ -9,9 +9,9 @@ const About = () => {
     <div>
       <AboutNew/>
       {/* <AboutOne/> */}
-      {/* <AboutTwo/> */}
-      {/* <AboutThree/> */}
-      {/* <AboutFour/> */}
+      <AboutTwo/>
+      <AboutThree/>
+      <AboutFour/>
     </div>
   )
 }

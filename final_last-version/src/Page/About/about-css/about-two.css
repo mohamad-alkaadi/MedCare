@@ -20,7 +20,7 @@
     display: grid;
 }
 
-.about-one-photo{
+.about-two-photo{
     justify-self: start;
     align-self: center;
     width: 98%;
@@ -91,20 +91,82 @@
 @media (max-width:800px){
     .about-two-img{
         grid-column: span 12;
+        grid-row: 1;
+    }
+    .about-two-photo{
+        margin: auto;
     }
     .about-two-text{
         grid-column: span 12;
+        grid-row: 2;
+
     }
     .about-two-title{
         font-size: 2.8rem;
         text-align: center;
         margin-bottom: .5rem;
+        margin-top: 0;
+        
 
     }
     .about-two-para{
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         padding-left: .1rem;
+    }
+}
+
+@media (max-width:550px){
+    .about-two-title{
+        font-size: 2.7rem;
+    }
+    .about-two-para{
+        font-size: 1.1rem;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:464px){
+    .aboutTwo-grid-system{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:auto;
+        width: 100%;
+        row-gap: 1px;        
+    }
+
+    .about-two-img{
+        grid-column: span 4;
+        display: grid;
+    }
+    
+    .about-two-text{
+        grid-column: span 4;
+        display: grid;
+        color: #00544f;
+    
+    }
+    
+}
+
+@media (max-width:460px){
+    .about-two-title{
+        font-size: 2.6rem;
+    }
+    .about-two-para{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:380px){
+    .about-two-title{
+        font-size: 2.5rem;
+        margin-bottom: .7rem;
+    }
+    .about-two-para{
+        font-size: 1rem;
     }
 }
 

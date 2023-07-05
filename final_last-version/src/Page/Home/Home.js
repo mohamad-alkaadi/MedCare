@@ -11,6 +11,7 @@ import SectionSix from './SectionSix'
 import Footer from '../../common/Footer'
 import SectionTwoNew from './SectionTwoNew'
 import Hello from './Hello'
+import BackToTop from '../../common/BackToTop'
 const Home = () => {
   return (
     <div className='home'>
@@ -26,6 +27,9 @@ const Home = () => {
         {/* <Footer/> */}
         {/* <SectionOne/> */}
         {/* <Hello/> */}
+        <BackToTop/>
+        
+
     </div>
   )
 }

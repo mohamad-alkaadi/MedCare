@@ -1,0 +1,21 @@
+.backToTop-button{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 1rem;
+    background-color: #068466;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.backToTop-arrow{
+    color: #fff;
+}

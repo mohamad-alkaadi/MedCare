@@ -159,19 +159,28 @@
         padding-top: 20px;
         padding-left: 20px;
       }
+    
       .menu-items #menu-item{
         color: #ffffff;
         grid-column: 1;
         align-self:flex-start;
-
+        text-decoration: none;
+        /* margin: 0 auto; */
       }
       .menu-items .mob-headerlogo{
         font-family: 'Comfortaa', cursive;
         font-size: 30px;
         padding: 0;
+        margin-left: 0;
         align-self: flex-start;
-        margin: 0 2rem;
+        /* margin: 0 2rem; */
         align-self:flex-start;
+        
+      }
+      .mobMenu-item-nav{
+        width: 100vw;
+        text-align: center;
+        font-size: 2.4rem;
       }
 
 }

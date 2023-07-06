@@ -51,12 +51,12 @@ function NavBar() {
                             </div>  
                             
                           <div className="menu-items">
-                              <a id='menu-item' className='mob-headerlogo' href="#">MedCare</a>
-                              <a id='menu-item' href="#">Home</a>
-                              <a id='menu-item' href="#">About</a>
-                              <a id='menu-item' href="#">Services</a>
+                              <CustomLink id='menu-item' className='mob-headerlogo' href="#">MedCare</CustomLink>
+                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Home</CustomLink>
+                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">About</CustomLink>
+                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Services</CustomLink>
                               {/* <a id='menu-item' href="#">Sign in</a> */}
-                              <a id='menu-item' href="#">Sign up</a>
+                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Sign in</CustomLink>
                           </div>                        
                     </nav>
                     {/* <p className='mob-headerlogo'>MedCare</p> */}

@@ -1,37 +1,44 @@
-.about-new-container{
+.service-new-container{
     background-color: #fff;
 }
-.aboutNew-grid-system{
+.serviceNew-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
     margin:auto;
   }
     
-.about-new{
+.service-new{
     max-width: 1600px;
     margin:30px auto;
     padding: 20px;
 
 }
 
-.about-new img{
+.service-new img{
     grid-column: span 6;
-    width: 100%;
+    width: 98%;
     justify-self: center;
     align-self: center;
     pointer-events: none;
 }
 
-.about-new-para{
+.section-new-para{
     grid-column: span 6;
 
 }
-.about-new-para{
+.section-new-para{
     padding-left: 2rem;
 }
-
-.abo-new-stitle{
+.service-new-para{
+    grid-column: 7 / span 6;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    width: 100%;    
+    
+}
+.ser-new-stitle{
     font-size: 1.5rem;
     color: #00544f;
     margin-left: 1rem;
@@ -40,7 +47,7 @@
 
 }
 
-.abo-new-btitle{
+.ser-new-btitle{
     font-size: 4.8rem;
     color: #00544f;
     font-family: 'Roboto', sans-aboif;
@@ -48,65 +55,65 @@
     text-align: start;
 }
 @media (max-width:1744px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 4.8rem;
         
     }
 }
 @media (max-width:1607px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 4.8rem;
         
     }
 }
 @media (max-width:1469px){
-    .abo-new-stitle{
+    .ser-new-stitle{
         padding-left: .5rem;
     }
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 4.5rem;
         
     }
 }
 @media (max-width:1332px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 3.8rem;
         
     }
 }
 @media (max-width:1195px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 3.5rem;
         
     }
 }
 @media (max-width:1085px){
-    .abo-new-stitle{
+    .ser-new-stitle{
         padding-left: .4rem;
     }
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 3.2rem;
         
     }
 }
 @media (max-width:975px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 3rem;
         
     }
 }
 @media (max-width:920px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 2.8rem;
         
     }
 }
 @media (max-width:865px){
-    .abo-new-stitle{
+    .ser-new-stitle{
         padding-left: .3rem;
         font-size: 1.3rem;
     }
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 2.5rem;
         
     }
@@ -114,24 +121,27 @@
 /* ------------change apperance -----------*/
 
 @media (max-width:800px){
-    .about-new{
+    .service-new{
         max-width: 1500px;
         margin:60px auto;
         padding: 20px;
     }
-    .about-new img{
+    .service-new-para{
+        grid-column: span 12;   
+    }
+    .service-new img{
         grid-column: span 12 ;
         grid-row: 1;
         width: 100%;    
     } 
-    .abo-new-stitle{
+    .ser-new-stitle{
         padding-left: .6rem;
         font-size: 1.3rem;
     }
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 4.5rem;
     }
-    .about-new-container{
+    .service-new-container{
         padding-bottom: 0;
     
     }
@@ -139,37 +149,37 @@
 
 
     @media (max-width:751px){
-        .abo-new-btitle{
+        .ser-new-btitle{
             font-size: 4.2rem;
             
         }
     }
     @media (max-width:682px){
-        .abo-new-btitle{
+        .ser-new-btitle{
             font-size: 3.8rem;
             
         }
     }
     
     @media (max-width:604px){
-        .abo-new-stitle{
+        .ser-new-stitle{
             padding-left: .5rem;
             font-size: 1.2rem;
         }
-        .abo-new-btitle{
+        .ser-new-btitle{
             font-size: 3.5rem;
             
         }
     }
     @media (max-width:560px){
-        .abo-new-btitle{
+        .ser-new-btitle{
             font-size: 3.2rem;
             /* font-size: 3rem; */
             
         }
     }
     @media (max-width:503px){
-        .abo-new-btitle{
+        .ser-new-btitle{
             font-size: 3rem;
             /* font-size: 3rem; */
             
@@ -178,18 +188,21 @@
     
 /* ------------4 column grid for phone */
 @media (max-width:464px){
-    .aboutNew-grid-system{
+    .serviceNew-grid-system{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin:auto;
         width: 100%;
     }
 
-
-    .about-new img{
+    .service-new-para{
+        grid-column: span 4;  
+         
+    }
+    .service-new img{
         grid-column: span 4 ;  
     }
-    .abo-new-text{
+    .ser-new-text{
         grid-column: span 4;   
     }
 
@@ -197,34 +210,34 @@
 
 
 @media (max-width:437px){
-    .abo-new-stitle{
+    .ser-new-stitle{
         padding-left: .2rem;
         font-size: 1.2rem;
     }
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 2.5rem;
     }
     
-    .abo-new-stitle{
+    .ser-new-stitle{
         font-size: 1.3rem;
     }
     
 }
 
 @media (max-width:369px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 2.2rem;
     }
-    .abo-new-stitle{
+    .ser-new-stitle{
         font-size: 1.1rem;
     }
 }
 
 @media (max-width:327px){
-    .abo-new-btitle{
+    .ser-new-btitle{
         font-size: 2.04rem;
     }
-    .abo-new-stitle{
+    .ser-new-stitle{
         font-size: 1.06rem;
     }
 }

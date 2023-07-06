@@ -9,6 +9,7 @@ import ServiceSix from './ServiceSix'
 import ServiceSeven from './ServiceSeven'
 import ServiceEight from './ServiceEight'
 import BackToTop from '../../common/BackToTop'
+import ServiceNew from './ServiceNew'
 
 const Services = () => {
   const location = useLocation();
@@ -19,7 +20,8 @@ const Services = () => {
   
   return (
     <div>
-        <ServiceOne id="service1"/>
+        {/* <ServiceOne id="service1"/> */}
+        <ServiceNew/>
         <ServiceTwo id="service2"/>
         <ServiceThree id="service3"/>
         <ServiceFour id="service4"/>

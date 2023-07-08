@@ -22,7 +22,7 @@ function App() {
          <Route path='/about' element={<About/>}/>
          <Route path='/signin' element={<SignIn/>}/>
       </Routes>
-      {location.pathname !== "/signin" && <Footer />}
+      {/* {location.pathname !== "/signin" && <Footer />} */}
     </div>
 
   );

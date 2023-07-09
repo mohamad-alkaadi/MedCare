@@ -3,7 +3,8 @@ import "./css/navbar.css"
 import {links } from './Data/navbar_data'
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
-function NavBar() { 
+function NavBar(props) { 
+  const {hamMenuActive, hamClicked} = props;
 
   //navbar scroll when active state
   const [navbar, setNavbar] = useState(false)
@@ -43,7 +44,7 @@ function NavBar() {
 
                     <nav className="mob-nav-sec">
                          
-                            <input className="nav-checkbox" type="checkbox" name="" id="" />
+                            <input className="nav-checkbox" onClick={hamClicked} type="checkbox" name="" id="" />
                             <div className="hamburger-lines">
                               <span className="line line1"></span>
                               <span className="line line2"></span>

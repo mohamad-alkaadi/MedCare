@@ -78,8 +78,7 @@ function SignIn() {
       {!resetEmailSent?
     <div className='sign-in-container' style={width>565?hightStyles:SmallStyles}>
       {!forgotPassword? 
-      <form>
-        <div className='sign-in grid-system'>
+      <form className='sign-in signin-grid-system'>
             <div className='signin-title'>
                 MedCare
             </div>
@@ -122,11 +121,9 @@ function SignIn() {
                   Forgot <button onClick={ShowHidden}>Password?</button>
                 </div>
             
-        </div>
         </form>:
         
-        <form>
-          <div className='sign-in grid-system'>
+        <form className='sign-in signin-grid-system'>
             <div className='forgot-key'>
               <img className='forgot-key-icon' src={key}/> 
             </div>
@@ -149,7 +146,7 @@ function SignIn() {
                         onFocus={() => setHiddenEmailFocus(true)}
                         onBlur={() => setHiddenEmailFocus(false)}/>
             </div>
-            <div className='forgot-submit'>
+            <div className='sign-in-submit'>
                   {/* <input 
                     type='submit'
                     value='Reset password'
@@ -159,12 +156,11 @@ function SignIn() {
               <div className='forgot-back'>
                 <button onClick={ShowHidden}><FaArrowLeft className='forgot-back-arrow'/> Back to Sign in</button>
               </div>
-          </div>
         </form>}
          {console.log(forgotPassword)}
     </div>:
-    <div className='sign-in-container' style={LoginStyles.signInContainer}>
-        <div className='sign-in grid-system'>
+    <div className='sign-in-container email-sent-container' style={width>565?hightStyles:SmallStyles}>
+        <div className='sign-in email-sent-a signin-grid-system'>
         <div className='email-sent'>
               <img className='email-sent-icon' src={emailPic}/> 
             </div>
@@ -176,7 +172,7 @@ function SignIn() {
               <button onClick={ReturnToSign}><FaArrowLeft className='forgot-back-arrow'/> Back to Sign in</button>
           </div>
         </div>
-    </div>
+     </div>
     }
     </div>
   )

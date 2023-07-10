@@ -4,7 +4,14 @@
     justify-content: center;
     align-content: center;
 }
-
+.signin-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    /* margin:0 2rem; */
+    margin:auto;
+  }
+    
 .sign-in{
     row-gap: 0;
     background-color: #fff;
@@ -120,6 +127,7 @@
     font-size: 1.05em;
     margin: auto;
     margin-bottom: 3rem;
+    text-align: center;
     color: #3e5553;
 
 }
@@ -242,12 +250,18 @@
 @media(max-width: 565px){
     .sign-in-container{
         display: block;
+        height: 100vh;
+        /* width: 100vw; */
     }
-    .grid-system{
+    
+    .signin-grid-system{
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin:auto 1rem;
+        /* margin:auto 1rem; */
+        /* margin-left:1rem;
+        margin-right:1rem; */
         width: 100%;
+
         
 
     }
@@ -256,7 +270,6 @@
         background-color: #ecfafe;
         padding:0;
         box-shadow: none;
-        
     }
     
     .signin-title{
@@ -266,11 +279,12 @@
 
     .sign-in-email{
         grid-column: span 4;
+        margin: auto;
+        width: 95%;
 
     }
     .sign-in-email input{
-        width: 95%;
-        
+        width: 100%;
     }
     
     .sign-in-email input:focus{
@@ -280,17 +294,22 @@
     
     .sign-in-password{
         grid-column: span 4;
+        margin: auto;
+        width: 95%;
     }
     .sign-in-password input{
-        width: 95%;
+        width: 100%;
     }
     
     .sign-in-submit{
-        grid-column: span 4;        
+        grid-column: span 4; 
+        margin: auto;
+        margin-top: 1rem;
+        width: 95%;       
     }
   
     .sign-in-submit button{  
-        width: 95%;
+        width: 100%;
     }
     .sign-in-forget{
         grid-column: span 4;
@@ -323,7 +342,7 @@
     }
     
     .forgot-back button{
-        width: 400px;
+        width: auto;
     }
     
     
@@ -332,8 +351,19 @@
         margin-top: 2rem;
     }
     
+    .email-sent-container{
+        /* display: grid; */
+        /* background-color: red; */
+        /* height: 100%; */
+    }
+    .email-sent-a{
+        width: 100%;
+        /* background-color: red; */
+
+    }
     .email-sent-sloganOne{
         grid-column: span 4;
+        /* margin: auto; */
     }
     
     .email-sent-sloganTwo{

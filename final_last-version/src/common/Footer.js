@@ -16,11 +16,14 @@ function useWindowSize(){
 
 
 
-const Footer = () => {
+const Footer = (props) => {
 
   const width = useWindowSize();
-
+  const {hamActive} = props;
+  const {appViewportWidth} = props
   return (
+    <>
+    {hamActive || appViewportWidth>800?
     <div>
         <div className='footer-container'>
             <div className='footer footer-grid-system'>
@@ -60,6 +63,8 @@ const Footer = () => {
             </div>
         </div>
         </div>
+        :null}
+      </>
   )
 }
 

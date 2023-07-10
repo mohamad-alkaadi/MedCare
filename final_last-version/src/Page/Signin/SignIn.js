@@ -3,6 +3,7 @@ import './signin-css/signin.css'
 import { FaArrowLeft } from 'react-icons/fa';
 import key from './sigin-assets/key-circle.png'
 import emailPic from './sigin-assets/email-circle.png'
+import { Link } from 'react-router-dom';
 
 function useHeightWindowSize(){
     const [heightSize,setHeightSize]=useState(window.innerHeight);
@@ -79,9 +80,9 @@ function SignIn() {
     <div className='sign-in-container' style={width>565?hightStyles:SmallStyles}>
       {!forgotPassword? 
       <form className='sign-in signin-grid-system'>
-            <div className='signin-title'>
-                MedCare
-            </div>
+            <Link to='/' className='signin-title'>
+                <p>MedCare</p>
+            </Link>
             
             <div className='sign-in-email'>
                     

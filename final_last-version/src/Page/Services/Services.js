@@ -20,7 +20,6 @@ const Services = () => {
   
   return (
     <div>
-        {/* <ServiceOne id="service1"/> */}
         <ServiceNew/>
         <ServiceTwo id="service2"/>
         <ServiceThree id="service3"/>

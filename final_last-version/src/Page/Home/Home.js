@@ -13,30 +13,33 @@ import Footer from '../../common/Footer'
 import SectionTwoNew from './SectionTwoNew'
 import Hello from './Hello'
 import BackToTop from '../../common/BackToTop'
-const Home = () => {
+
+const Home = (props) => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const {hamActive} = props;
+  const {appViewportWidth} = props
+
   return (
+    <>
+    {hamActive || appViewportWidth>800?
     <div className='home'>
-        {/* <NavBar/> */}
+      
         <SectionOne/>
-        {/* <SectionTwo/> */}
         <SectionTwoNew/>
         <SectionThree/>
         <SectionFour/>
         <SectionFive/>
         <SectionSix/>
         <SectionSeven/>
-        {/* <Footer/> */}
-        {/* <SectionOne/> */}
-        {/* <Hello/> */}
         <BackToTop/>
-        
 
     </div>
+  :null}
+  </>
   )
 }
 

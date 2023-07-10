@@ -9,27 +9,54 @@ import SignIn from './Page/Signin/SignIn';
 import SectionTwoNew from './Page/Home/SectionTwoNew';
 // import { createBrowserRouter, createRoutesFromElements, Route, Link, Outlet, RouterProvider} from 'react-router-dom';
 import { Route, Routes, useLocation } from "react-router-dom"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+
+function useAppWindowSize(){
+  const [size,setSize]=useState(window.innerWidth);
+
+  useEffect(()=>{
+    const handleResize = () => {
+    setSize(window.innerWidth);
+    };
+    window.addEventListener('resize',handleResize);
+    return () => {
+      window.removeEventListener('resize',handleResize);
+    };
+  },[]);
+  return size;
+}
+
+
 
 function App() {
+  const appViewportWidth = useAppWindowSize();
+
   const location = useLocation();
-  const [hamMenuActive,setHamMenuActive] = useState(false)
+  const [hamMenuActive,setHamMenuActive] = useState(true)
+
   const hamClicked = () => {
     setHamMenuActive(!hamMenuActive)
     console.log(hamMenuActive)
   };
 
+  // useEffect(() => { 
+  //   if(appViewportWidth>800 && hamMenuActive ){ 
+  //     setHamMenuActive(true) 
+  //     console.log(hamMenuActive) 
+  //   } 
+  // }, [appViewportWidth, hamMenuActive])
   
   return (
     <div className="App">
       {location.pathname !== "/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked}/>}
       <Routes>
-         <Route path='/' element={<Home/>}/>
-         <Route path='/services' element={<Services/>}/>
-         <Route path='/about' element={<About/>}/>
+         <Route path='/' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
+         <Route path='/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
+         <Route path='/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/signin' element={<SignIn/>}/>
       </Routes>
-      {location.pathname !== "/signin" && <Footer />}
+      {location.pathname !== "/signin" && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
     </div>
 
   );

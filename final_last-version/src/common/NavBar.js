@@ -54,12 +54,12 @@ function NavBar(props) {
                             </div>  
                             
                           <div className="menu-items">
-                              <CustomLink id='menu-item' className='mob-headerlogo' href="#">MedCare</CustomLink>
-                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Home</CustomLink>
-                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">About</CustomLink>
-                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Services</CustomLink>
+                              <CustomLink to='/' id='menu-item' className='mob-headerlogo' onClick={() => document.querySelector('.nav-checkbox').checked = false} >MedCare</CustomLink>
+                              <CustomLink to='/' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Home</CustomLink>
+                              <CustomLink to='/about' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>About</CustomLink>
+                              <CustomLink to='/services' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Services</CustomLink>
                               {/* <a id='menu-item' href="#">Sign in</a> */}
-                              <CustomLink id='menu-item' className="mobMenu-item-nav" href="#">Sign in</CustomLink>
+                              <CustomLink to='/signin' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Sign in</CustomLink>
                           </div>                        
                     </nav>
                     {/* <p className='mob-headerlogo'>MedCare</p> */}

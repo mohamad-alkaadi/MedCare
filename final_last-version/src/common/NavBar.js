@@ -6,7 +6,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 
 function NavBar(props) { 
-  const {hamMenuActive, hamClicked} = props;
+  const {hamMenuActive, hamClicked, closeNavBar} = props;
 
   //navbar scroll when active state
   const [navbar, setNavbar] = useState(false)
@@ -52,14 +52,14 @@ function NavBar(props) {
                               <span className="line line2"></span>
                               <span className="line line3"></span>
                             </div>  
-                            
+                          
                           <div className="menu-items">
-                              <CustomLink to='/' id='menu-item' className='mob-headerlogo' onClick={() => document.querySelector('.nav-checkbox').checked = false} >MedCare</CustomLink>
-                              <CustomLink to='/' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Home</CustomLink>
-                              <CustomLink to='/about' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>About</CustomLink>
-                              <CustomLink to='/services' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Services</CustomLink>
+                              <CustomLink to='/' id='menu-item' className='mob-headerlogo' onClick={closeNavBar} >MedCare</CustomLink>
+                              <CustomLink to='/' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Home</CustomLink>
+                              <CustomLink to='/about' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>About</CustomLink>
+                              <CustomLink to='/services' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Services</CustomLink>
                               {/* <a id='menu-item' href="#">Sign in</a> */}
-                              <CustomLink to='/signin' id='menu-item' className="mobMenu-item-nav" onClick={() => document.querySelector('.nav-checkbox').checked = false}>Sign in</CustomLink>
+                              <CustomLink to='/signin' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Sign in</CustomLink>
                           </div>                        
                     </nav>
                     {/* <p className='mob-headerlogo'>MedCare</p> */}

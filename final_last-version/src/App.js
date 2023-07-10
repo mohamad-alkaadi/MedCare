@@ -40,16 +40,14 @@ function App() {
     console.log(hamMenuActive)
   };
 
-  // useEffect(() => { 
-  //   if(appViewportWidth>800 && hamMenuActive ){ 
-  //     setHamMenuActive(true) 
-  //     console.log(hamMenuActive) 
-  //   } 
-  // }, [appViewportWidth, hamMenuActive])
-  
+  const closeNavBar = () =>{
+    document.querySelector('.nav-checkbox').checked = false
+    setHamMenuActive(!hamMenuActive)
+  }
+
   return (
     <div className="App">
-      {location.pathname !== "/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked}/>}
+      {location.pathname !== "/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
       <Routes>
          <Route path='/' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>

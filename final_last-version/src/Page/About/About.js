@@ -7,21 +7,28 @@ import AboutFour from './AboutFour'
 import AboutNew from './AboutNew'
 import BackToTop from '../../common/BackToTop'
 
-const About = () => {
+const About = (props) => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const {hamActive} = props
+  const {appViewportWidth} = props
+
   return (
-    <div>
-      <AboutNew/>
-      {/* <AboutOne/> */}
-      <AboutTwo/>
-      <AboutThree/>
-      <AboutFour/>
-      <BackToTop/>
-    </div>
+    <>
+    {hamActive || appViewportWidth>800?
+      <div>
+        <AboutNew/>
+        {/* <AboutOne/> */}
+        <AboutTwo/>
+        <AboutThree/>
+        <AboutFour/>
+        <BackToTop/>
+      </div>
+      :null}
+    </>
   )
 }
 

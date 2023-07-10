@@ -11,26 +11,33 @@ import ServiceEight from './ServiceEight'
 import BackToTop from '../../common/BackToTop'
 import ServiceNew from './ServiceNew'
 
-const Services = () => {
+const Services = (props) => {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
   
-  return (
-    <div>
-        <ServiceNew/>
-        <ServiceTwo id="service2"/>
-        <ServiceThree id="service3"/>
-        <ServiceFour id="service4"/>
-        <ServiceFive id="service5"/>
-        <ServiceSix id="service6"/>
-        <ServiceSeven id="service7"/>
-        <ServiceEight id="service8"/>
-        <BackToTop/>
+  const {hamActive} = props
+  const {appViewportWidth} = props
 
-    </div>
+  return (
+     <>
+    {hamActive || appViewportWidth>800?
+      <div>
+          <ServiceNew/>
+          <ServiceTwo id="service2"/>
+          <ServiceThree id="service3"/>
+          <ServiceFour id="service4"/>
+          <ServiceFive id="service5"/>
+          <ServiceSix id="service6"/>
+          <ServiceSeven id="service7"/>
+          <ServiceEight id="service8"/>
+          <BackToTop/>
+
+      </div>
+      :null}
+  </>
   )
 }
 

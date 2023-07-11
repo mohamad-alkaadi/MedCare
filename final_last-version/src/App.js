@@ -53,6 +53,7 @@ function App() {
          <Route path='/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/signin' element={<SignIn/>}/>
+         {/* <Route path='*' element={<ErrorPage/>}/> */}
       </Routes>
       {location.pathname !== "/signin" && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
     </div>

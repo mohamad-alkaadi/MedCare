@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/MedCare/static/css/main.76c2db47.css",
+    "main.js": "/MedCare/static/js/main.f3d8746c.js",
+    "static/js/787.69d66440.chunk.js": "/MedCare/static/js/787.69d66440.chunk.js",
+    "static/media/sec3.jpg": "/MedCare/static/media/sec3.92d98a644b8284f38a98.jpg",
+    "static/media/smartwatch720p.mp4": "/MedCare/static/media/smartwatch720p.2f17ae4d9568d606c015.mp4",
+    "static/media/sec5.png": "/MedCare/static/media/sec5.cfe9bb4b87ab716e779b.png",
+    "static/media/aboutOne.png": "/MedCare/static/media/aboutOne.8840308de3515946f0cd.png",
+    "static/media/aboutTwo.png": "/MedCare/static/media/aboutTwo.0aee16a50a2d6b348b6d.png",
+    "static/media/img-1.png": "/MedCare/static/media/img-1.d0b722ff4d28ea99d42a.png",
+    "static/media/imgThree.png": "/MedCare/static/media/imgThree.7b4a341dd00050588a98.png",
+    "static/media/doctor-img.png": "/MedCare/static/media/doctor-img.9f9bee7cce64ac8edc44.png",
+    "static/media/last-edit-black.png": "/MedCare/static/media/last-edit-black.a39f5a448daf3ac96040.png",
+    "static/media/AboutUsGirl.png": "/MedCare/static/media/AboutUsGirl.b164df416061dbef2915.png",
+    "static/media/AboutUsGirlGray.png": "/MedCare/static/media/AboutUsGirlGray.f6fa11ccc38c4d56bd03.png",
+    "static/media/doctor.png": "/MedCare/static/media/doctor.74417ea87abca8dc92ac.png",
+    "static/media/reminder.png": "/MedCare/static/media/reminder.d2e052e832c0c94870bc.png",
+    "static/media/Experience2.png": "/MedCare/static/media/Experience2.78192d3685b9bb9ad0a0.png",
+    "static/media/servicelogo.png": "/MedCare/static/media/servicelogo.fb316f28a5eefa4ee57e.png",
+    "static/media/helthlogo.png": "/MedCare/static/media/helthlogo.67d0ca592e2d8777fe50.png",
+    "static/media/coverage.png": "/MedCare/static/media/coverage.ef8236b4f0bb24973161.png",
+    "static/media/quality1.png": "/MedCare/static/media/quality1.9abeec6809cea088ba33.png",
+    "static/media/Experience1.png": "/MedCare/static/media/Experience1.20d33b21f19dc5898d64.png",
+    "static/media/visit.png": "/MedCare/static/media/visit.b18e8054360a500c9950.png",
+    "static/media/key-circle.png": "/MedCare/static/media/key-circle.b2aef9ec745e769fa5b5.png",
+    "static/media/email-circle.png": "/MedCare/static/media/email-circle.121297c96c705a8c84e1.png",
+    "static/media/access.png": "/MedCare/static/media/access.93467088f0bea6c8eee7.png",
+    "static/media/integrity.png": "/MedCare/static/media/integrity.7eee5022842e6c89ccdf.png",
+    "index.html": "/MedCare/index.html",
+    "main.76c2db47.css.map": "/MedCare/static/css/main.76c2db47.css.map",
+    "main.f3d8746c.js.map": "/MedCare/static/js/main.f3d8746c.js.map",
+    "787.69d66440.chunk.js.map": "/MedCare/static/js/787.69d66440.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76c2db47.css",
+    "static/js/main.f3d8746c.js"
+  ]
+}

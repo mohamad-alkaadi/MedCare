@@ -2,7 +2,7 @@ import React,{useEffect,useState,useRef} from 'react'
 import {FaArrowRight,FaFacebookF,FaLinkedinIn,FaYoutube,FaInstagram,FaTwitter,FaHome,FaBuilding,FaPhone} from 'react-icons/fa'
 import {GrMail} from 'react-icons/gr'
 import './css/footer.css'
-
+import {Link} from 'react-router-dom'
 function useWindowSize(){
     const [size,setSize]=useState(window.innerWidth);
     useEffect(()=>{
@@ -27,20 +27,20 @@ const Footer = (props) => {
     <div>
         <div className='footer-container'>
             <div className='footer footer-grid-system'>
-                <div className='footer-logo'><p>MedCare</p></div>
+                <Link to='/MedCare' className='footer-logo'><p>MedCare</p></Link>
 
                 <div className='footer-company-links'>
                     <div className='footer-company-title'>Company</div>
-                    <div className='footer-links'><a className='footer-link footer-company-one' href='/'>How it works</a></div>
-                    <div className='footer-links'><a className='footer-link footer-company-two' href='/'>Our app</a></div>
-                    <div className='footer-links'><a className='footer-link footer-company-three' href='/'>Our values</a></div>
+                    <div className='footer-links'><a className='footer-link footer-company-one' href='/'>Our Mission</a></div>
+                    <div className='footer-links'><a className='footer-link footer-company-two' href='/'>Our Story</a></div>
+                    <div className='footer-links'><a className='footer-link footer-company-three' href='/'>Our Goal</a></div>
                 </div>
 
                 <div className='footer-quick-links'>
                     <div className='footer-quick-title'>Quick links</div>
                     <div className='footer-links'><a className='footer-link footer-quick-one' href='/'>Pricing</a></div>
-                    <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>using the watch</a></div>
-                    <div className='footer-links'><a className='footer-link footer-quick-three' href='/'>blank</a></div>
+                    <div className='footer-links'><a className='footer-link footer-quick-two' href='/'>Benefits</a></div>
+                    <div className='footer-links'><a className='footer-link footer-quick-three' href='/'>Features</a></div>
                 </div>
                 <div className='footer-contact-us'>
                     <div className='footer-contact-title'>Contact us</div>                    

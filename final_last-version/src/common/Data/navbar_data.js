@@ -1,17 +1,17 @@
 export const links = [
     {
         id:1,
-        url:'/',
+        url:'/MedCare/',
         text:'Home'
     },
     {
         id:2,
-        url:'/about',
+        url:'/MedCare/about',
         text:'About'
     },
     {
         id:3,
-        url:'/services',
+        url:'/MedCare/services',
         text:'Services'
     },
 ] 
@@ -19,7 +19,7 @@ export const links = [
 export const user_int = [
     {
         id:1,
-        url:'/Log-in',
+        url:'/MedCare/Log-in',
         text:'Login'
 
     },

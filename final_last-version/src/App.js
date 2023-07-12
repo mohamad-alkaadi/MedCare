@@ -49,7 +49,7 @@ function App() {
     <div className="App">
       {location.pathname !== "/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
       <Routes>
-         <Route path='/' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
+         <Route path='/MedCare/' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/signin' element={<SignIn/>}/>

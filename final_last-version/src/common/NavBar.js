@@ -31,7 +31,7 @@ function NavBar(props) {
        <>
        <div className='nav-container'>
         <div className='navigation navBar-grid-system'>
-                    <Link to="/MedCare/" className='headerlogo'>MedCare</Link>
+                    <Link to="/MedCare" className='headerlogo'>MedCare</Link>
                     <nav className='nav-sec'>
                         {links.map((link) => {
                         const {url,text} = link;
@@ -54,8 +54,8 @@ function NavBar(props) {
                             </div>  
                           
                           <div className="menu-items">
-                              <CustomLink to='/MedCare/' id='menu-item' className='mob-headerlogo' onClick={closeNavBar} >MedCare</CustomLink>
-                              <CustomLink to='/MedCare/' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Home</CustomLink>
+                              <CustomLink to='/MedCare' id='menu-item' className='mob-headerlogo' onClick={closeNavBar} >MedCare</CustomLink>
+                              <CustomLink to='/MedCare' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Home</CustomLink>
                               <CustomLink to='/MedCare/about' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>About</CustomLink>
                               <CustomLink to='/MedCare/services' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Services</CustomLink>
                               {/* <a id='menu-item' href="#">Sign in</a> */}

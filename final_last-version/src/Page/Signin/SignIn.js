@@ -73,14 +73,14 @@ function SignIn() {
 
     const hightStyles = LoginStyles.signInContainer
     const SmallStyles = SmallLoginStyles.signInContainer
-// sign in
-  return (
+
+    return (
     <div>
       {!resetEmailSent?
     <div className='sign-in-container' style={width>565?hightStyles:SmallStyles}>
       {!forgotPassword? 
       <form className='sign-in signin-grid-system'>
-            <Link to='/MedCare' className='signin-title'>
+            <Link className='signin-title'>
                 <p>MedCare</p>
             </Link>
             

@@ -44,7 +44,7 @@ function App() {
     document.querySelector('.nav-checkbox').checked = false
     setHamMenuActive(!hamMenuActive)
   }
-
+// my app
   return (
     <div className="App">
       {location.pathname !== "/MedCare/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}

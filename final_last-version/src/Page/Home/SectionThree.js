@@ -132,7 +132,7 @@ const SectionThree = () => {
                </div>)
         break;
       default:
-        return <img src={secThee} draggable="false" />
+        return <img src={secThee} draggable="false" loading='lazy'/>
         break;
     }
    

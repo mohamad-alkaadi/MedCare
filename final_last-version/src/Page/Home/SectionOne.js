@@ -8,7 +8,7 @@ const SectionOne = () => {
     <div className='section-one-container'>
         <div className='section-one secOne-grid-system'>
           
-          <img src={imgOne} draggable="false" />
+          <img src={imgOne} draggable="false" loading='lazy'/>
           <div className='section-one-para'>
       
             <p className='one-headline'>Where<br/>healthcare<br/>happens<br/>24/7</p>

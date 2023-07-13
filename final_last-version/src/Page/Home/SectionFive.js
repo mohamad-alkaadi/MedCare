@@ -18,7 +18,7 @@ const SectionFive = () => {
 
             </div>
             <div className='sec-five-img'>
-                <img className='five-img' src={secFive} draggable="false" />
+                <img className='five-img' src={secFive} draggable="false" loading='lazy'/>
             </div>
         </div>
     </div>

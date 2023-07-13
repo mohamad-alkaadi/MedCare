@@ -39,7 +39,7 @@ const AboutFour = () => {
           </div>
         </div>
         <div className='about-four-img'>
-          <img className='about-four-photo hiddenAboutFour' src={imgThree} ref={aboutFourPhotoRef}/>
+          <img className='about-four-photo hiddenAboutFour' src={imgThree} ref={aboutFourPhotoRef} loading='lazy'/>
         </div>
       </div>
     </div>

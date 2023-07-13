@@ -21,7 +21,7 @@ const ServiceThree = () => {
                 </div>
             </div>
             <div className='service-three-img'>
-                <img className='ser-three-img' src={watch} draggable="false" />
+                <img className='ser-three-img' src={watch} draggable="false" loading='lazy'/>
             </div>
         </div>
     </div>

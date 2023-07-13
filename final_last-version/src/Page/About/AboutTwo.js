@@ -44,7 +44,7 @@ const AboutTwo = () => {
           </div>
         </div>
         <div className='about-two-img'>
-          <img className='about-two-photo hiddenAboutTwo' src={imgOne} ref={aboutTwoPhotoRef}/>
+          <img className='about-two-photo hiddenAboutTwo' src={imgOne} ref={aboutTwoPhotoRef} loading='lazy'/>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const AboutThree = () => {
     <div className='about-three-container'>
       <div className='about-three aboutThree-grid-system'>
         <div className='about-three-img'>
-          <img className='about-one-photo hiddenAboutThree' src={imgTwo} ref={aboutThreePhotoRef}/>
+          <img className='about-one-photo hiddenAboutThree' src={imgTwo} ref={aboutThreePhotoRef} loading='lazy'/>
         </div>
         <div className="about-three-text">
           <div className='about-three-title hiddenAboutThree' ref={aboutThreeTitleRef}>

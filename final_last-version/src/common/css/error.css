@@ -11,3 +11,18 @@
   object-fit: cover;
   z-index: -1;
 }
+
+.error-grid-system{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    margin:auto;
+}
+
+.error-logo,.error-content,.error-paraOne,.error-paraTwo{
+  grid-column: span 12;
+}
+
+.error-logo{
+  margin: auto;
+}

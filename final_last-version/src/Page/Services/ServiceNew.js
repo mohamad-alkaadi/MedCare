@@ -6,7 +6,7 @@ const ServiceNew = () => {
     <div className='service-new-container'>
     <div className='service-new serviceNew-grid-system'>
       
-      <img src={doctor} draggable="false" />
+      <img src={doctor} draggable="false" loading='lazy'/>
       <div className='service-new-para'>
   
       <div className='ser-new-stitle'>Services us</div>

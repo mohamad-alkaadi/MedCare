@@ -7,7 +7,7 @@ function AboutNew() {
     <div className='about-new-container'>
     <div className='about-new aboutNew-grid-system'>
       
-      <img src={aboutGirlGray} draggable="false" />
+      <img src={aboutGirlGray} draggable="false" loading='lazy'/>
       <div className='section-one-para'>
   
       <div className='abo-new-stitle'>About us</div>

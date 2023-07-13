@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MedCare/static/css/main.bab7a382.css",
-    "main.js": "/MedCare/static/js/main.671b32e3.js",
+    "main.css": "/MedCare/static/css/main.9a98978f.css",
+    "main.js": "/MedCare/static/js/main.65b2fafc.js",
     "static/js/787.69d66440.chunk.js": "/MedCare/static/js/787.69d66440.chunk.js",
     "static/media/sec3.jpg": "/MedCare/static/media/sec3.92d98a644b8284f38a98.jpg",
     "static/media/smartwatch720p.mp4": "/MedCare/static/media/smartwatch720p.2f17ae4d9568d606c015.mp4",
@@ -29,12 +29,12 @@
     "static/media/access.png": "/MedCare/static/media/access.93467088f0bea6c8eee7.png",
     "static/media/integrity.png": "/MedCare/static/media/integrity.7eee5022842e6c89ccdf.png",
     "index.html": "/MedCare/index.html",
-    "main.bab7a382.css.map": "/MedCare/static/css/main.bab7a382.css.map",
-    "main.671b32e3.js.map": "/MedCare/static/js/main.671b32e3.js.map",
+    "main.9a98978f.css.map": "/MedCare/static/css/main.9a98978f.css.map",
+    "main.65b2fafc.js.map": "/MedCare/static/js/main.65b2fafc.js.map",
     "787.69d66440.chunk.js.map": "/MedCare/static/js/787.69d66440.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bab7a382.css",
-    "static/js/main.671b32e3.js"
+    "static/css/main.9a98978f.css",
+    "static/js/main.65b2fafc.js"
   ]
 }

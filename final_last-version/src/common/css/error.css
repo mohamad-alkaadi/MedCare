@@ -2,6 +2,8 @@
     height: 100vh;
 } 
 
+
+
 .error-fullScreen-video{
   position: fixed;
   top: 0;
@@ -15,14 +17,58 @@
 .error-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(16,1fr);
     gap: 2rem;
     margin:auto;
+    height: 100vh;
+    row-gap: 1px;
 }
 
 .error-logo,.error-content,.error-paraOne,.error-paraTwo{
   grid-column: span 12;
+  margin: auto;
+
 }
 
 .error-logo{
-  margin: auto;
+  color: #f4e530;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 100;
+  font-size: 3rem;
+  margin-top: .5rem;
+  font-weight: 100;
+}
+
+.error-logoLink{
+  text-decoration: none;
+}
+
+.error-logoText{
+  color: #f4e530;
+}
+
+.error-content{
+  color: #f4e530;
+  grid-row: 11/13;
+  margin-top: 1.5rem;
+  font-size: 11.5rem;
+  /* background-color: red; */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Spectral', serif;
+}
+.error-paraOne{
+  color: #fff;
+  grid-row: 15;
+  font-size: 2.6rem;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.error-paraTwo{
+  color: #fff;
+  grid-row: 16;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  font-family: 'Nanum Myeongjo', serif;
 }

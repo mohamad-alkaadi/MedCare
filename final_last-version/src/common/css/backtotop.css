@@ -1,7 +1,7 @@
 .backToTop-button{
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 40px;
     padding: 1rem;
     background-color: #068466;
     border: none;
@@ -18,4 +18,12 @@
 
 .backToTop-arrow{
     color: #fff;
+}
+
+@media(max-width:1171px){
+    .backToTop-button{
+        right: 10px;
+        bottom: 10px;
+        
+    }
 }

@@ -6,6 +6,7 @@ import NavBar from './common/NavBar';
 import Register from './Page/Register';
 import About from './Page/About/About';
 import SignIn from './Page/Signin/SignIn';
+import Error from './common/Error';
 import SectionTwoNew from './Page/Home/SectionTwoNew';
 // import { createBrowserRouter, createRoutesFromElements, Route, Link, Outlet, RouterProvider} from 'react-router-dom';
 import { Route, Routes, useLocation } from "react-router-dom"
@@ -40,6 +41,7 @@ function App() {
     console.log(hamMenuActive)
   };
 
+
   const closeNavBar = () =>{
     document.querySelector('.nav-checkbox').checked = false
     setHamMenuActive(!hamMenuActive)
@@ -47,13 +49,13 @@ function App() {
 // my app for deploy
   return (
     <div className="App">
-      {location.pathname !== "/MedCare/signin" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
+      {location.pathname !== "/MedCare/signin" && location.pathname !== "*" && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
       <Routes>
          <Route path='/MedCare' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/signin' element={<SignIn/>}/>
-         {/* <Route path='*' element={<ErrorPage/>}/> */}
+         {/* <Route path='*' element={<Error/>}/> */}
       </Routes>
       {location.pathname !== "/MedCare/signin" && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
     </div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MedCare/static/css/main.219d6309.css",
-    "main.js": "/MedCare/static/js/main.e9cf873e.js",
+    "main.css": "/MedCare/static/css/main.bab7a382.css",
+    "main.js": "/MedCare/static/js/main.671b32e3.js",
     "static/js/787.69d66440.chunk.js": "/MedCare/static/js/787.69d66440.chunk.js",
     "static/media/sec3.jpg": "/MedCare/static/media/sec3.92d98a644b8284f38a98.jpg",
     "static/media/smartwatch720p.mp4": "/MedCare/static/media/smartwatch720p.2f17ae4d9568d606c015.mp4",
@@ -14,6 +14,7 @@
     "static/media/last-edit-black.png": "/MedCare/static/media/last-edit-black.a39f5a448daf3ac96040.png",
     "static/media/AboutUsGirl.png": "/MedCare/static/media/AboutUsGirl.b164df416061dbef2915.png",
     "static/media/AboutUsGirlGray.png": "/MedCare/static/media/AboutUsGirlGray.f6fa11ccc38c4d56bd03.png",
+    "static/media/error-vide.mp4": "/MedCare/static/media/error-vide.818afcb0ead5b0c31499.mp4",
     "static/media/doctor.png": "/MedCare/static/media/doctor.74417ea87abca8dc92ac.png",
     "static/media/reminder.png": "/MedCare/static/media/reminder.d2e052e832c0c94870bc.png",
     "static/media/Experience2.png": "/MedCare/static/media/Experience2.78192d3685b9bb9ad0a0.png",
@@ -28,12 +29,12 @@
     "static/media/access.png": "/MedCare/static/media/access.93467088f0bea6c8eee7.png",
     "static/media/integrity.png": "/MedCare/static/media/integrity.7eee5022842e6c89ccdf.png",
     "index.html": "/MedCare/index.html",
-    "main.219d6309.css.map": "/MedCare/static/css/main.219d6309.css.map",
-    "main.e9cf873e.js.map": "/MedCare/static/js/main.e9cf873e.js.map",
+    "main.bab7a382.css.map": "/MedCare/static/css/main.bab7a382.css.map",
+    "main.671b32e3.js.map": "/MedCare/static/js/main.671b32e3.js.map",
     "787.69d66440.chunk.js.map": "/MedCare/static/js/787.69d66440.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.219d6309.css",
-    "static/js/main.e9cf873e.js"
+    "static/css/main.bab7a382.css",
+    "static/js/main.671b32e3.js"
   ]
 }

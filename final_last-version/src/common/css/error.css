@@ -14,6 +14,14 @@
   z-index: -1;
 }
 
+@media (max-width:1708px){
+  .error-fullScreen-video{
+    height: 100%;
+
+  }
+
+}
+
 .error-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);

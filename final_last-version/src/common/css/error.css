@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
   z-index: -1;
 }
@@ -35,7 +35,7 @@
   font-family: 'Comfortaa', cursive;
   font-weight: 100;
   font-size: 3rem;
-  margin-top: .5rem;
+  margin-top: 2rem;
   font-weight: 100;
 }
 
@@ -71,4 +71,136 @@
   font-size: 2.6rem;
   margin-bottom: 1rem;
   font-family: 'Nanum Myeongjo', serif;
+}
+
+
+@media (max-width:915px){
+  
+.error-fullScreen-video{
+  display: none;
+}
+.error-page-container{
+  background-color: #f1f1f1;
+}
+.error-grid-system{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin:auto;
+  width: 100%;
+  padding-top: 2rem;
+  gap:initial;
+
+  row-gap: initial;
+}
+
+.error-logo,.error-content,.error-paraOne,.error-paraTwo{
+  grid-column: span 4;
+  margin: auto;
+
+}
+
+.error-logo{
+  color: #00544f;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.error-logoLink{
+  text-decoration: none;
+}
+
+.error-logoText{
+  color: #00544f;
+}
+
+.error-content{
+  color: #00544f;
+  grid-row: auto;
+  margin: 1rem 0;
+  font-size: 7.5rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: center;
+
+}
+.error-paraOne{
+  color: #00544f;
+  grid-row: auto;
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
+
+.error-paraTwo{
+  margin-top: 2rem;
+  grid-row: auto;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: .8rem 3rem;
+  width: fit-content;
+  border: #00544f solid 1px;
+  height: fit-content;
+
+}
+
+.error-paraTwo-link{
+  text-decoration: none;
+}
+
+.error-paraTwo-linkText{
+  color: #00544f;
+  font-size: 1.2rem;
+
+}
+.error-paraTwo:hover{
+  background-color: #005450;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  
+}
+.error-paraTwo:hover span{
+  color: #fff;
+}
+
+}
+
+@media (max-width:490px){
+  .error-paraOne{
+    font-size: 1.8rem;
+  }
+}
+@media (max-width:408px){
+  .error-paraOne{
+    font-size: 1.5rem;
+  }
+
+  .error-paraTwo{
+    margin-top: 2rem;
+    padding: .6rem 2rem;
+
+  
+  }
+
+  .error-paraTwo-link span{
+    font-size: 1rem;
+  }
+  .error-logo{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width:334px){
+  .error-paraOne{
+    font-size: 1.35rem;
+  }
 }

@@ -57,7 +57,7 @@ function App() {
          <Route path='/MedCare/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/signin' element={<SignIn/>}/>
-         <Route path='*' element={<Error hasError={hasError} setHasError={setHasError}/>}/>
+         <Route path='*' element={<Error hasError={hasError} setHasError={setHasError} appViewportWidth={appViewportWidth}/>}/>
       </Routes>
       {location.pathname !== "/MedCare/signin" && !hasError && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
     </div>

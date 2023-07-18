@@ -4,15 +4,13 @@
 .section-seven{
     max-width:1500px;
     margin: 30px auto;
-    /* background-color: red; */
-    /* background-color: lightcoral; */
+
 }
 
 .secSeven-grid-system{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
-    /* margin:0 2rem; */
     margin:auto;
   }
 
@@ -35,7 +33,6 @@
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
-    /* margin: 1.5rem 0; */
     
 }
 
@@ -106,7 +103,6 @@
     grid-template-rows: 20% 25% 30% 25%;
     box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
     background-color:  #005450;
-    /* background-image: linear-gradient(#3e7059, #005450); */
 }
 
 
@@ -241,13 +237,11 @@
 
 @media (max-width:487px){
     .seven-card {
-        /* width: 24rem; */
         width: 24rem;
     }
 }
 @media (max-width:391px){
     .seven-card {
-        /* width: 24rem; */
         width: 22rem;
         height: 30rem;
     }

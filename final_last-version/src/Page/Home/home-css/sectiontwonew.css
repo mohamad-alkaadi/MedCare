@@ -7,20 +7,17 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
-    /* margin:0 2rem; */
     margin:auto;
   }
 .section-twoNew{
     max-width: 1500px;
     margin:30px auto;
     padding: 20px;
-    /* min-height: 800px; */
     row-gap: 0;
 }
 
 .two-headlineNew{
     grid-column: span 12;
-    /* justify-self: center; */
     margin-bottom: 4rem;
     text-align: center;
     font-size: 3rem;
@@ -34,7 +31,6 @@
     justify-self: center;
     text-align: center;
     font-size: 1.3rem;
-    /* margin-bottom: 3rem; */
     color: #fff;
 }
 

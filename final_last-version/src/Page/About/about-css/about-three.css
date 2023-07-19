@@ -1,6 +1,5 @@
 .about-three-container{
     background-color: #fff;
-    /* background-color: lightcoral; */
 }
 .aboutThree-grid-system{
     display: grid;
@@ -10,7 +9,6 @@
 }
 .hiddenAboutThree{
     opacity: 0; 
-    /* transform: translateX(-100px); */
     transition: opacity 1s, transform 1s;
 }
 .showAboutThree{

@@ -1,16 +1,11 @@
 .about-two-container{
     background-color: #f7f7f7;
-    /* background-color: lightcoral; */
 }
 .hiddenAboutTwo{
-    /* opacity: 0; */
-    /* transition: all 1s; */
     opacity: 0; /* make the element invisible */
-    /* transform: translateX(100px);  */
     transition: opacity 1s, transform 1s;
 }
 .showAboutTwo{
-    /* opacity: 1; */
     opacity: 1; /* make the element visible */
     transform: translateX(0); /* move the element back to its original position */
 }

@@ -164,14 +164,12 @@
     @media (max-width:560px){
         .abo-new-btitle{
             font-size: 3.2rem;
-            /* font-size: 3rem; */
             
         }
     }
     @media (max-width:503px){
         .abo-new-btitle{
             font-size: 3rem;
-            /* font-size: 3rem; */
             
         }
     }

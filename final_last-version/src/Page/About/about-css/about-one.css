@@ -7,7 +7,6 @@
     
 
 .about-one-container{
-    /* background-color: lightblue; */
     padding-bottom: 2rem;
 
 }
@@ -21,7 +20,6 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    /* background-color: blue; */
 }
 .abo-one-stitle{
     font-size: 1.5rem;
@@ -33,7 +31,6 @@
 
 .abo-one-btitle{
     font-size: 5rem;
-    /* maybe 5 or 5.5 */
     color: #00544f;
     font-family: 'Roboto', sans-aboif;
     margin-left: 1rem;
@@ -44,13 +41,11 @@
     grid-column: span 6;
     display: grid;
     align-self: center;
-    /* background-color: red; */
     padding: 10px 0;
 }
 
 .abo-one-watch{
     width: 85%;
-    /* height: 50%; */
     justify-self: center;
     align-self: center;
 }

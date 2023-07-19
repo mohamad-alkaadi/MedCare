@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
   gap: 2rem;
-  /* margin:0 2rem; */
   margin:auto;
 }
   
@@ -47,7 +46,6 @@
 }
 
 #s-in-button{
-    /* border: #00544f solid 1px; */
     border-radius: 50px;
     padding: 11px 17px;
     background-color: #00544f;
@@ -166,15 +164,14 @@
         grid-column: 1;
         align-self:flex-start;
         text-decoration: none;
-        /* margin: 0 auto; */
       }
+
       .menu-items .mob-headerlogo{
         font-family: 'Comfortaa', cursive;
         font-size: 30px;
         padding: 0;
         margin-left: 0;
         align-self: flex-start;
-        /* margin: 0 2rem; */
         align-self:flex-start;
         
       }
@@ -215,7 +212,6 @@
   color: #ffffff;
   padding: 0;
   align-self:flex-start;
-  /* font-family: 'Comfortaa', cursive; */
   grid-column: 1;
 }
   

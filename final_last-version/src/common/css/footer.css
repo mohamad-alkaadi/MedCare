@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 2rem;
-    /* margin:0 2rem; */
     margin:auto;
   }
 
@@ -58,10 +57,7 @@
     margin: 2rem 0;
 }
 .footer-link:hover{
-    /* color: #07c79a; */
-    /* border-bottom: .5px solid #fff; */
     color: #e7e6e6;
-    /* color: #cfcfcf; */
 }
 .footer-link{
     text-decoration: none;
@@ -74,11 +70,6 @@
     color:#fff;
     font-size: 1.2rem;
 }
-/* .footer-contact a:hover{
-   color: #07c79a;
-       border-bottom: .5px solid #fff;
-
-} */
 
 
 .contact-icon{

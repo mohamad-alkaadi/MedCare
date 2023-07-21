@@ -27,11 +27,9 @@
 
 .five-right-pone{
     grid-column: span 6;
-    /* background-color: lightblue; */
 }
 .five-right-ptwo{
     grid-column: span 6;
-    /* background-color: lightcoral; */
 }
 .ser-five-right{
     display: grid;
@@ -47,7 +45,6 @@
 .five-right-img{
     max-width: 150px;
     margin-right:1rem;
-    /* background-color: lightgreen; */
     align-self: center;
 }
 
@@ -59,7 +56,6 @@
     grid-area: text;
     display: grid;
     grid-template-rows: 30% 70%;
-    /* background-color: lightgoldenrodyellow; */
     align-self: center;
     height: 70%;
 

@@ -7,7 +7,6 @@
     
 
 .service-one-container{
-    /* background-color: lightblue; */
     padding-bottom: 2rem;
 
 }
@@ -21,7 +20,6 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    /* background-color: blue; */
 }
 .ser-one-stitle{
     font-size: 1.5rem;
@@ -32,7 +30,6 @@
 
 .ser-one-btitle{
     font-size: 5rem;
-    /* maybe 5 or 5.5 */
     color: #00544f;
     font-family: 'Roboto', sans-serif;
     margin-left: 1rem;
@@ -43,13 +40,11 @@
     grid-column: span 6;
     display: grid;
     align-self: center;
-    /* background-color: red; */
     padding: 10px 0;
 }
 
 .ser-one-watch{
     width: 85%;
-    /* height: 50%; */
     justify-self: center;
     align-self: center;
 }
@@ -152,14 +147,12 @@
 @media (max-width:560px){
     .ser-one-btitle{
         font-size: 3.5rem;
-        /* font-size: 3rem; */
         
     }
 }
 @media (max-width:503px){
     .ser-one-btitle{
         font-size: 3rem;
-        /* font-size: 3rem; */
         
     }
 }

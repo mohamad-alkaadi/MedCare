@@ -173,26 +173,7 @@
         font-size: 1.8rem;
     }
 }
-/* 
-@media (max-width:575px){
-    .ser-six-title{
-        font-size: 2.2rem;
-    }
-} */
-/* 
-@media (max-width:479px){
-    .ser-six-title{
-        font-size: 2.2rem;
-        text-align: center;
-        padding: 0 3rem;
-    }
-} */
-/* 
-@media (max-width:405px){
-    .ser-six-title{
-        font-size: 2rem;
-    }
-} */
+
 
 @media (max-width:464px){
     .serviceSix-grid-system{

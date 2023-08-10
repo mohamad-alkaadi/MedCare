@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Page/Home/Home';
+import SignUp from './Page/Signup/SignUp';
 import Services from './Page/Services/Services';
 import Footer from './common/Footer';
 import NavBar from './common/NavBar';
@@ -50,17 +51,18 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname !== "/MedCare/signin" && !hasError && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
+      {location.pathname !== "/MedCare/signin" && location.pathname !== "/MedCare/signup" && !hasError && <NavBar hamMenuActive={hamMenuActive} hamClicked={hamClicked} closeNavBar={closeNavBar}/>}
       <Routes>
          <Route path='/MedCare' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/' element={<Home hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/services' element={<Services hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/about' element={<About hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/signin' element={<SignIn/>}/>
+         <Route path='/MedCare/signup' element={<SignUp/>}/>
          <Route path='*' element={<Error hasError={hasError} setHasError={setHasError} appViewportWidth={appViewportWidth}/>}/>
          <Route path='/MedCare/error' element={<Error hasError={hasError} setHasError={setHasError} appViewportWidth={appViewportWidth}/>}/>
       </Routes>
-      {location.pathname !== "/MedCare/signin" && !hasError && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
+      {location.pathname !== "/MedCare/signin" && location.pathname !== "/MedCare/signup" && !hasError && <Footer hamActive={hamMenuActive} appViewportWidth={appViewportWidth}/>}
     </div>
 
   );

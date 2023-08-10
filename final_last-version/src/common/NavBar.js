@@ -60,7 +60,7 @@ function NavBar(props) {
                               <CustomLink to='/MedCare/services' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Services</CustomLink>
                               {/* <a id='menu-item' href="#">Sign in</a> */}
                               <CustomLink to='/MedCare/signin' id='menu-item' className="mobMenu-item-nav" onClick={closeNavBar}>Sign in</CustomLink>
-                          </div>                        
+                          </div>
                     </nav>
                     {/* <p className='mob-headerlogo'>MedCare</p> */}
  

@@ -61,7 +61,6 @@ const SignUp = () => {
             </Link>
             
             <div className='sign-up-email'>
-                    
                     <input 
                         type='email'
                         placeholder='Email'
@@ -74,27 +73,11 @@ const SignUp = () => {
                         onFocus={() => setEmailFocus(true)}
                         onBlur={() => setEmailFocus(false)}/>
             </div>
-
-                <div className='sign-up-password'>
-                    <input
-                        type='password'
-                        placeholder='Password'
-                        id='signup-password'
-                        onChange={(e) => setPwd(e.target.value)}
-                        required
-                        aria-invalid={validPwd ? "false":"true"}
-                        onFocus={() => setPwdFocus(true)}
-                        onBlur={() => setPwdFocus(false)}/>
-
-                </div>
                 <div className='sign-up-submit'>
-                  {/* <input 
-                    type='submit'
-                    value='SIGN IN'/> */}
-                    <button type="submit">SIGN IN</button>
+                    <button type="submit">SIGN UP</button>
                 </div>
                 <div className="sign-up-forget">
-                  Forgot <button onClick={ShowHidden}>Password?</button>
+                  Already have an <button onClick={ShowHidden}>account?</button>
                 </div>
             
         </form>

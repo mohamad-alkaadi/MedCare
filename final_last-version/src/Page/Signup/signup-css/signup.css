@@ -1,5 +1,4 @@
 .sign-up-container{
-    /* background-color: red; */
     display: grid;
     justify-content: center;
     align-content: center;
@@ -36,44 +35,24 @@
 .sign-up-email{
     grid-column: span 12;
 }
-.sign-up-email input{
-    /* width: 100%; */
+
+
+#signup-email{
+    border-radius: 0;
     width: 400px;
     font-size: .9rem;
-    border-radius: 0;
     height: 3.5rem;
     margin-bottom: 0;
     border:1px #f1f1f1 solid;
     /* margin: 0 2rem; */
     padding-left: 1rem;
 }
-
 .sign-up-email input:focus{
     outline: solid #00544f 1px;
     /* border-radius: 2px; */
     margin-bottom: 1px;
 }
 
-.sign-up-password{
-    grid-column: span 12;
-}
-.sign-up-password input{
-    /* width: 100%; */
-    width: 400px;
-    /* margin: 0 2rem; */
-    font-size: .9rem;
-    border-radius: 0;
-    /* height: 36px; */
-    height: 3.5rem;
-    border:1px #f1f1f1 solid;
-    padding-left: 1rem;
-
-}
-
-.sign-up-password input:focus{
-    outline: solid #00544f 1px;
-    /* border-radius: 2px; */
-}
 
 .sign-up-submit{
     grid-column: span 12;
@@ -147,7 +126,7 @@
         width: 95%;
 
     }
-    .sign-up-email input{
+    #signup-email{
         width: 100%;
     }
     
@@ -156,14 +135,6 @@
         margin-bottom: 1px;
     }
     
-    .sign-up-password{
-        grid-column: span 4;
-        margin: auto;
-        width: 95%;
-    }
-    .sign-up-password input{
-        width: 100%;
-    }
     
     .sign-up-submit{
         grid-column: span 4; 

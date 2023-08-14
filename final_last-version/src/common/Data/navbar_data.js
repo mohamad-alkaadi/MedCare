@@ -14,6 +14,11 @@ export const links = [
         url:'/MedCare/services',
         text:'Services'
     },
+    {
+        id:4,
+        url:'/MedCare/signup',
+        text:'Sign up'
+    },
 ] 
 
 export const user_int = [

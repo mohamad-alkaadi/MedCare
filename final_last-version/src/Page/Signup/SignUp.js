@@ -36,20 +36,12 @@ const SignUp = () => {
   const [validEmail, setValidEmail] = useState(false);
   const [emailFocus, setEmailFocus] = useState(false);
 
-  const [pwd, setPwd] = useState('');
-  const [validPwd, setValidPwd] = useState(false);
-  const [pwdFocus, setPwdFocus] = useState(false);
 
-  const [forgotPassword,setForgotPassword] = useState(false)
-  const [resetEmailSent,setResetEmailSent] = useState(false)
-  const [resetEmailSave,setResetEmailSave] = useState("")
+
+
   const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
   const SmallLoginStyles = { signInContainer:{ minHeight:SignInHeight, backgroundColor:"#ecfafe", } }
 
-  function ShowHidden(){
-    setForgotPassword(!forgotPassword)
-
-  }
   const hightStyles = LoginStyles.signInContainer
   const SmallStyles = SmallLoginStyles.signInContainer
 
@@ -77,7 +69,7 @@ const SignUp = () => {
                     <button type="submit">SIGN UP</button>
                 </div>
                 <div className="sign-up-forget">
-                  Already have an <button onClick={ShowHidden}>account?</button>
+                  Already have an <Link to="../MedCare/signin"><p>account?</p></Link>
                 </div>
             
         </form>

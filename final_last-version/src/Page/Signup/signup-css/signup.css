@@ -73,22 +73,24 @@
     /* font-weight: 100; */
 }
 
-.sign-up-forget{
+.sign-up-alreadySigned{
     grid-column: span 12;
     margin: 0 auto;   
     margin-top: 2.5rem;  
     /* color: #003f3b; */
     font-size: .95rem;
     margin-bottom: 2.375rem;
+    display: flex;
 }
 
-.sign-up-forget button{
+.sign-up-alreadySigned p{
     color: #007e78;
     text-decoration: none;
     cursor: pointer;
     background: none;
     border: none;
     padding: 0;
+    margin-left: .3rem;
     font-size: .95rem;
 }
 
@@ -145,7 +147,7 @@
     .sign-up-submit button{  
         width: 100%;
     }
-    .sign-up-forget{
+    .sign-up-alreadySigned{
         grid-column: span 4;
         margin-top: 2.5rem; 
         display: block;

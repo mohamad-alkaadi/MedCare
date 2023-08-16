@@ -1,5 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './signup-css/signup.css'
+import {emailPic} from './signup-assets/email-circle.png'
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +37,8 @@ const SignUp = () => {
   const [validEmail, setValidEmail] = useState(false);
   const [emailFocus, setEmailFocus] = useState(false);
 
-
+  const [resetEmailSent,setResetEmailSent] = useState(false)
+  const [resetEmailSave,setResetEmailSave] = useState("")
 
 
   const LoginStyles = { signInContainer:{ height:SignInHeight, backgroundColor:"#ecfafe"} }
@@ -44,8 +46,14 @@ const SignUp = () => {
 
   const hightStyles = LoginStyles.signInContainer
   const SmallStyles = SmallLoginStyles.signInContainer
-
+  
+  function handleResend(){
+    return
+  }
   return (
+    <div>
+    {!resetEmailSent?
+
     <div className='sign-up-container' style={width>565?hightStyles:SmallStyles}>
       <form className='sign-up signup-grid-system'>
             <Link to='/MedCare' className='signup-title'>
@@ -68,12 +76,27 @@ const SignUp = () => {
                 <div className='sign-up-submit'>
                     <button type="submit">SIGN UP</button>
                 </div>
-                <div className="sign-up-forget">
+                <div className="sign-up-alreadySigned">
                   Already have an <Link to="../MedCare/signin"><p>account?</p></Link>
                 </div>
             
         </form>
+    </div>:
+    <div className='sign-in-container email-sent-container' style={width>565?hightStyles:SmallStyles}>
+        <div className='sign-in email-sent-a signin-grid-system'>
+        <div className='email-sent'>
+              <img className='email-sent-icon' src={emailPic}/> 
+            </div>
+          <div className='email-sent-sloganOne'>Check your email</div>
+          <div className='email-sent-sloganTwo'>We sent a password reset link to</div>
+          <div className='email-sent-email'>{resetEmailSave}</div>
+          <div className='email-sent-notReceive'>Didn't receive the email? <button onClick={handleResend}>Click to resend</button></div>
+          
+        </div>
+     </div>
+}
     </div>
+
   )
 }
 

@@ -1,0 +1,46 @@
+from django.conf import settings
+from django.db import models
+
+
+# Create your models here.
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+
+# we put the foreign key in the many side of one to many
+# each category has multiple servers and each server has multiple categories
+# in ManyToMany we write ManyToManyField instead of ForeignKey
+class Server(models.Model):
+    name = models.CharField(max_length=100)
+    owner = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="server_owner"
+    )
+    category = models.ForeignKey(
+        Category, on_delete=models.PROTECT, related_name="server_category"
+    )
+    description = models.CharField(max_length=255, null=True)
+    member = models.ManyToManyField(settings.AUTH_USER_MODEL)
+
+    def __str__(self):
+        return self.name
+
+
+class Channel(models.Model):
+    name = models.CharField(max_length=100)
+    owner = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="channel_owner"
+    )
+    topic = models.CharField(max_length=100)  # 3lak
+    server = models.ForeignKey(Server, on_delete=models.CASCADE)
+
+    # how do we want to save our values
+    def save(self, *args, **kwargs):
+        self.name = self.name.lower()  # save as lower case
+        super(Channel, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.name

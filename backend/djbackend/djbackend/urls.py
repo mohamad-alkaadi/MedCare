@@ -9,7 +9,7 @@ from drf_spectacular.views import (
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register("api/server/select/", ServerListViewSet)
+router.register("api/server/select", ServerListViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),

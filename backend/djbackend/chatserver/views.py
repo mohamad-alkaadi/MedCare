@@ -5,12 +5,43 @@ from rest_framework.response import Response
 from .models import Server
 from rest_framework.exceptions import ValidationError, AuthenticationFailed
 from django.db.models import Count
-
+from .schema import server_list_docs
 # viewsets is a class that provides CRUD operations
 class ServerListViewSet(viewsets.ViewSet):
     queryset = Server.objects.all()
-
+    @server_list_docs
     def list(self, request):
+        """
+            Lists servers based on provided query parameters.
+
+            Args:
+                request (rest_framework.request.Request): The incoming request object.
+
+            Raises:
+                AuthenticationFailed: If the user is not authenticated for queries based on user or server id.
+
+            Returns:
+                rest_framework.response.Response: A response containing serialized server data.
+
+            Query Parameters:
+                - category (str): Filters servers by category name.
+                - qty (str): Limits the queryset to the specified quantity.
+                - by_user (str): If "true", filters servers by the requesting user.
+                - by_serverid (str): Filters servers by the provided server ID.
+                - with_num_members (str): If "true", annotates the queryset with the number of members.
+
+            Raises:
+                ValidationError: If the specified server ID is not found or if there is a value error.
+
+            Usage Example:
+                GET /servers/?category=example&qty=5&by_user=true&by_serverid=123&with_num_members=true
+
+            Note:
+                - If 'by_user' or 'by_serverid' is provided without user authentication, an AuthenticationFailed
+                exception is raised.
+                - 'qty' and 'with_num_members' are optional and can be omitted.
+
+        """
         # Capture query parameters
         category = request.query_params.get("category")
         qty = request.query_params.get("qty")
@@ -31,6 +62,13 @@ class ServerListViewSet(viewsets.ViewSet):
             user_id = request.user.id
             self.queryset = self.queryset.filter(member=user_id)
 
+        # if by_user:
+        #     if by_user and not request.user.is_authenticated:
+        #         user_id = request.user.id
+        #         self.queryset = self.queryset.filter(member=user_id)
+        #     else:
+        #         raise AuthenticationFailed()
+        
         # Annotate queryset with the number of members if 'with_num_members' is True
         if with_num_members:
             self.queryset = self.queryset.annotate(num_members=Count("member"))

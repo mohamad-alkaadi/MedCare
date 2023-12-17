@@ -2,7 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.shortcuts import get_object_or_404
 from django.dispatch import receiver
-from validators import validate_icon_image_size
+from chatserver.validators import validate_icon_image_size, validate_image_file_extension
 def server_icon_upload_path(instance, filename):
     return f"server/{instance.id}/server_icon/{filename}"
 def server_banner_upload_path(instance, filename):
@@ -64,8 +64,9 @@ class Channel(models.Model):
     )
     topic = models.CharField(max_length=100)  # 3lak
     server = models.ForeignKey(Server, on_delete=models.CASCADE, related_name="channel_server")
-    banner = models.ImageField(upload_to=server_banner_upload_path, null=True, blank=True)
-    icon = models.ImageField(upload_to= server_icon_upload_path, null=False, blank=True, validators={validate_icon_image_size})
+    #in the image field we do not save the img to the database, instead we save the path of the image to the database
+    banner = models.ImageField(upload_to=server_banner_upload_path, null=True, blank=True, validators={validate_image_file_extension})
+    icon = models.ImageField(upload_to= server_icon_upload_path, null=False, blank=True, validators={validate_icon_image_size, validate_image_file_extension})
 
     # # how do we want to save our values
     # def save(self, *args, **kwargs):

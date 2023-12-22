@@ -1,8 +1,17 @@
-import { ChevronLeft } from "@mui/icons-material"
+import { ChevronLeft, ChevronRight } from "@mui/icons-material"
 import { Box, IconButton } from "@mui/material"
 import React from "react"
 
-const DrawerToggle = () => {
+type Props = {
+  open: boolean
+  handleDrawOpen: () => void
+  handleDrawClose: () => void
+}
+const DrawerToggle: React.FC<Props> = ({
+  open,
+  handleDrawClose,
+  handleDrawOpen,
+}) => {
   return (
     <Box
       sx={{
@@ -12,8 +21,8 @@ const DrawerToggle = () => {
         alignItems: "center",
       }}
     >
-      <IconButton>
-        <ChevronLeft />
+      <IconButton onClick={open ? handleDrawClose : handleDrawOpen}>
+        {open ? <ChevronLeft /> : <ChevronRight />}
       </IconButton>
     </Box>
   )

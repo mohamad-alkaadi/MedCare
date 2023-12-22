@@ -3,6 +3,7 @@ import React from "react"
 import PrimaryAppBar from "./chatTemplates/PrimaryAppBar"
 import { useTheme } from "@mui/material/styles"
 import PrimaryDraw from "./chatTemplates/PrimaryDraw"
+import SecoundaryDrawer from "./chatTemplates/SecoundaryDrawer"
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <CssBaseline />
       <PrimaryAppBar />
       <PrimaryDraw></PrimaryDraw>
+      <SecoundaryDrawer />
     </Box>
   )
 }

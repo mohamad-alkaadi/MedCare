@@ -1,9 +1,20 @@
 import { Box, Typography } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
 import React from "react"
+import axios from "axios"
 
 const SecoundaryDrawer = () => {
   const theme = useTheme()
+
+  axios
+    .get("http://127.0.0.1:8000/api/server/select/?category=cat1")
+    .then((response) => {
+      console.log(response.data)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+
   return (
     <Box
       sx={{

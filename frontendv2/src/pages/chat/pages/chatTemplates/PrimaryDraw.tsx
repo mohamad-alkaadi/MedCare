@@ -9,6 +9,14 @@ const PrimaryDraw = () => {
   const below600 = useMediaQuery("(max-width:599px)")
   const [open, setOpen] = useState(!below600)
 
+  const handleDrawOpen = () => {
+    setOpen(true)
+  }
+
+  const handleDrawClose = () => {
+    setOpen(false)
+  }
+
   const openedMixin = () => ({
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
@@ -24,13 +32,6 @@ const PrimaryDraw = () => {
     overflowX: "hidden",
     width: theme.primaryDraw.closed,
   })
-  const handleDrawOpen = () => {
-    setOpen(true)
-  }
-
-  const handleDrawClose = () => {
-    setOpen(false)
-  }
 
   const Drawer = styled(
     MuiDrawer,
@@ -45,7 +46,7 @@ const PrimaryDraw = () => {
     }),
     ...(!open && {
       // he put openedMixin possible error
-      ...openedMixin(),
+      ...closedMixin(),
       "& .MuiDrawer-paper": closedMixin(),
     }),
   }))

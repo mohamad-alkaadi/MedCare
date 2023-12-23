@@ -4,6 +4,7 @@ import PrimaryAppBar from "./chatTemplates/PrimaryAppBar"
 import { useTheme } from "@mui/material/styles"
 import PrimaryDraw from "./chatTemplates/PrimaryDraw"
 import SecoundaryDrawer from "./chatTemplates/SecoundaryDrawer"
+import Main from "./chatTemplates/Main"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <PrimaryAppBar />
       <PrimaryDraw></PrimaryDraw>
       <SecoundaryDrawer />
+      <Main />
     </Box>
   )
 }

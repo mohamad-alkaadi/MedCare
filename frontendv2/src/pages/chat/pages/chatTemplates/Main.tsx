@@ -1,18 +1,15 @@
 import { Box, Typography } from "@mui/material"
-import { useTheme } from "@mui/material/styles"
 import React from "react"
-
-const SecoundaryDrawer = () => {
+import { useTheme } from "@mui/material/styles"
+const Main = () => {
   const theme = useTheme()
   return (
     <Box
       sx={{
-        minWidth: `${theme.secondaryDraw.width}px `,
+        flexGrow: 1,
         height: `calc(100vh - ${theme.primaryAppBar.height}px)`,
         mt: `${theme.primaryAppBar.height}px`,
-        borderRight: `1px solid ${theme.palette.divider}`,
-        display: { xs: "none", sm: "block" },
-        overflow: "auto",
+        overflow: "hidden",
       }}
     >
       {[...Array(50)].map((_, i) => (
@@ -24,4 +21,4 @@ const SecoundaryDrawer = () => {
   )
 }
 
-export default SecoundaryDrawer
+export default Main

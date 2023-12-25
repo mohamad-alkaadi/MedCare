@@ -13,7 +13,16 @@ const useAxiosWithInterceptor = (): AxiosInstance => {
     (response) => {
       return response
     },
-    async (error) => {}
+    async (error) => {
+      // we can use the originalRequest to retry a second time to request something from the server
+      const originalRequest = error.config
+      if (error.response?.status === 403) {
+        // redirect to home page
+        const goRoot = () => navigate("/error")
+        goRoot()
+      }
+      throw error
+    }
   )
   return jwtAxios
 }

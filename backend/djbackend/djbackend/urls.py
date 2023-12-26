@@ -1,4 +1,4 @@
-from chatserver.views import ServerListViewSet
+from chatserver.views import ServerListViewSet, CategoryListViewSet
 from django.contrib import admin
 from django.urls import path
 from drf_spectacular.views import (
@@ -12,7 +12,7 @@ from django.conf.urls.static import static
 
 router = DefaultRouter()
 router.register("api/server/select", ServerListViewSet)
-
+router.register("api/server/category", CategoryListViewSet)
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/docs/schema/", SpectacularAPIView.as_view(), name="schema"),

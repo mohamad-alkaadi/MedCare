@@ -6,7 +6,11 @@ import axios from "axios"
 import useAxiosWithInterceptor from "../../../../helpers/jwtinterceptor"
 /////////////
 
-const SecoundaryDrawer = () => {
+type SecondaryDrawProps = {
+  children: React.ReactNode
+}
+
+const SecondaryDrawer = ({ children }: SecondaryDrawProps) => {
   const theme = useTheme()
   // const jwtAxios = useAxiosWithInterceptor()
   // axios
@@ -37,13 +41,9 @@ const SecoundaryDrawer = () => {
         overflow: "auto",
       }}
     >
-      {[...Array(50)].map((_, i) => (
-        <Typography key={i} paragraph>
-          {i + 1}
-        </Typography>
-      ))}
+      {children}
     </Box>
   )
 }
 
-export default SecoundaryDrawer
+export default SecondaryDrawer

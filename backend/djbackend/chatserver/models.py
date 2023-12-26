@@ -53,6 +53,32 @@ class Server(models.Model):
     description = models.CharField(max_length=255, blank=True, null=True)
     member = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
+    banner = models.ImageField(upload_to=server_banner_upload_path, null=True, blank=True, validators={validate_image_file_extension})
+    icon = models.ImageField(upload_to= server_icon_upload_path, null=False, blank=True, validators={validate_icon_image_size, validate_image_file_extension})
+
+    # # how do we want to save our values
+    # def save(self, *args, **kwargs):
+    #     self.name = self.name.lower()  # save as lower case
+    #     super(Channel, self).save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+        if self.id:
+            existing = get_object_or_404(Server, id=self.id)
+            if existing.icon != self.icon:
+                existing.icon.delete(save=False)
+            if existing.banner != self.banner:
+                existing.banner.delete(save=False)
+
+        super(Server, self).save(*args, **kwargs)
+
+    #capture delete event
+    @receiver(models.signals.pre_delete, sender="chatserver.Server")
+    def server_delete_files(sender, instance, **kwargs):
+        for field in instance._meta.fields:
+            if field.name == "icon" or field.name == "banner":
+                file = getattr(instance, field.name)
+                if file:
+                    file.delete(save=False)
+
     def __str__(self):
         return f"{self.name}-{self.id}"
 
@@ -65,31 +91,6 @@ class Channel(models.Model):
     topic = models.CharField(max_length=100)  # 3lak
     server = models.ForeignKey(Server, on_delete=models.CASCADE, related_name="channel_server")
     #in the image field we do not save the img to the database, instead we save the path of the image to the database
-    banner = models.ImageField(upload_to=server_banner_upload_path, null=True, blank=True, validators={validate_image_file_extension})
-    icon = models.ImageField(upload_to= server_icon_upload_path, null=False, blank=True, validators={validate_icon_image_size, validate_image_file_extension})
-
-    # # how do we want to save our values
-    # def save(self, *args, **kwargs):
-    #     self.name = self.name.lower()  # save as lower case
-    #     super(Channel, self).save(*args, **kwargs)
-    def save(self, *args, **kwargs):
-        if self.id:
-            existing = get_object_or_404(Category, id=self.id)
-            if existing.icon != self.icon:
-                existing.icon.delete(save=False)
-            if existing.banner != self.banner:
-                existing.banner.delete(save=False)
-
-        super(Category, self).save(*args, **kwargs)
-
-    #capture delete event
-    @receiver(models.signals.pre_delete, sender="chatserver.Channel")
-    def category_delete_files(sender, instance, **kwargs):
-        for field in instance._meta.fields:
-            if field.name == "icon" or field.name == "banner":
-                file = getattr(instance, field.name)
-                if file:
-                    file.delete(save=False)
-
+   
     def __str__(self):
         return self.name

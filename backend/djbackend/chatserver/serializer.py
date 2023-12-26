@@ -8,6 +8,7 @@ class ChannelSerializer(serializers.ModelSerializer):
 class ServerSerializer(serializers.ModelSerializer):
     num_members = serializers.SerializerMethodField() #allows us to generate a field value that is not derived from model attribute like methods(functions)
     channel_server = ChannelSerializer(many =True)
+    category = serializers.StringRelatedField()
     class Meta:
         model = Server
         exclude = ("member",)

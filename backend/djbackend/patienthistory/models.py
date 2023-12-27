@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 # Create your models here.
+
 class Doctor(models.Model):
     name = models.CharField(max_length=255, null=False)
     specialization = models.CharField(max_length=255, null=False)
@@ -26,10 +27,10 @@ class Appointment(models.Model):
     # checkup /  follow-up / surgery
     def __str__(self):
         return self.reason
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def save(self, *args, **kwargs):
         if self.appointment_type == 'surgery':
-            self._meta.get_field('need_surgery').editable = False
+            self.need_surgery = False
+        super().save(*args, **kwargs)
 
 
 # class Surgery(models.Model):

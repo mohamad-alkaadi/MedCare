@@ -83,7 +83,7 @@ class ServerListViewSet(viewsets.ViewSet):
         #         self.queryset = self.queryset.filter(member=user_id)
         #     else:
         #         raise AuthenticationFailed()
-        
+
         # Annotate queryset with the number of members if 'with_num_members' is True
         if with_num_members:
             self.queryset = self.queryset.annotate(num_members=Count("member"))

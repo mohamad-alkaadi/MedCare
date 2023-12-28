@@ -1,5 +1,6 @@
 import React from "react"
 import Home from "./pages/Home"
+import Explore from "./pages/Explore"
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -13,6 +14,7 @@ const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/chat/" element={<Home />} />
+      <Route path="/chat/explore/:categoryName" element={<Explore />} />
       {/* <Route path="/profile/" element={<Profile />} /> */}
     </Route>
   )

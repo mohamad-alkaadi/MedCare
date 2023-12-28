@@ -11,21 +11,21 @@ import {
 import MenuIcon from "@mui/icons-material/Menu"
 import React, { useEffect, useState } from "react"
 import { useTheme } from "@mui/material/styles"
-
+import ExploreCategories from "../../components/SecoundaryDraw/ExploreCategories"
 const PrimaryAppBar = () => {
   const theme = useTheme()
   const [sideMenu, setSideMenu] = useState(false)
-  // const toggleDrawer =
-  // (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-  //   if (
-  //     event.type === "keydown" &&
-  //     ((event as React.KeyboardEvent).key === "Tab" ||
-  //       (event as React.KeyboardEvent).key === "Shift")
-  //   ) {
-  //     return;
-  //   }
-  //   setSideMenu(open);
-  // };
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return
+      }
+      setSideMenu(open)
+    }
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.up("sm"))
 
@@ -35,6 +35,16 @@ const PrimaryAppBar = () => {
     }
   }, [isSmallScreen])
 
+  const list = () => (
+    <Box
+      sx={{ pt: `${theme.primaryAppBar.height}px`, minWidth: 200 }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <ExploreCategories />
+    </Box>
+  )
   return (
     <AppBar
       sx={{
@@ -80,11 +90,7 @@ const PrimaryAppBar = () => {
           open={sideMenu}
           onClose={() => setSideMenu(false)}
         >
-          {[...Array(100)].map((_, i) => (
-            <Typography key={i} paragraph>
-              {i + 1}
-            </Typography>
-          ))}
+          {list()}
         </Drawer>
 
         <Link underline="none" color="inherit" href="/chat/">

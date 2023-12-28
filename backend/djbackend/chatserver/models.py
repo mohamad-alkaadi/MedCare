@@ -22,6 +22,7 @@ class Category(models.Model):
             existing = get_object_or_404(Category, id=self.id)
             if existing.icon != self.icon:
                 existing.icon.delete(save=False)
+        self.name = self.name.lower()  # save as lower case
         super(Category, self).save(*args, **kwargs)
 
 

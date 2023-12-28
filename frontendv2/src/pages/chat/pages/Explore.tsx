@@ -8,7 +8,7 @@ import Main from "./chatTemplates/Main"
 import PopularChannels from "../components/PrimaryDraw/PopularChannels"
 import ExploreCategories from "../components/SecoundaryDraw/ExploreCategories"
 import ExploreServers from "../components/ExploreServers"
-const Home = () => {
+const Explore = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -26,4 +26,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Explore

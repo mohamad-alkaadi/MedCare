@@ -17,6 +17,7 @@ import { MEDIA_URL } from "../../../../config"
 interface Category {
   id: number
   name: string
+  category: string
   description: string
   icon: string
 }
@@ -55,7 +56,7 @@ const ExploreCategories = () => {
             dense={true}
           >
             <Link
-              to={`/explore/${item.name}`}
+              to={`/chat/explore/${item.category}`}
               style={{ textDecoration: "none", color: "inheret" }}
             >
               <ListItemButton sx={{ minHeight: 48 }}>
@@ -81,7 +82,7 @@ const ExploreCategories = () => {
                       paddingLeft={1}
                       sx={{ color: "black" }}
                     >
-                      {item.name}
+                      {item.category}
                     </Typography>
                   }
                 ></ListItemText>
